@@ -7,8 +7,8 @@ function CandidateCard({ candidate, selected, onSelect }) {
             <div className="candidate-radio"></div>
             <div className="candidate-symbol">{candidate.symbol || '👤'}</div>
             <div className="candidate-info">
-                <div className="candidate-name">{candidate.name}</div>
-                <div className="candidate-party">
+                <div className="candidate-name" style={{ textTransform: 'capitalize' }}>{candidate.name}</div>
+                <div className="candidate-party" style={{ textTransform: 'capitalize' }}>
                     {candidate.party}
                     <span className="candidate-party-short" style={{ marginLeft: '8px' }}>
                         {candidate.party_short}
