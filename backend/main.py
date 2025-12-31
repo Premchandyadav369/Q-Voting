@@ -6,6 +6,7 @@ This is an academic simulation for research purposes only.
 Not affiliated with the Election Commission of India.
 """
 
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
@@ -13,6 +14,18 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
+
+# Define allowed origins
+FRONTEND_URL = os.environ.get("FRONTEND_URL", "http://localhost:5173")
+allow_origins = [FRONTEND_URL]
+
+# Add Vercel preview URLs for development flexibility
+if "vercel.app" in FRONTEND_URL:
+    project_name = FRONTEND_URL.split("https://")[1].split(".vercel.app")[0]
+    allow_origins.extend([
+        f"https://{project_name}-*.vercel.app",
+        f"https://{project_name}.vercel.app"
+    ])
 
 from models.database import init_db, seed_database
 from routes import auth_router, voting_router, results_router
@@ -60,7 +73,7 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173", "http://localhost:5174", "http://localhost:5175"],
+    allow_origins=allow_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

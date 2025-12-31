@@ -78,10 +78,10 @@ function BallotPage({ session, constituency, electionType, setVoteReceipt }) {
                         <div style={{ fontSize: '14px', opacity: 0.8, marginBottom: '4px' }}>
                             Constituency
                         </div>
-                        <div style={{ fontSize: '24px', fontWeight: '700' }}>
+                        <div style={{ fontSize: '24px', fontWeight: '700', textTransform: 'capitalize' }}>
                             {constituency.name}
                         </div>
-                        <div style={{ opacity: 0.8, marginTop: '4px' }}>
+                        <div style={{ opacity: 0.8, marginTop: '4px', textTransform: 'capitalize' }}>
                             {constituency.district} District
                         </div>
                     </div>
@@ -162,10 +162,10 @@ function BallotPage({ session, constituency, electionType, setVoteReceipt }) {
                                         <div style={{ fontSize: '2rem', marginBottom: '8px' }}>
                                             {selectedCandidateInfo.symbol || '👤'}
                                         </div>
-                                        <div style={{ fontWeight: '600', fontSize: '18px' }}>
+                                        <div style={{ fontWeight: '600', fontSize: '18px', textTransform: 'capitalize' }}>
                                             {selectedCandidateInfo.name}
                                         </div>
-                                        <div style={{ color: 'var(--neutral-600)' }}>
+                                        <div style={{ color: 'var(--neutral-600)', textTransform: 'capitalize' }}>
                                             {selectedCandidateInfo.party}
                                         </div>
                                         <div className="badge badge-info" style={{ marginTop: '8px' }}>

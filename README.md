@@ -116,24 +116,29 @@ Follow these steps to set up and run the application on your local machine.
    - Click "Add New" -> "Project".
    - Select your GitHub repository.
 3. **Configure Project**:
-   - Root Directory: `frontend`
-   - Framework Preset: `Vite`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
+   - **Root Directory**: `frontend` (Vercel should autodetect this)
 4. **Environment Variables**:
-   - Add `VITE_API_BASE_URL` pointing to your deployed backend (e.g., `https://your-backend.herokuapp.com`).
-5. **Deploy**: Click "Deploy".
+   - Add `VITE_API_BASE_URL` and point it to the URL of your deployed backend (from Phase 5).
+5. **Deploy**: Click "Deploy". Vercel will automatically use the `vercel.json` file for the correct build settings.
 
-### Phase 5: Deploy Backend (FastAPI)
+### Phase 5: Deploy Backend (FastAPI) on Render
 
-1. **Recommended Platforms**: [Render](https://render.com), [Railway](https://railway.app), or [Koyeb](https://koyeb.com).
-2. **Setup**:
-   - Link your GitHub repo.
-   - Set the root directory to `backend`.
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-3. **Environment Variables**:
-   - Add `GEMINI_API_KEY` with your real-time Gemini 2.5 Flash API Key.
+1. **Sign in to Render**: Go to [Render](https://render.com).
+2. **Create a New Web Service**:
+   - Click "New +" -> "Web Service".
+   - Connect your GitHub repository.
+3. **Configuration**:
+   - **Name**: `quantum-voting-backend` (or your choice)
+   - **Root Directory**: `backend`
+   - **Environment**: `Python 3`
+   - **Region**: Choose a region close to you.
+   - **Branch**: `main`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app`
+4. **Environment Variables**:
+   - Under the "Environment" section, click "Add Environment Variable".
+   - **Key**: `GEMINI_API_KEY`, **Value**: `your_gemini_api_key_here`
+5. **Deploy**: Click "Create Web Service". Render will use the `render.yaml` for configuration.
 
 ---
 ## 📄 Academic Disclaimer
