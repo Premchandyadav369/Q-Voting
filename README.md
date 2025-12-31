@@ -129,15 +129,15 @@ This project uses a `render.yaml` file to define the backend infrastructure as c
 2. **Create a New Blueprint Service**:
    - Click "New +" -> "Blueprint".
    - Connect your GitHub repository.
-   - Render will automatically detect and parse the `render.yaml` file.
+   - Render will automatically detect and parse the `render.yaml` file. The `PYTHON_VERSION` is already set to `3.11` in the file.
 3. **Approve the Service**:
    - Give your new service a name and click "Apply".
 4. **Add Environment Variables**:
    - After the service is created, go to its "Environment" tab.
-   - Add the following secret variables. These are not stored in `render.yaml` for security reasons.
+   - The `render.yaml` file includes a placeholder for `FRONTEND_URL`. You should update its value to the live URL of your deployed Vercel frontend (from Phase 4).
+   - You also need to add a secret variable for your Gemini API key:
      - `GEMINI_API_KEY`: Your secret key for the Google Gemini API.
-     - `FRONTEND_URL`: The live URL of your deployed Vercel frontend (from Phase 4).
-5. **Automatic Deployment**: Render will now build and deploy your backend. The deployment is pre-configured via `render.yaml` to use Python 3.11 for maximum compatibility.
+5. **Automatic Deployment**: Render will now build and deploy your backend.
 
 ---
 ## 📄 Academic Disclaimer
