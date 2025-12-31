@@ -3,640 +3,2861 @@
         {
             "name": "Telugu Desam Party",
             "short": "TDP",
-            "symbol": "🚲",
+            "symbol": "\ud83d\udeb2",
             "color": "#FFEB3B",
             "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Telugu_Desam_Party_Flag.svg/120px-Telugu_Desam_Party_Flag.svg.png"
         },
         {
             "name": "YSR Congress Party",
             "short": "YSRCP",
-            "symbol": "🏠",
+            "symbol": "\ud83c\udfe0",
             "color": "#1565C0",
             "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/YSR_Congress_Party_logo.svg/120px-YSR_Congress_Party_logo.svg.png"
         },
         {
             "name": "Janasena Party",
             "short": "JSP",
-            "symbol": "🌾",
+            "symbol": "\ud83e\udd5b",
             "color": "#E53935",
             "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/JanaSena_Party_Logo.svg/120px-JanaSena_Party_Logo.svg.png"
         },
         {
             "name": "Bharatiya Janata Party",
             "short": "BJP",
-            "symbol": "🪷",
+            "symbol": "\ud83e\udeb7",
             "color": "#FF9933",
             "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Bharatiya_Janata_Party_logo.svg/120px-Bharatiya_Janata_Party_logo.svg.png"
         },
         {
             "name": "Indian National Congress",
             "short": "INC",
-            "symbol": "✋",
+            "symbol": "\u270b",
             "color": "#00BCD4",
             "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Indian_National_Congress_hand_logo.svg/120px-Indian_National_Congress_hand_logo.svg.png"
         },
         {
             "name": "Communist Party of India",
             "short": "CPI",
-            "symbol": "🌾",
+            "symbol": "\ud83c\udf3e",
             "color": "#F44336",
             "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Communist_Party_of_India_logo.svg/120px-Communist_Party_of_India_logo.svg.png"
         },
         {
             "name": "Independent",
             "short": "IND",
-            "symbol": "⭐",
+            "symbol": "\u2b50",
             "color": "#9E9E9E",
+            "logo_url": null
+        },
+        {
+            "name": "Communist Party of India (Marxist)",
+            "short": "CPI(M)",
+            "symbol": "\u262d",
+            "color": "#FF0000",
             "logo_url": null
         }
     ],
     "mla_candidates_2024": {
-        "Vijayawada West": [
+        "Ichchapuram": [
             {
-                "name": "Gadde Rammohan Rao",
-                "party": "TDP",
-                "votes_2024": 85234
+                "name": "Piriya Vijaya",
+                "party": "YSRCP"
             },
             {
-                "name": "Velampalli Srinivas Rao",
-                "party": "YSRCP",
-                "votes_2024": 62341
+                "name": "Bendalam Ashok",
+                "party": "TDP"
             },
             {
-                "name": "K. Srinivas",
-                "party": "JSP",
-                "votes_2024": 12456
+                "name": "Masupatri Chakravarthy Reddy",
+                "party": "INC"
             }
         ],
-        "Vijayawada Central": [
+        "Palasa": [
             {
-                "name": "Bonda Uma Maheswara Rao",
-                "party": "TDP",
-                "votes_2024": 78543
+                "name": "Seediri Appalaraju",
+                "party": "YSRCP"
             },
             {
-                "name": "Malladi Vishnu",
-                "party": "YSRCP",
-                "votes_2024": 58234
+                "name": "Gouthu Sireesha",
+                "party": "TDP"
             },
             {
-                "name": "R. Srinivas Rao",
-                "party": "BJP",
-                "votes_2024": 8765
+                "name": "Majji Trinadh Babu",
+                "party": "INC"
             }
         ],
-        "Vijayawada East": [
+        "Tekkali": [
             {
-                "name": "Gadde Rammohan",
-                "party": "TDP",
-                "votes_2024": 92341
+                "name": "Duvvada Srinivas",
+                "party": "YSRCP"
             },
             {
-                "name": "G. Srinivasulu Yadav",
-                "party": "YSRCP",
-                "votes_2024": 54321
+                "name": "Kinjarapu Atchannaidu",
+                "party": "TDP"
+            },
+            {
+                "name": "Killi Kruparani",
+                "party": "INC"
             }
         ],
-        "Mangalagiri": [
+        "Pathapatnam": [
             {
-                "name": "Nara Lokesh",
-                "party": "TDP",
-                "votes_2024": 112453
+                "name": "Reddy Shanthi",
+                "party": "YSRCP"
             },
             {
-                "name": "Alla Ramakrishna Reddy",
-                "party": "YSRCP",
-                "votes_2024": 78234
+                "name": "Mamidi Govinda Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Koppurothu Venkata Rao",
+                "party": "INC"
             }
         ],
-        "Guntur West": [
+        "Srikakulam": [
             {
-                "name": "Galla Aruna Kumar",
-                "party": "TDP",
-                "votes_2024": 85673
+                "name": "Dharmana Prasada Rao",
+                "party": "YSRCP"
             },
             {
-                "name": "Maddali Giri",
-                "party": "YSRCP",
-                "votes_2024": 62341
+                "name": "Gondu Shankar",
+                "party": "TDP"
+            },
+            {
+                "name": "Ambati Krishna Rao",
+                "party": "INC"
             }
         ],
-        "Guntur East": [
+        "Amadalavalasa": [
             {
-                "name": "Mohammad Naseer Ahmed",
-                "party": "TDP",
-                "votes_2024": 76543
+                "name": "Thammineni Seetharam",
+                "party": "YSRCP"
             },
             {
-                "name": "Mohammed Mustafa",
-                "party": "YSRCP",
-                "votes_2024": 65432
+                "name": "Koona Ravi Kumar",
+                "party": "TDP"
+            },
+            {
+                "name": "Sannapala Annajirao",
+                "party": "INC"
             }
         ],
-        "Tirupati": [
+        "Etcherla": [
             {
-                "name": "Arani Srinivasulu",
-                "party": "TDP",
-                "votes_2024": 89765
+                "name": "Gorle Kiran Kumar",
+                "party": "YSRCP"
             },
             {
-                "name": "Bhumana Karunakar Reddy",
-                "party": "YSRCP",
-                "votes_2024": 78654
+                "name": "Nadikuditi Eswara Rao",
+                "party": "BJP"
+            },
+            {
+                "name": "Karimajji Malleswar Rao",
+                "party": "INC"
             }
         ],
-        "Kadapa": [
+        "Narasannapeta": [
             {
-                "name": "R. Madhavi Reddy",
-                "party": "TDP",
-                "votes_2024": 75432
+                "name": "Dharmana Krishna Das",
+                "party": "YSRCP"
             },
             {
-                "name": "Amarnath Reddy",
-                "party": "YSRCP",
-                "votes_2024": 82341
+                "name": "Baggu Ramana Murthy",
+                "party": "TDP"
+            },
+            {
+                "name": "Mantri Narasimha Murthy",
+                "party": "INC"
             }
         ],
-        "Kurnool": [
+        "Rajam (SC)": [
             {
-                "name": "S.V. Mohan Reddy",
-                "party": "TDP",
-                "votes_2024": 78543
+                "name": "Tale Rajesh",
+                "party": "YSRCP"
             },
             {
-                "name": "Hafeez Khan",
-                "party": "YSRCP",
-                "votes_2024": 72341
+                "name": "Kondru Murali Mohan",
+                "party": "TDP"
+            },
+            {
+                "name": "Kambala Rajavardhan",
+                "party": "INC"
             }
         ],
-        "Anantapur Urban": [
+        "Palakonda (ST)": [
             {
-                "name": "Prabhakar Chowdary",
-                "party": "TDP",
-                "votes_2024": 82341
+                "name": "Viswasarayi Kalavathi",
+                "party": "YSRCP"
             },
             {
-                "name": "S. Muhammad Farooq",
-                "party": "YSRCP",
-                "votes_2024": 65432
+                "name": "Nimmaka Jaya Krishna",
+                "party": "JSP"
+            },
+            {
+                "name": "Sarava Chanti Babu",
+                "party": "INC"
             }
         ],
-        "Hindupur": [
+        "Kurupam (ST)": [
             {
-                "name": "Nandamuri Balakrishna",
-                "party": "TDP",
-                "votes_2024": 125678
+                "name": "Pamula Pushpa Sreevani",
+                "party": "YSRCP"
             },
             {
-                "name": "B.K. Parthasarathy",
-                "party": "YSRCP",
-                "votes_2024": 54321
+                "name": "Toyaka Jagadeeswari",
+                "party": "TDP"
+            },
+            {
+                "name": "M. Ramana",
+                "party": "CPI(M)"
             }
         ],
-        "Rajahmundry City": [
+        "Parvathipuram (SC)": [
             {
-                "name": "Adireddy Vasu",
-                "party": "TDP",
-                "votes_2024": 92345
+                "name": "Alajangi Jogarao",
+                "party": "YSRCP"
             },
             {
-                "name": "Jakkampudi Raja",
-                "party": "YSRCP",
-                "votes_2024": 56789
+                "name": "Bonela Vijay Chandra",
+                "party": "TDP"
+            },
+            {
+                "name": "Battina Mohan Rao",
+                "party": "INC"
             }
         ],
-        "Kakinada City": [
+        "Salur (ST)": [
             {
-                "name": "P.P. Ramakrishna",
-                "party": "TDP",
-                "votes_2024": 78543
+                "name": "Peedika Rajanna Dora",
+                "party": "YSRCP"
             },
             {
-                "name": "Kurasala Kannababu",
-                "party": "YSRCP",
-                "votes_2024": 67890
+                "name": "Gummidi Sandhyarani",
+                "party": "TDP"
+            },
+            {
+                "name": "Muvvala Pushpa Rao",
+                "party": "INC"
+            }
+        ],
+        "Bobbili": [
+            {
+                "name": "Sambangi Venkata China Appalanaidu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Ravu Venkata Swetha Kumara Krishna Ranga Rao (BabyNayana)",
+                "party": "TDP"
+            },
+            {
+                "name": "Maripi Vidyasagar",
+                "party": "INC"
+            }
+        ],
+        "Cheepurupalli": [
+            {
+                "name": "Botcha Satyanarayana",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kimidi Kala Venkat Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Aadi Narayana Jammu",
+                "party": "INC"
+            }
+        ],
+        "Gajapathinagaram": [
+            {
+                "name": "Botcha Appalanarasayya",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kondapalli Srinivas",
+                "party": "TDP"
+            },
+            {
+                "name": "Dola Srinivas",
+                "party": "INC"
+            }
+        ],
+        "Nellimarla": [
+            {
+                "name": "Baddukonda Appala Naidu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Lokam Naga Madhavi",
+                "party": "JSP"
+            },
+            {
+                "name": "Saragada Ramesh Kumar",
+                "party": "INC"
+            }
+        ],
+        "Vizianagaram": [
+            {
+                "name": "Kolagatla Veerabhadra Swamy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pusapati Aditi Vijayalakshmi Gajapathi Raju",
+                "party": "TDP"
+            },
+            {
+                "name": "Satish Kumar Sunkari",
+                "party": "INC"
+            }
+        ],
+        "Srungavarapukota": [
+            {
+                "name": "Kadubandi Srinivasa Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kolla Lalitha Kumari",
+                "party": "TDP"
+            },
+            {
+                "name": "Gedela Tirupathi",
+                "party": "INC"
+            }
+        ],
+        "Bhimili": [
+            {
+                "name": "Muttamsetti Srinivasa Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Ganta Srinivasa Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Addala Venkata Varma Raju",
+                "party": "INC"
             }
         ],
         "Visakhapatnam East": [
             {
-                "name": "Velagapudi Ramakrishna Babu",
-                "party": "TDP",
-                "votes_2024": 86543
+                "name": "M. V. V. Satyanarayana",
+                "party": "YSRCP"
             },
             {
-                "name": "M. Bhagavath Rao",
-                "party": "YSRCP",
-                "votes_2024": 54321
+                "name": "Velagapudi Ramakrishna Babu",
+                "party": "TDP"
+            },
+            {
+                "name": "Guthula Srinivas Rao",
+                "party": "INC"
             }
         ],
         "Visakhapatnam South": [
             {
                 "name": "Vasupalli Ganesh Kumar",
-                "party": "TDP",
-                "votes_2024": 93456
+                "party": "YSRCP"
             },
             {
-                "name": "D. Srinivasa Rao",
-                "party": "YSRCP",
-                "votes_2024": 65432
+                "name": "Vamsi Krishna Srinivas",
+                "party": "JSP"
+            },
+            {
+                "name": "Vasupalli Santosh",
+                "party": "INC"
+            }
+        ],
+        "Visakhapatnam North": [
+            {
+                "name": "Kammila Kannaparaju",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Penmetsa Vishnu Kumar Raju",
+                "party": "BJP"
+            },
+            {
+                "name": "Lakkaraju Rama Rao",
+                "party": "INC"
+            }
+        ],
+        "Visakhapatnam West": [
+            {
+                "name": "Adari Anand Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "P. G. V. R. Naidu",
+                "party": "TDP"
+            },
+            {
+                "name": "Attili Vimala",
+                "party": "CPI"
             }
         ],
         "Gajuwaka": [
             {
-                "name": "Palla Srinivasa Rao",
-                "party": "JSP",
-                "votes_2024": 98765
+                "name": "Gudivada Amarnath",
+                "party": "YSRCP"
             },
             {
-                "name": "Tippala Nagireddy",
-                "party": "YSRCP",
-                "votes_2024": 54321
-            }
-        ],
-        "Srikakulam": [
-            {
-                "name": "Gondu Shankar",
-                "party": "TDP",
-                "votes_2024": 76543
+                "name": "Palla Srinivas Rao Yadav",
+                "party": "TDP"
             },
             {
-                "name": "Dharmana Prasada Rao",
-                "party": "YSRCP",
-                "votes_2024": 72341
-            }
-        ],
-        "Nellore City": [
-            {
-                "name": "P. Anil Kumar Yadav",
-                "party": "YSRCP",
-                "votes_2024": 85432
-            },
-            {
-                "name": "Somireddy Chandra Mohan Reddy",
-                "party": "TDP",
-                "votes_2024": 78654
-            }
-        ],
-        "Pithapuram": [
-            {
-                "name": "Pawan Kalyan",
-                "party": "JSP",
-                "votes_2024": 134394
-            },
-            {
-                "name": "Vanga Geetha",
-                "party": "YSRCP",
-                "votes_2024": 64115
-            }
-        ],
-        "Kuppam": [
-            {
-                "name": "N. Chandrababu Naidu",
-                "party": "TDP",
-                "votes_2024": 121929
-            },
-            {
-                "name": "K.R.J. Bharath",
-                "party": "YSRCP",
-                "votes_2024": 73913
-            }
-        ],
-        "Pulivendula": [
-            {
-                "name": "Y.S. Jagan Mohan Reddy",
-                "party": "YSRCP",
-                "votes_2024": 116315
-            },
-            {
-                "name": "Mareddy Ravindranath Reddy",
-                "party": "TDP",
-                "votes_2024": 54628
-            }
-        ],
-        "Undi": [
-            {
-                "name": "K. Raghu Rama Krishna Raju",
-                "party": "TDP",
-                "votes_2024": 116902
-            },
-            {
-                "name": "P.V.L. Narasimha Raju",
-                "party": "YSRCP",
-                "votes_2024": 60125
-            }
-        ],
-        "Rajahmundry Rural": [
-            {
-                "name": "Gorantla Butchaiah Chowdary",
-                "party": "TDP",
-                "votes_2024": 129060
-            },
-            {
-                "name": "Chelluboyina Venu Gopala Krishna",
-                "party": "YSRCP",
-                "votes_2024": 64970
-            }
-        ],
-        "Rajanagaram": [
-            {
-                "name": "Bathula Bala Ramakrishna",
-                "party": "JSP",
-                "votes_2024": 105849
-            },
-            {
-                "name": "Jakkampudi Raja",
-                "party": "YSRCP",
-                "votes_2024": 71800
-            }
-        ],
-        "Anaparthy": [
-            {
-                "name": "Nallamili Ramakrishna Reddy",
-                "party": "BJP",
-                "votes_2024": 108543
-            },
-            {
-                "name": "Sathi Suryanarayana Reddy",
-                "party": "YSRCP",
-                "votes_2024": 87693
-            }
-        ],
-        "Payakaraopeta": [
-            {
-                "name": "Vangalapudi Anitha",
-                "party": "TDP",
-                "votes_2024": 116743
-            },
-            {
-                "name": "Kambala Jogulu",
-                "party": "YSRCP",
-                "votes_2024": 73016
-            }
-        ],
-        "Narsipatnam": [
-            {
-                "name": "Chintakayala Ayyannapatrudu",
-                "party": "TDP",
-                "votes_2024": 99849
-            },
-            {
-                "name": "Petla Uma Sankara Ganesh",
-                "party": "YSRCP",
-                "votes_2024": 75173
-            }
-        ],
-        "Yelamanchili": [
-            {
-                "name": "Sundarapu Vijay Kumar",
-                "party": "JSP",
-                "votes_2024": 109543
-            },
-            {
-                "name": "Uppalapati Venkata Ramanamurthy Raju",
-                "party": "YSRCP",
-                "votes_2024": 60597
+                "name": "Maradana Jaggunaidu",
+                "party": "CPI(M)"
             }
         ],
         "Chodavaram": [
             {
-                "name": "K.S.N. Raju",
-                "party": "TDP",
-                "votes_2024": 108543
+                "name": "Karanam Dharmasri",
+                "party": "YSRCP"
             },
             {
-                "name": "Karanam Dharmasri",
-                "party": "YSRCP",
-                "votes_2024": 84321
+                "name": "Kalidindi Suryana Naga Sanyasi Raju",
+                "party": "TDP"
+            },
+            {
+                "name": "Jagat Srinivas",
+                "party": "INC"
             }
         ],
-        "Anakapalle": [
+        "Madugula": [
             {
-                "name": "Konathala Ramakrishna",
-                "party": "JSP",
-                "votes_2024": 114673
+                "name": "Eerli Anuradha",
+                "party": "YSRCP"
             },
+            {
+                "name": "Bandaru Satyanarayana Murthy",
+                "party": "TDP"
+            },
+            {
+                "name": "BBS Srinivas Rao",
+                "party": "INC"
+            }
+        ],
+        "Araku Valley (ST)": [
+            {
+                "name": "Regam Mathsyalingam",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pangi Rajarao",
+                "party": "BJP"
+            },
+            {
+                "name": "Setti Gangadharaswamy",
+                "party": "INC"
+            }
+        ],
+        "Paderu (ST)": [
+            {
+                "name": "M. Visweswara Raju",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Giddi Eswari",
+                "party": "TDP"
+            },
+            {
+                "name": "Sataka Bullibabu",
+                "party": "INC"
+            }
+        ],
+        "Anakapalli": [
             {
                 "name": "Malasala Bharath Kumar",
-                "party": "YSRCP",
-                "votes_2024": 49025
-            }
-        ],
-        "Vizianagaram": [
-            {
-                "name": "Aditi Gajapathi Raju",
-                "party": "TDP",
-                "votes_2024": 102345
+                "party": "YSRCP"
             },
             {
-                "name": "Kolagatla Veerabhadra Swamy",
-                "party": "YSRCP",
-                "votes_2024": 65432
+                "name": "Konathala Ramakrishna",
+                "party": "JSP"
+            },
+            {
+                "name": "Illa Rama Gangadhara Rao",
+                "party": "INC"
             }
         ],
-        "Amalapuram": [
+        "Pendurthi": [
             {
-                "name": "Ayyaji Vema Manepalli",
-                "party": "JSP",
-                "votes_2024": 108923
+                "name": "Annamreddy Adeep Raj",
+                "party": "YSRCP"
             },
+            {
+                "name": "Panchakarla Ramesh Babu",
+                "party": "JSP"
+            },
+            {
+                "name": "Piridi Bhagat",
+                "party": "INC"
+            }
+        ],
+        "Elamanchili": [
+            {
+                "name": "Kanna Babu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Sundarapu Vijay Kumar",
+                "party": "JSP"
+            },
+            {
+                "name": "Tar Narsing Rao",
+                "party": "INC"
+            }
+        ],
+        "Payakaraopet (SC)": [
+            {
+                "name": "Kambala Jogulu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vangalapudi Anitha",
+                "party": "TDP"
+            },
+            {
+                "name": "Boni Tata Rao",
+                "party": "INC"
+            }
+        ],
+        "Narsipatnam": [
+            {
+                "name": "Uma Shankar Ganesh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Chintakayala Ayyanna Patrudu",
+                "party": "TDP"
+            },
+            {
+                "name": "Ruthala Sriramamurthy",
+                "party": "INC"
+            }
+        ],
+        "Tuni": [
+            {
+                "name": "Dadisetty Raja",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Yanamala Divya",
+                "party": "TDP"
+            },
+            {
+                "name": "Gelam Srinivasa Rao",
+                "party": "INC"
+            }
+        ],
+        "Prathipadu (Kakinada)": [
+            {
+                "name": "Varupula Subbarao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Varupula Satya Prabha",
+                "party": "TDP"
+            },
+            {
+                "name": "N. V. V. Satyanarayana",
+                "party": "INC"
+            }
+        ],
+        "Pithapuram": [
+            {
+                "name": "Vanga Geetha",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pawan Kalyan",
+                "party": "JSP"
+            },
+            {
+                "name": "Madepalli Satyananda Rao",
+                "party": "INC"
+            }
+        ],
+        "Kakinada Rural": [
+            {
+                "name": "Kurasala Kannababu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pantham Venkateswara Rao",
+                "party": "JSP"
+            },
+            {
+                "name": "Pilli Satya Lakshmi",
+                "party": "INC"
+            }
+        ],
+        "Peddapuram": [
+            {
+                "name": "Davuluru Dora Babu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nimmakayala Chinarajappa",
+                "party": "TDP"
+            },
+            {
+                "name": "Dorababu Tummala",
+                "party": "INC"
+            }
+        ],
+        "Anaparthy": [
+            {
+                "name": "Sathi Suryanarayana Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nallamilli Ramakrishna Reddy",
+                "party": "BJP"
+            },
+            {
+                "name": "Yella Srinivasa Rao",
+                "party": "INC"
+            }
+        ],
+        "Kakinada City": [
+            {
+                "name": "Dwarampudi Chandrasekhar Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vanamadi Venkateswara Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Chekka Nookaraju",
+                "party": "INC"
+            }
+        ],
+        "Ramachandrapuram": [
+            {
+                "name": "Pilli Surya Prakash",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vasamsetti Subhash",
+                "party": "TDP"
+            },
+            {
+                "name": "Kota Srinivasa Rao",
+                "party": "INC"
+            }
+        ],
+        "Mummidivaram": [
+            {
+                "name": "Ponnada Venkata Satish Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Datla Subbaraju",
+                "party": "TDP"
+            },
+            {
+                "name": "Palepu Dharma Rao",
+                "party": "INC"
+            }
+        ],
+        "Amalapuram (SC)": [
             {
                 "name": "Pinipe Viswarup",
-                "party": "YSRCP",
-                "votes_2024": 75432
-            }
-        ]
-    },
-    "mp_candidates_2024": {
-        "Vijayawada": [
-            {
-                "name": "Kesineni Sivanath",
-                "party": "TDP",
-                "votes_2024": 654321
+                "party": "YSRCP"
             },
             {
-                "name": "Kesineni Nani",
-                "party": "YSRCP",
-                "votes_2024": 543210
+                "name": "Aithabathula Anandarao",
+                "party": "TDP"
+            },
+            {
+                "name": "Aithabathula Subhashini",
+                "party": "INC"
             }
         ],
-        "Guntur": [
+        "Razole (SC)": [
             {
-                "name": "Pemmasani Chandrasekhar",
-                "party": "TDP",
-                "votes_2024": 678543
+                "name": "Gollapalli Surya Rao",
+                "party": "YSRCP"
             },
             {
-                "name": "Lavu Srikrishna Devarayalu",
-                "party": "YSRCP",
-                "votes_2024": 523456
+                "name": "Deva Varaprasad",
+                "party": "JSP"
+            },
+            {
+                "name": "Sarella Prasanna Kumar",
+                "party": "INC"
             }
         ],
-        "Tirupati": [
+        "Gannavaram (Konaseema) (SC)": [
             {
-                "name": "M. Gurumoorthy",
-                "party": "TDP",
-                "votes_2024": 645321
+                "name": "Vipparthi Venugopal Rao",
+                "party": "YSRCP"
             },
             {
-                "name": "Dr. M. Gurumoorthy",
-                "party": "YSRCP",
-                "votes_2024": 534210
+                "name": "Giddi Satyanarayana",
+                "party": "JSP"
+            },
+            {
+                "name": "Kondeti Chittibabu",
+                "party": "INC"
             }
         ],
-        "Visakhapatnam": [
+        "Kothapeta": [
             {
-                "name": "M. Sribharat",
-                "party": "TDP",
-                "votes_2024": 698765
+                "name": "Chirla Jaggi Reddy",
+                "party": "YSRCP"
             },
             {
-                "name": "M.V.V. Satyanarayana",
-                "party": "YSRCP",
-                "votes_2024": 543210
+                "name": "Bandaru Satyananda Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Routhu Eswara Rao",
+                "party": "INC"
             }
         ],
-        "Rajahmundry": [
+        "Mandapeta": [
             {
-                "name": "Daggubati Purandeswari",
-                "party": "TDP",
-                "votes_2024": 654321
+                "name": "Thota Trimurthulu",
+                "party": "YSRCP"
             },
             {
-                "name": "Margani Bharat Ram",
-                "party": "YSRCP",
-                "votes_2024": 523456
+                "name": "V. Jogeswara Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Kamana Prabhakara Rao",
+                "party": "INC"
             }
         ],
-        "Kadapa": [
+        "Rajanagaram": [
             {
-                "name": "Y.S. Avinash Reddy",
-                "party": "YSRCP",
-                "votes_2024": 598765
+                "name": "Jakkampudi Raja",
+                "party": "YSRCP"
             },
             {
-                "name": "Ramachandra Yadav",
-                "party": "TDP",
-                "votes_2024": 423456
+                "name": "Battula Balarama Krishna",
+                "party": "JSP"
+            },
+            {
+                "name": "Mundru Venkata Srinivas",
+                "party": "INC"
             }
         ],
-        "Kurnool": [
+        "Rajahmundry City": [
             {
-                "name": "Bastipati Nagaraju",
-                "party": "TDP",
-                "votes_2024": 576543
+                "name": "Margani Bharat",
+                "party": "YSRCP"
             },
             {
-                "name": "Sanjeev Kumar",
-                "party": "YSRCP",
-                "votes_2024": 534210
+                "name": "Adireddy Vasu",
+                "party": "TDP"
+            },
+            {
+                "name": "Boda Lakshmi Venkata Prasanna",
+                "party": "INC"
             }
         ],
-        "Anantapur": [
+        "Rajahmundry Rural": [
             {
-                "name": "Ambica G Lakshminarayana",
-                "party": "TDP",
-                "votes_2024": 612345
+                "name": "C. S. Venugopala Krishna",
+                "party": "YSRCP"
             },
             {
-                "name": "Talari Rangaiah",
-                "party": "YSRCP",
-                "votes_2024": 498765
+                "name": "Gorantla Butchaiah Chowdary",
+                "party": "TDP"
+            },
+            {
+                "name": "Balepalli Muralidhar",
+                "party": "INC"
             }
         ],
-        "Hindupur": [
+        "Jaggampeta": [
             {
-                "name": "Kuruva Gorantla Madhav",
-                "party": "TDP",
-                "votes_2024": 587654
+                "name": "Thota Narasimham",
+                "party": "YSRCP"
             },
             {
-                "name": "Kristappa",
-                "party": "YSRCP",
-                "votes_2024": 456789
+                "name": "Jyothula Nehru",
+                "party": "TDP"
+            },
+            {
+                "name": "Marothi VV Ganeswara Rao",
+                "party": "INC"
             }
         ],
-        "Nellore": [
+        "Rampachodavaram (ST)": [
             {
-                "name": "Vemireddy Prabhakar Reddy",
-                "party": "TDP",
-                "votes_2024": 623456
+                "name": "Nagulapalli Dhanalakshmi",
+                "party": "YSRCP"
             },
             {
-                "name": "Adala Prabhakar Reddy",
-                "party": "YSRCP",
-                "votes_2024": 576543
+                "name": "Miryala Sirisha Devi",
+                "party": "TDP"
+            },
+            {
+                "name": "Lotha Rama Rao",
+                "party": "CPI(M)"
+            }
+        ],
+        "Kovvur (SC)": [
+            {
+                "name": "Talari Venkat Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Muppidi Venkateswara Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Arigela Aruna Kumari",
+                "party": "INC"
+            }
+        ],
+        "Nidadavole": [
+            {
+                "name": "G. Srinivas Naidu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kandula Durgesh",
+                "party": "JSP"
+            },
+            {
+                "name": "Peddireddi Subba Rao",
+                "party": "INC"
+            }
+        ],
+        "Achanta": [
+            {
+                "name": "Cherukuvada Sri Ranganadha Raju",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pithani Satyanarayana",
+                "party": "TDP"
+            },
+            {
+                "name": "Nekkanti Venkata Satyanarayana",
+                "party": "INC"
+            }
+        ],
+        "Palakollu": [
+            {
+                "name": "Gudala Gopi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nimmala Rama Naidu",
+                "party": "TDP"
+            },
+            {
+                "name": "Kolukuluri Arjun Rao",
+                "party": "INC"
+            }
+        ],
+        "Narasapuram": [
+            {
+                "name": "Mudunuri Prasad Raju",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bommidi Nayakar",
+                "party": "JSP"
+            },
+            {
+                "name": "Kanuri Udaya Baskara Krishna Prasad",
+                "party": "INC"
+            }
+        ],
+        "Bhimavaram": [
+            {
+                "name": "Grandhi Srinivas",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pulaparthi Ramanjaneyulu",
+                "party": "JSP"
+            },
+            {
+                "name": "Ankem Seetaramu",
+                "party": "INC"
+            }
+        ],
+        "Undi": [
+            {
+                "name": "P. V. L. Narasimha Raju",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Raghu Rama Krishna Raju",
+                "party": "TDP"
+            },
+            {
+                "name": "Vegesha Venkata Gopala Krishnam",
+                "party": "INC"
+            }
+        ],
+        "Tanuku": [
+            {
+                "name": "Karumuri Venkata Nageswara Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Arimilli Radha Krishna",
+                "party": "TDP"
+            },
+            {
+                "name": "Kadali Rama Rao",
+                "party": "INC"
+            }
+        ],
+        "Tadepalligudem": [
+            {
+                "name": "Kottu Satyanarayana",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bolisetti Srinivas",
+                "party": "JSP"
+            },
+            {
+                "name": "Marneedi Sekhar",
+                "party": "INC"
+            }
+        ],
+        "Unguturu": [
+            {
+                "name": "Puppala Vasubabu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Patsmatla Dharmaraju",
+                "party": "JSP"
+            },
+            {
+                "name": "Pathapati Hari Kumara Raju",
+                "party": "INC"
+            }
+        ],
+        "Denduluru": [
+            {
+                "name": "Kotaru Abbaya Chowdary",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Chintamaneni Prabhakar",
+                "party": "TDP"
+            },
+            {
+                "name": "Alapati Narasimha Murthy",
+                "party": "INC"
+            }
+        ],
+        "Eluru": [
+            {
+                "name": "Alla Kali Krishna Srinivas",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Badeti Radha Krishna",
+                "party": "TDP"
+            },
+            {
+                "name": "Bandi Venkateswara Rao",
+                "party": "CPI"
+            }
+        ],
+        "Gopalapuram (SC)": [
+            {
+                "name": "Taneti Vanitha",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Maddipati Venkata Raju",
+                "party": "TDP"
+            },
+            {
+                "name": "Sodadasi Martin Luther",
+                "party": "INC"
+            }
+        ],
+        "Polavaram (ST)": [
+            {
+                "name": "Tellam Rajyalakshmi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Chirri Balaraju",
+                "party": "JSP"
+            },
+            {
+                "name": "Srujana Duvvela",
+                "party": "INC"
+            }
+        ],
+        "Chintalapudi (SC)": [
+            {
+                "name": "Kambham Vijayaraju",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Songa Roshan",
+                "party": "TDP"
+            },
+            {
+                "name": "Vunnamatla Rakada Eliza",
+                "party": "INC"
+            }
+        ],
+        "Tiruvuru (SC)": [
+            {
+                "name": "Nallagatla Swamy Das",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kolikapudi Srinivasa Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Lam Thantiya Kumari",
+                "party": "INC"
+            }
+        ],
+        "Nuzvid": [
+            {
+                "name": "Meka Venkata Pratap Apparao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kolusu Parthasarathy",
+                "party": "TDP"
+            },
+            {
+                "name": "Krishna Maridu",
+                "party": "INC"
+            }
+        ],
+        "Gannavaram (Krishna)": [
+            {
+                "name": "Vallabhaneni Vamsi Mohan",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Yarlagadda Venkata Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "K. Venkateswara Rao",
+                "party": "CPI(M)"
+            }
+        ],
+        "Gudivada": [
+            {
+                "name": "Kodali Sri Venkateswara Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Venigandla Ramu",
+                "party": "TDP"
+            },
+            {
+                "name": "Vaddadi Govinda Rao",
+                "party": "INC"
+            }
+        ],
+        "Kaikalur": [
+            {
+                "name": "Dulam Nageswara Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kamineni Srinivas",
+                "party": "BJP"
+            },
+            {
+                "name": "Boddu Noble",
+                "party": "INC"
+            }
+        ],
+        "Pedana": [
+            {
+                "name": "Uppala Ramu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kagitha Krishna Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "Sonti Nagaraju",
+                "party": "INC"
+            }
+        ],
+        "Machilipatnam": [
+            {
+                "name": "Perni Krishnamurthy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kollu Ravindra",
+                "party": "TDP"
+            },
+            {
+                "name": "Abdul Mateen",
+                "party": "INC"
+            }
+        ],
+        "Avanigadda": [
+            {
+                "name": "Simhadri Ramesh Babu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Mandali Buddha Prasad",
+                "party": "JSP"
+            },
+            {
+                "name": "Andee Srirama Murthy",
+                "party": "INC"
+            }
+        ],
+        "Pamarru (SC)": [
+            {
+                "name": "Kaile Anil Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Varla Kumar Raja",
+                "party": "TDP"
+            },
+            {
+                "name": "D. Y. Das",
+                "party": "INC"
+            }
+        ],
+        "Penamaluru": [
+            {
+                "name": "Jogi Ramesh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bode Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "Elisala Subrahmanyam",
+                "party": "INC"
+            }
+        ],
+        "Vijayawada West": [
+            {
+                "name": "Shaik Asif",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Sujana Chowdary",
+                "party": "BJP"
+            },
+            {
+                "name": "G. Koteswara Rao",
+                "party": "CPI"
+            }
+        ],
+        "Vijayawada Central": [
+            {
+                "name": "Vellampalli Srinivas",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bonda Umamaheswara Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Ch. Babu Rao",
+                "party": "CPI(M)"
+            }
+        ],
+        "Vijayawada East": [
+            {
+                "name": "Devineni Avinash",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gadde Rama Mohan",
+                "party": "TDP"
+            },
+            {
+                "name": "Pongupati Nancharayya",
+                "party": "INC"
+            }
+        ],
+        "Mylavaram": [
+            {
+                "name": "Sarnala Tirupathi Rao Yadav",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vasantha Krishna Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "Borra Kiran",
+                "party": "INC"
+            }
+        ],
+        "Nandigama (SC)": [
+            {
+                "name": "Monditoka Jagan Mohana Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Tangirala Sowmya",
+                "party": "TDP"
+            },
+            {
+                "name": "Manda Vajraiah",
+                "party": "INC"
+            }
+        ],
+        "Jaggayyapeta": [
+            {
+                "name": "Samineni Udaya Bhanu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Sreeram Rajagopal Tataiah",
+                "party": "TDP"
+            },
+            {
+                "name": "Karnati Apparao",
+                "party": "INC"
+            }
+        ],
+        "Pedakurapadu": [
+            {
+                "name": "Namburu Sankar Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bhashyam Praveen",
+                "party": "TDP"
+            },
+            {
+                "name": "Pamidi Nageshwar Rao",
+                "party": "INC"
+            }
+        ],
+        "Tadikonda (SC)": [
+            {
+                "name": "Mekathoti Sucharitha",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Tenali Sravan Kumar",
+                "party": "TDP"
+            },
+            {
+                "name": "Manichala Sushil Raja",
+                "party": "INC"
+            }
+        ],
+        "Mangalagiri": [
+            {
+                "name": "Murugudu Lavanya",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nara Lokesh",
+                "party": "TDP"
+            },
+            {
+                "name": "Jonna Shiva Shankar",
+                "party": "CPI(M)"
+            }
+        ],
+        "Ponnuru": [
+            {
+                "name": "Ambati Murali",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Dhulipalla Narendra Kumar",
+                "party": "TDP"
+            },
+            {
+                "name": "Jakka Ravindra Nath",
+                "party": "INC"
+            }
+        ],
+        "Vemuru (SC)": [
+            {
+                "name": "Varikuti Ashok Babu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nakka Ananda Babu",
+                "party": "TDP"
+            },
+            {
+                "name": "Buraga Subba Rao",
+                "party": "INC"
+            }
+        ],
+        "Repalle": [
+            {
+                "name": "Evuru Ganesh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Anagani Satya Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "Mopidevi Srinivas Rao",
+                "party": "INC"
+            }
+        ],
+        "Tenali": [
+            {
+                "name": "Annabathuni Siva Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nadendla Manohar",
+                "party": "JSP"
+            },
+            {
+                "name": "Chandu Sambasivudu",
+                "party": "INC"
+            }
+        ],
+        "Bapatla": [
+            {
+                "name": "Kona Raghupathi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vegesana Narendra Varma Raju",
+                "party": "TDP"
+            },
+            {
+                "name": "Ganta Anji Babu",
+                "party": "INC"
+            }
+        ],
+        "Prathipadu (Guntur) (SC)": [
+            {
+                "name": "Balasani Kiran Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Burla Ramanjaneyulu",
+                "party": "TDP"
+            },
+            {
+                "name": "Korivi Vinaya Kumar",
+                "party": "INC"
+            }
+        ],
+        "Guntur West": [
+            {
+                "name": "Vidadala Rajini",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Piduguralla Madhavi",
+                "party": "TDP"
+            },
+            {
+                "name": "Dr. Rajachakonda John Babu",
+                "party": "INC"
+            }
+        ],
+        "Guntur East": [
+            {
+                "name": "Shaik Noori Fathima",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Muhammad Nazeer Khan",
+                "party": "TDP"
+            },
+            {
+                "name": "Shaik Mastan Valli",
+                "party": "INC"
+            }
+        ],
+        "Chilakaluripet": [
+            {
+                "name": "K. Manohar Naidu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Prathipati Pulla Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Maddula Radha Krishna",
+                "party": "INC"
+            }
+        ],
+        "Narasaraopeta": [
+            {
+                "name": "Gopireddy Srinivasa Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Chadalavada Aravinda Babu",
+                "party": "TDP"
+            },
+            {
+                "name": "Shaik Mahaboob Basha",
+                "party": "INC"
+            }
+        ],
+        "Sattenapalle": [
+            {
+                "name": "Ambati Rambabu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kanna Lakshminarayana",
+                "party": "TDP"
+            },
+            {
+                "name": "Chandra Paul Chukka",
+                "party": "INC"
+            }
+        ],
+        "Vinukonda": [
+            {
+                "name": "Bolla Brahma Naidu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "G. V. Anjaneyulu",
+                "party": "TDP"
+            },
+            {
+                "name": "Chenna Srinivas Rao",
+                "party": "INC"
+            }
+        ],
+        "Gurajala": [
+            {
+                "name": "Kasu Mahesh Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Yarapathineni Srinivasa Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Tiyyagura Yalamanda Reddy",
+                "party": "INC"
+            }
+        ],
+        "Macherla": [
+            {
+                "name": "Pinnelli Rama Krishna Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Julakanti Brahmananda Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Yeramala Ramachandra Reddy",
+                "party": "INC"
+            }
+        ],
+        "Yerragondapalem (SC)": [
+            {
+                "name": "Tatiparthi Chandrasekhar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Guduri Erixion Babu",
+                "party": "TDP"
+            },
+            {
+                "name": "Budhala Ajitha Rao",
+                "party": "INC"
+            }
+        ],
+        "Darsi": [
+            {
+                "name": "Buchepalli Siva Prasad Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gottipati Lakshmi",
+                "party": "TDP"
+            },
+            {
+                "name": "Putluri Konda Reddy",
+                "party": "INC"
+            }
+        ],
+        "Parchur": [
+            {
+                "name": "Yadam Balaji",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Yeluri Sambasiva Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Nallagorla Siva Srilakshmi Jyothi",
+                "party": "INC"
+            }
+        ],
+        "Addanki": [
+            {
+                "name": "Panem Hanimi Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gottipati Ravikumar",
+                "party": "TDP"
+            },
+            {
+                "name": "Adusumalli Kishore Babu",
+                "party": "INC"
+            }
+        ],
+        "Chirala": [
+            {
+                "name": "Karanam Venkatesh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Madduluri Malakondaiah Yadav",
+                "party": "TDP"
+            },
+            {
+                "name": "Amanchi Krishna Mohan",
+                "party": "INC"
+            }
+        ],
+        "Santhanuthalapadu (SC)": [
+            {
+                "name": "Merugu Nagarjuna",
+                "party": "YSRCP"
+            },
+            {
+                "name": "B. N. Vijay Kumar",
+                "party": "TDP"
+            },
+            {
+                "name": "Vijesh Raj Palaparthi",
+                "party": "INC"
             }
         ],
         "Ongole": [
             {
-                "name": "Magunta Srinivasulu Reddy",
-                "party": "TDP",
-                "votes_2024": 598765
+                "name": "Balineni Srinivasa Reddy",
+                "party": "YSRCP"
             },
             {
-                "name": "Chevireddy Bhaskar Reddy",
-                "party": "YSRCP",
-                "votes_2024": 534210
+                "name": "Damacharla Janardhana Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Turakapalli Nagalakshmi",
+                "party": "INC"
+            }
+        ],
+        "Kandukur": [
+            {
+                "name": "Burra Madhu Sudhan Yadav",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Inturi Nageswara Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "Sayed Gouse Mohiddin",
+                "party": "INC"
+            }
+        ],
+        "Kondapi (SC)": [
+            {
+                "name": "Audimulapu Suresh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Dola Sree Bala Veeranjaneya Swamy",
+                "party": "TDP"
+            },
+            {
+                "name": "Pasumarthi Sudhakar",
+                "party": "INC"
+            }
+        ],
+        "Markapuram": [
+            {
+                "name": "Anna Rambabu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kandula Narayana Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Javeed Anwar",
+                "party": "INC"
+            }
+        ],
+        "Giddalur": [
+            {
+                "name": "K. P. Nagarjuna Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Muthumula Ashok Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Pagadala Pedda Rangaswamy",
+                "party": "INC"
+            }
+        ],
+        "Kanigiri": [
+            {
+                "name": "Daddala Narayana Yadav",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Mukku Ugra Narasimha Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Deverapalli Subbareddy",
+                "party": "INC"
+            }
+        ],
+        "Kavali": [
+            {
+                "name": "Ramireddy Pratap Kumar Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kavya Krishna Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Podalakuri Kalyan",
+                "party": "INC"
+            }
+        ],
+        "Atmakur": [
+            {
+                "name": "Mekapati Vikram Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Anam Ramanarayana Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Chevuru Sreedhara Reddy",
+                "party": "INC"
+            }
+        ],
+        "Kovur": [
+            {
+                "name": "Nallapareddy Prasanna Kumar Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vemireddy Prashanti Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Nebrambaka Mohan",
+                "party": "INC"
+            }
+        ],
+        "Nellore City": [
+            {
+                "name": "Mohammad Khaleel",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Ponguru Narayana",
+                "party": "TDP"
+            },
+            {
+                "name": "M. Ramesh",
+                "party": "CPI(M)"
+            }
+        ],
+        "Nellore Rural": [
+            {
+                "name": "Adala Prabhakara Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kotamreddy Sridhar Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Shaik Fayaz",
+                "party": "INC"
+            }
+        ],
+        "Sarvepalli": [
+            {
+                "name": "Kakani Govardhan Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Somireddy Chandra Mohan Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "P.V. Srikanth Reddy",
+                "party": "INC"
+            }
+        ],
+        "Gudur (SC)": [
+            {
+                "name": "Meruga Murali",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pasam Sunil Kumar",
+                "party": "TDP"
+            },
+            {
+                "name": "U Ramakrishna Rao",
+                "party": "INC"
+            }
+        ],
+        "Sullurpeta (SC)": [
+            {
+                "name": "Kiliveti Sanjeevaiah",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nelavala Vijayasree",
+                "party": "TDP"
+            },
+            {
+                "name": "Chandanamudi Shiva",
+                "party": "INC"
+            }
+        ],
+        "Venkatagiri": [
+            {
+                "name": "Nedurumalli Ramkumar Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Korugondla Ramakrishna",
+                "party": "TDP"
+            },
+            {
+                "name": "Panta Srinivasulu",
+                "party": "INC"
+            }
+        ],
+        "Udayagiri": [
+            {
+                "name": "Mekapati Rajagopal Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kakarla Suresh",
+                "party": "TDP"
+            },
+            {
+                "name": "Somu Anilkumar Reddy",
+                "party": "INC"
+            }
+        ],
+        "Badvel (SC)": [
+            {
+                "name": "Dasari Sudha",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bojja Roshanna",
+                "party": "BJP"
+            },
+            {
+                "name": "Neerugattu Dora Vijaya Jyothi",
+                "party": "INC"
+            }
+        ],
+        "Rajampet": [
+            {
+                "name": "Akepati Amarnath Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Sugavasi Subramanyam",
+                "party": "TDP"
+            },
+            {
+                "name": "Bhukya Viswanath Naik",
+                "party": "CPI"
+            }
+        ],
+        "Kadapa": [
+            {
+                "name": "Amzath Basha Shaik Bepari",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Reddeppagari Madhavi Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Tumman Kalyal Aszal Alikhan",
+                "party": "INC"
+            }
+        ],
+        "Kodur (SC)": [
+            {
+                "name": "Koramutla Srinivasulu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Arava Sreedhar",
+                "party": "JSP"
+            },
+            {
+                "name": "Gosala Devi",
+                "party": "INC"
+            }
+        ],
+        "Rayachoti": [
+            {
+                "name": "Gadikota Srikanth Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Mandipalli Ramprasad Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Shaik Alla Bakash",
+                "party": "INC"
+            }
+        ],
+        "Pulivendla": [
+            {
+                "name": "Y. S. Jagan Mohan Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Mareddy Ravindranatha Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Mulam Reddy Dhruva Kumar Reddy",
+                "party": "INC"
+            }
+        ],
+        "Kamalapuram": [
+            {
+                "name": "Pochimareddy Ravindranath Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Putha Krishna Chaitanya Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Gali Chandra",
+                "party": "CPI"
+            }
+        ],
+        "Jammalamadugu": [
+            {
+                "name": "Mule Sudheer Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "C. Adinarayana Reddy",
+                "party": "BJP"
+            },
+            {
+                "name": "Brahmanareddy Pamula",
+                "party": "INC"
+            }
+        ],
+        "Proddatur": [
+            {
+                "name": "Rachamallu Siva Prasad Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nandyala Varada Rajulu Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Shaik Poola Mohammed Nazeer",
+                "party": "INC"
+            }
+        ],
+        "Mydukur": [
+            {
+                "name": "Settipalli Raghurami Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Putta Sudhakar Yadav",
+                "party": "TDP"
+            },
+            {
+                "name": "Gundlakunta Sriramulu",
+                "party": "INC"
+            }
+        ],
+        "Allagadda": [
+            {
+                "name": "Gangula Brijendra Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bhuma Akhila Priya",
+                "party": "TDP"
+            },
+            {
+                "name": "Baragodla Hussain",
+                "party": "INC"
+            }
+        ],
+        "Srisailam": [
+            {
+                "name": "Silpa Chakrapani Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Budda Rajasekhar Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Asar Syed Ismail",
+                "party": "INC"
+            }
+        ],
+        "Nandikotkur (SC)": [
+            {
+                "name": "Dara Sudheer",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Githa Jayasurya",
+                "party": "TDP"
+            },
+            {
+                "name": "Thoguru Arthur",
+                "party": "INC"
+            }
+        ],
+        "Kurnool": [
+            {
+                "name": "A. Mohammad Imtiaz Ahmed",
+                "party": "YSRCP"
+            },
+            {
+                "name": "T. G. Bharath",
+                "party": "TDP"
+            },
+            {
+                "name": "Shaik Jelani Basha",
+                "party": "INC"
+            }
+        ],
+        "Panyam": [
+            {
+                "name": "Katasani Ramabhupal Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gowru Charitha Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "D. Ghous Desai",
+                "party": "CPI(M)"
+            }
+        ],
+        "Nandyal": [
+            {
+                "name": "Silpa Ravichandra Kishore Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "N. M. D. Farooq",
+                "party": "TDP"
+            },
+            {
+                "name": "Gokula Krishna Reddy",
+                "party": "INC"
+            }
+        ],
+        "Banaganapalle": [
+            {
+                "name": "Katasani Rami Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "B. C. Janardhan Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Gutam Pullaiah",
+                "party": "INC"
+            }
+        ],
+        "Dhone": [
+            {
+                "name": "Buggana Rajendranath Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kotla Jayasurya Prakasha Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Garlapati Madhuleti Swami",
+                "party": "INC"
+            }
+        ],
+        "Pattikonda": [
+            {
+                "name": "Kangati Sreedevi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "K. E. Shyam Babu",
+                "party": "TDP"
+            },
+            {
+                "name": "P. Ramachandraiah",
+                "party": "CPI"
+            }
+        ],
+        "Kodumur (SC)": [
+            {
+                "name": "Audimulapu Sateesh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Boggula Dastagiri",
+                "party": "TDP"
+            },
+            {
+                "name": "Paregella Murali Krishna",
+                "party": "INC"
+            }
+        ],
+        "Yemmiganur": [
+            {
+                "name": "Butta Renuka",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Jaya Nageswara Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Marumulla Kashim Vali",
+                "party": "INC"
+            }
+        ],
+        "Mantralayam": [
+            {
+                "name": "Y. Balanagi Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Raghavendra Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "P S Murali Krishnaraju",
+                "party": "INC"
+            }
+        ],
+        "Adoni": [
+            {
+                "name": "Y. Sai Prasad Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "P. V. Parthasarathi",
+                "party": "BJP"
+            },
+            {
+                "name": "Golla Ramesh",
+                "party": "INC"
+            }
+        ],
+        "Alur": [
+            {
+                "name": "Busine Virupakshi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "B. Veerabhadra Gowd",
+                "party": "TDP"
+            },
+            {
+                "name": "Naveen Kishore Arakatla",
+                "party": "INC"
+            }
+        ],
+        "Rayadurg": [
+            {
+                "name": "Mettu Govinda Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kalava Srinivasulu",
+                "party": "TDP"
+            },
+            {
+                "name": "M. B. Chinna Appiah",
+                "party": "INC"
+            }
+        ],
+        "Uravakonda": [
+            {
+                "name": "Y. Visweswara Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Payyavula Keshav",
+                "party": "TDP"
+            },
+            {
+                "name": "Y. Madhusudan Reddy",
+                "party": "INC"
+            }
+        ],
+        "Guntakal": [
+            {
+                "name": "Y. Venkatrama Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gummanur Jayaram",
+                "party": "TDP"
+            },
+            {
+                "name": "Kavali Prabhakar",
+                "party": "INC"
+            }
+        ],
+        "Tadipatri": [
+            {
+                "name": "Kethireddy Pedda Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "J.C. Asmit Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Gujjala Nagi Reddy",
+                "party": "INC"
+            }
+        ],
+        "Singanamala (SC)": [
+            {
+                "name": "M. Veeranjaneyulu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bandaru Sravani Sree",
+                "party": "TDP"
+            },
+            {
+                "name": "Sake Sailajanath",
+                "party": "INC"
+            }
+        ],
+        "Anantapur Urban": [
+            {
+                "name": "Anantha Venkatarami Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Daggupati Venkateswara Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "C. Jafar",
+                "party": "CPI"
+            }
+        ],
+        "Kalyandurg": [
+            {
+                "name": "Talari Rangaiah",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Amilineni Surendra Babu",
+                "party": "TDP"
+            },
+            {
+                "name": "P. Rambhupal Reddy",
+                "party": "INC"
+            }
+        ],
+        "Raptadu": [
+            {
+                "name": "Thopudurthi Prakash Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Paritala Sunitha",
+                "party": "TDP"
+            },
+            {
+                "name": "Adi Andhra Sankaraiah",
+                "party": "INC"
+            }
+        ],
+        "Madakasira (SC)": [
+            {
+                "name": "Eera Lakkappa",
+                "party": "YSRCP"
+            },
+            {
+                "name": "M. S. Raju",
+                "party": "TDP"
+            },
+            {
+                "name": "Karikera Sudhakar",
+                "party": "INC"
+            }
+        ],
+        "Hindupur": [
+            {
+                "name": "T. N. Deepika",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nandamuri Balakrishna",
+                "party": "TDP"
+            },
+            {
+                "name": "Mohammad Hussain Inayathulla",
+                "party": "INC"
+            }
+        ],
+        "Penukonda": [
+            {
+                "name": "K. V. Ushashri Charan",
+                "party": "YSRCP"
+            },
+            {
+                "name": "S. Savitha",
+                "party": "TDP"
+            },
+            {
+                "name": "P. Narasimhappa",
+                "party": "INC"
+            }
+        ],
+        "Puttaparthi": [
+            {
+                "name": "Duddukunta Sreedhar Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Palle Sindhura Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Madhusudhan Reddy",
+                "party": "INC"
+            }
+        ],
+        "Dharmavaram": [
+            {
+                "name": "Kethireddy Venkatarami Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Y. Satya Kumar Yadav",
+                "party": "BJP"
+            },
+            {
+                "name": "Rangana Aswardha Narayana",
+                "party": "INC"
+            }
+        ],
+        "Kadiri": [
+            {
+                "name": "B. S. Maqbool Ahmed",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kandikunta Venkata Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "K. S. Shanwaz",
+                "party": "INC"
+            }
+        ],
+        "Thamballapalle": [
+            {
+                "name": "Peddireddy Dwarkanath Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Jaya Chandra Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "M. N. Chandrasekhar Reddy",
+                "party": "INC"
+            }
+        ],
+        "Pileru": [
+            {
+                "name": "Chintala Ramachandra Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Nallari Kishore Kumar Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "B. Somasekhar Reddy",
+                "party": "INC"
+            }
+        ],
+        "Madanapalle": [
+            {
+                "name": "Nissar Ahmed",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Mohammed Shahjahan Basha",
+                "party": "TDP"
+            },
+            {
+                "name": "Pawan Kumar Reddy",
+                "party": "INC"
+            }
+        ],
+        "Punganur": [
+            {
+                "name": "Peddireddy Ramachandra Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Challa Ramachandra Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "G. Murali Mohan Yadav",
+                "party": "INC"
+            }
+        ],
+        "Chandragiri": [
+            {
+                "name": "Chevireddy Mohith Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Pulivarthi Venkata Mani Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "Kanuparthy Srinivasulu",
+                "party": "INC"
+            }
+        ],
+        "Tirupati": [
+            {
+                "name": "Bhumana Abhinay Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Arani Srinivasulu",
+                "party": "JSP"
+            },
+            {
+                "name": "P. Murali",
+                "party": "CPI"
+            }
+        ],
+        "Srikalahasti": [
+            {
+                "name": "Biyyapu Madhusudhan Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Bojjala Sudhir Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Pothugunta Rajesh Naidu",
+                "party": "INC"
+            }
+        ],
+        "Sathyavedu (SC)": [
+            {
+                "name": "Nukatoti Rajesh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Koneti Adimulam",
+                "party": "TDP"
+            },
+            {
+                "name": "Balaguruvam Babu",
+                "party": "INC"
+            }
+        ],
+        "Nagari": [
+            {
+                "name": "R. K. Roja",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gali Bhanu Prakash",
+                "party": "TDP"
+            },
+            {
+                "name": "Pochareddy Rakesh Reddy",
+                "party": "INC"
+            }
+        ],
+        "Gangadhara Nellore (SC)": [
+            {
+                "name": "Kalattur Krupa Lakshmi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "V. M. Thomas",
+                "party": "TDP"
+            },
+            {
+                "name": "Deyala Ramesh Babu",
+                "party": "INC"
+            }
+        ],
+        "Chittoor": [
+            {
+                "name": "M. Vijayananda Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Gurajala Jagan Mohan",
+                "party": "TDP"
+            },
+            {
+                "name": "G. Tikaram",
+                "party": "INC"
+            }
+        ],
+        "Puthalapattu (SC)": [
+            {
+                "name": "M. Sunil Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kalikiri Murali Mohan",
+                "party": "TDP"
+            },
+            {
+                "name": "M. S. Babu",
+                "party": "INC"
+            }
+        ],
+        "Palamaner": [
+            {
+                "name": "N. Venkate Gowda",
+                "party": "YSRCP"
+            },
+            {
+                "name": "N. Amarnath Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "B. Siva Sankar",
+                "party": "INC"
+            }
+        ],
+        "Kuppam": [
+            {
+                "name": "K. R. J. Bharath",
+                "party": "YSRCP"
+            },
+            {
+                "name": "N. Chandrababu Naidu",
+                "party": "TDP"
+            },
+            {
+                "name": "Avula Govindarajulu",
+                "party": "INC"
+            }
+        ]
+    },
+    "mp_candidates_2024": {
+        "Araku (ST)": [
+            {
+                "name": "Gumma Thanuja Rani",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kothapalli Geetha",
+                "party": "BJP"
+            },
+            {
+                "name": "Appala Narsa",
+                "party": "CPI(M)"
             }
         ],
         "Srikakulam": [
             {
-                "name": "Kinjarapu Ram Mohan Naidu",
-                "party": "TDP",
-                "votes_2024": 645321
+                "name": "Perada Tilak",
+                "party": "YSRCP"
             },
             {
-                "name": "Tilak",
-                "party": "YSRCP",
-                "votes_2024": 398765
+                "name": "Kinjarapu Ram Mohan Naidu",
+                "party": "TDP"
+            },
+            {
+                "name": "Pedada Parameswara Rao",
+                "party": "INC"
             }
         ],
         "Vizianagaram": [
             {
-                "name": "Kemisetti Srinivasa Rao",
-                "party": "JSP",
-                "votes_2024": 576543
+                "name": "Bellana Chandra Sekhar",
+                "party": "YSRCP"
             },
             {
-                "name": "B. Appalanaidu",
-                "party": "YSRCP",
-                "votes_2024": 423456
+                "name": "Kalisetti Appala Naidu",
+                "party": "TDP"
+            },
+            {
+                "name": "Bobbili Srinu",
+                "party": "INC"
+            }
+        ],
+        "Visakhapatnam": [
+            {
+                "name": "Botcha Jhansi Lakshmi",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Mathukumilli Bharat",
+                "party": "TDP"
+            },
+            {
+                "name": "Pulusu Satyanarayana Reddy",
+                "party": "INC"
+            }
+        ],
+        "Anakapalli": [
+            {
+                "name": "Budi Mutyala Naidu",
+                "party": "YSRCP"
+            },
+            {
+                "name": "C. M. Ramesh",
+                "party": "BJP"
+            },
+            {
+                "name": "Vegi Venkatesh",
+                "party": "INC"
             }
         ],
         "Kakinada": [
             {
-                "name": "Tangella Uday Srinivas",
-                "party": "TDP",
-                "votes_2024": 612345
+                "name": "Chalamalasetti Sunil",
+                "party": "YSRCP"
             },
             {
-                "name": "Ch. Karunakar Reddy",
-                "party": "YSRCP",
-                "votes_2024": 487654
+                "name": "Tangella Uday Srinivas",
+                "party": "JSP"
+            },
+            {
+                "name": "M. M. Pallam Raju",
+                "party": "INC"
             }
         ],
-        "Amalapuram": [
+        "Amalapuram (SC)": [
+            {
+                "name": "Rapaka Vara Prasada Rao",
+                "party": "YSRCP"
+            },
             {
                 "name": "Ganti Harish Madhur",
-                "party": "JSP",
-                "votes_2024": 587654
+                "party": "TDP"
             },
             {
-                "name": "Rapaka Varaprasad",
-                "party": "YSRCP",
-                "votes_2024": 456789
+                "name": "Janga Goutham",
+                "party": "INC"
             }
         ],
-        "Anakapalle": [
+        "Rajahmundry": [
             {
-                "name": "C.M. Ramesh",
-                "party": "BJP",
-                "votes_2024": 762345
+                "name": "Guduri Srinivas",
+                "party": "YSRCP"
             },
             {
-                "name": "Budi Mutyala Naidu",
-                "party": "YSRCP",
-                "votes_2024": 465432
+                "name": "Daggubati Purandeswari",
+                "party": "BJP"
+            },
+            {
+                "name": "Gidugu Rudra Raju",
+                "party": "INC"
+            }
+        ],
+        "Narasapuram": [
+            {
+                "name": "Guduri Umabala",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Srinivas Verma",
+                "party": "BJP"
+            },
+            {
+                "name": "Korlapati Brahmananda Rao Naidu",
+                "party": "INC"
+            }
+        ],
+        "Eluru": [
+            {
+                "name": "Karumuri Sunil Kumar",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Putta Mahesh Kumar",
+                "party": "TDP"
+            },
+            {
+                "name": "Lavanya Kumari",
+                "party": "INC"
+            }
+        ],
+        "Machilipatnam": [
+            {
+                "name": "Simhadri Chandrasekhar Rao",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vallabhaneni Balashowry",
+                "party": "JSP"
+            },
+            {
+                "name": "Gollu Krishna",
+                "party": "INC"
+            }
+        ],
+        "Vijayawada": [
+            {
+                "name": "Kesineni Srinivas",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kesineni Sivanath",
+                "party": "TDP"
+            },
+            {
+                "name": "Valluru Bhargav",
+                "party": "INC"
+            }
+        ],
+        "Guntur": [
+            {
+                "name": "Kilari Venkata Rosaiah",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Chandra Sekhar Pemmasani",
+                "party": "TDP"
+            },
+            {
+                "name": "Jangala Ajay Kumar",
+                "party": "CPI"
+            }
+        ],
+        "Narasaraopet": [
+            {
+                "name": "Poluboina Anilkumar Yadav",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Lavu Sri Krishna Devarayalu",
+                "party": "TDP"
+            },
+            {
+                "name": "Garnepudi Alexander Sudhakar",
+                "party": "INC"
+            }
+        ],
+        "Bapatla (SC)": [
+            {
+                "name": "Nandigam Suresh",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Tenneti Krishna Prasad",
+                "party": "TDP"
+            },
+            {
+                "name": "Jesudasu Seelam",
+                "party": "INC"
+            }
+        ],
+        "Ongole": [
+            {
+                "name": "Chevireddy Bhaskar Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Magunta Sreenivasulu Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Eda Sudhakara Reddy",
+                "party": "INC"
+            }
+        ],
+        "Nandyal": [
+            {
+                "name": "Pocha Brahmananda Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Byreddy Sabari",
+                "party": "TDP"
+            },
+            {
+                "name": "Jangiti Lakshmi Narasimha Yadav",
+                "party": "INC"
+            }
+        ],
+        "Kurnoolu": [
+            {
+                "name": "B. Y. Ramaiah",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Panchalingala Nagaraju",
+                "party": "TDP"
+            },
+            {
+                "name": "P. G. Ram Pullaiah Yadav",
+                "party": "INC"
+            }
+        ],
+        "Anantapur": [
+            {
+                "name": "Malagundla Sankaranarayana",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Ambika Lakshminarayana",
+                "party": "TDP"
+            },
+            {
+                "name": "Mallikarjun Vajjala",
+                "party": "INC"
+            }
+        ],
+        "Hindupur": [
+            {
+                "name": "J. Shantha",
+                "party": "YSRCP"
+            },
+            {
+                "name": "B. K. Parthasarathi",
+                "party": "TDP"
+            },
+            {
+                "name": "B. A. Samad Shaheen",
+                "party": "INC"
+            }
+        ],
+        "Kadapa": [
+            {
+                "name": "Y. S. Avinash Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Chadipiralla Bhupesh Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Y. S. Sharmila",
+                "party": "INC"
+            }
+        ],
+        "Nellore": [
+            {
+                "name": "V. Vijaysai Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Vemireddy Prabhakar Reddy",
+                "party": "TDP"
+            },
+            {
+                "name": "Koppula Raju",
+                "party": "INC"
+            }
+        ],
+        "Tirupati (SC)": [
+            {
+                "name": "Maddila Gurumoorthy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Velagapalli Varaprasad Rao",
+                "party": "BJP"
+            },
+            {
+                "name": "Chinta Mohan",
+                "party": "INC"
+            }
+        ],
+        "Rajampet": [
+            {
+                "name": "P. V. Midhun Reddy",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Kiran Kumar Reddy",
+                "party": "BJP"
+            },
+            {
+                "name": "S K Basheed",
+                "party": "INC"
+            }
+        ],
+        "Chittoor (SC)": [
+            {
+                "name": "N. Reddeppa",
+                "party": "YSRCP"
+            },
+            {
+                "name": "Daggumalla Prasada Rao",
+                "party": "TDP"
+            },
+            {
+                "name": "M Jagapathi",
+                "party": "INC"
             }
         ]
     },
@@ -716,9 +2937,9 @@
         "Chittoor": {
             "lat": 13.2172,
             "lng": 79.1003,
-            "mla_count": 14,
+            "mla_count": 7,
             "mp_count": 2
         }
     },
-    "note": "2024 AP Election data - Candidate names are based on actual contestants. Vote counts are simulated for demonstration."
+    "note": "2024 AP Election data - Candidate names are based on actual contestants."
 }
