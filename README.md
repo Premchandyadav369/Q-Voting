@@ -123,22 +123,21 @@ Follow these steps to set up and run the application on your local machine.
 
 ### Phase 5: Deploy Backend (FastAPI) on Render
 
+This project uses a `render.yaml` file to define the backend infrastructure as code. This means Render can automatically configure the deployment for you.
+
 1. **Sign in to Render**: Go to [Render](https://render.com).
-2. **Create a New Web Service**:
-   - Click "New +" -> "Web Service".
+2. **Create a New Blueprint Service**:
+   - Click "New +" -> "Blueprint".
    - Connect your GitHub repository.
-3. **Configuration**:
-   - **Name**: `quantum-voting-backend` (or your choice)
-   - **Root Directory**: `backend`
-   - **Environment**: `Python 3`
-   - **Region**: Choose a region close to you.
-   - **Branch**: `main`
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app`
-4. **Environment Variables**:
-   - Under the "Environment" section, click "Add Environment Variable".
-   - **Key**: `GEMINI_API_KEY`, **Value**: `your_gemini_api_key_here`
-5. **Deploy**: Click "Create Web Service". Render will use the `render.yaml` for configuration.
+   - Render will automatically detect and parse the `render.yaml` file.
+3. **Approve the Service**:
+   - Give your new service a name and click "Apply".
+4. **Add Environment Variables**:
+   - After the service is created, go to its "Environment" tab.
+   - Add the following secret variables. These are not stored in `render.yaml` for security reasons.
+     - `GEMINI_API_KEY`: Your secret key for the Google Gemini API.
+     - `FRONTEND_URL`: The live URL of your deployed Vercel frontend (from Phase 4).
+5. **Automatic Deployment**: Render will now build and deploy your backend. The deployment is pre-configured via `render.yaml` to use Python 3.11 for maximum compatibility.
 
 ---
 ## 📄 Academic Disclaimer
