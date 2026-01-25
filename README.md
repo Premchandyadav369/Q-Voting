@@ -134,55 +134,49 @@ The backend is engineered for high concurrency, quantum simulation, and real-tim
 
 ## 🌐 Deployment Guide (Vercel)
 
-To deploy this "Next-Gen" application to Vercel, we use a hybrid approach or a Vercel serverless configuration.
+This project is configured as a Monorepo (Frontend + Backend). Follow these exact steps to deploy.
 
-### Deployment Steps
+### Step 1: Prepare GitHub
+1.  **Push Code**: Ensure your latest code is pushed to GitHub (we just fixed the `node_modules` issue).
+2.  **Verify**: Go to your GitHub repo and check that `frontend/node_modules` folder is **NOT** present.
 
-1.  **Prepare the Frontend**:
-    - Navigate to `frontend/`.
-    - Ensure `vite.config.js` is set up.
-    - Run `npm run build` to verify it builds correctly.
+### Step 2: Vercel Dashboard Setup
+1.  **Import Project**:
+    -   Go to [Vercel Dashboard](https://vercel.com/dashboard).
+    -   Click **Add New** -> **Project**.
+    -   Select `Q-Voting` from the list and clicking **Import**.
 
-2.  **Prepare the Backend (Serverless)**:
-    - Create a `vercel.json` in the root directory to tell Vercel how to handle the Python API.
-    - Ensure `requirements.txt` is present in the `backend/` folder.
+2.  **Configure Project**:
+    *You will see a screen asking for build settings. ENTER THESE EXACTLY:*
 
-3.  **Vercel Configuration (`vercel.json`)**:
-    Create a file named `vercel.json` in the root with the following content:
+    -   **Project Name**: `q-voting` (or your choice).
+    -   **Framework Preset**: Select **Vite**.
+    -   **Root Directory**: Click `Edit` and select `frontend`.
+        *(⚠️ Important: Since we are deploying the frontend as the main view, we point root to `frontend`. The `vercel.json` in the root will handle the backend routing).*
 
-    ```json
-    {
-      "version": 2,
-      "builds": [
-        {
-          "src": "backend/main.py",
-          "use": "@vercel/python"
-        },
-        {
-          "src": "frontend/package.json",
-          "use": "@vercel/static-build",
-          "config": { "distDir": "dist" }
-        }
-      ],
-      "routes": [
-        {
-          "src": "/api/(.*)",
-          "dest": "backend/main.py"
-        },
-        {
-          "src": "/(.*)",
-          "dest": "frontend/$1"
-        }
-      ]
-    }
-    ```
+    *(Wait! Actually, for the hybrid setup with `vercel.json` to work perfectly, keep Root Directory as `./` (default) and use the settings below)*:
 
-4.  **Push to GitHub**:
-    - Push your code to the repository: [https://github.com/Premchandyadav369](https://github.com/Premchandyadav369)
+    **b) CORRECT SETTINGS (Hybrid Mode)**:
+    -   **Framework Preset**: Select **Other** (Override if it picked Vite).
+    -   **Root Directory**: Leave as `./` (The root folder).
+    -   **Build Command**: `cd frontend && npm install && npm run build`
+    -   **Output Directory**: `frontend/dist`
+    -   **Install Command**: `pip install -r backend/requirements.txt`
 
-5.  **Deploy**:
-    - Connect your GitHub repo to Vercel.
-    - Vercel will detect the configuration and deploy both the React frontend and Python backend (as serverless functions).
+    *Why? Because we need to tell Vercel to install both Python and Node dependencies from the root.*
+
+3.  **Environment Variables**:
+    -   Expand "Environment Variables".
+    -   Add `GEMINI_API_KEY` : `your_api_key_here` (If you want AI features).
+
+4.  **Deploy**:
+    -   Click **Deploy**.
+    -   Vercel will detect the `vercel.json` configuration for the `/api` routes and the build command for the UI.
+
+### Step 3: Verify Live Site
+-   The build logs will show dependencies installing.
+-   Once complete, visit your URL (e.g., `https://q-voting.vercel.app`).
+-   Test the API by going to `https://q-voting.vercel.app/api/health`. It should return `{"status": "healthy"}`.
 
 ---
 
