@@ -87,12 +87,25 @@ async def get_candidates(constituency_id: int):
         db.close()
 
 
+# Simple in-memory rate limiter: session_id -> last_request_time
+rate_limit_store = {}
+
 @router.post("/cast", response_model=VoteConfirmation)
 async def cast_vote(request: CastVoteRequest):
     """
     Cast a vote for either MLA or MP election.
     Supports dual voting - can vote for both in same session.
+    Includes rate limiting (2 seconds between actions).
     """
+    # Rate Limiting Check
+    current_time = datetime.utcnow().timestamp()
+    last_request = rate_limit_store.get(request.session_id, 0)
+    
+    if current_time - last_request < 2.0:
+        raise HTTPException(status_code=429, detail="Please wait before voting again (Spam Protection Active)")
+    
+    rate_limit_store[request.session_id] = current_time
+
     db = SessionLocal()
     try:
         # Validate session

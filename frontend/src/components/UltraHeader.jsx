@@ -23,6 +23,14 @@ function UltraHeader() {
             <div className="container">
                 <Link to="/" className="logo">
                     <img src="/qvoting-logo.png" alt="Q-Voting Ultra" />
+                    <span style={{
+                        fontSize: '0.7rem',
+                        background: 'rgba(255,255,255,0.1)',
+                        padding: '2px 6px',
+                        borderRadius: '4px',
+                        color: 'var(--text-muted)',
+                        marginLeft: '10px'
+                    }}>v1.1</span>
                 </Link>
 
                 <div className="header-badges">
