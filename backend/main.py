@@ -17,6 +17,7 @@ load_dotenv()
 from models.database import init_db, seed_database
 from routes import auth_router, voting_router, results_router
 from routes.advanced import router as advanced_router
+from routes.security import router as security_router
 
 
 @asynccontextmanager
@@ -71,6 +72,7 @@ app.include_router(auth_router, prefix="/api")
 app.include_router(voting_router, prefix="/api")
 app.include_router(results_router, prefix="/api")
 app.include_router(advanced_router, prefix="/api")
+app.include_router(security_router, prefix="/api")
 
 
 @app.get("/")

@@ -151,12 +151,15 @@ async def cast_vote(request: CastVoteRequest):
         if existing_vote:
             raise HTTPException(status_code=400, detail="Duplicate vote detected")
         
+        receipt_code = anonymity_guard.generate_anonymous_receipt(encrypted_result['vote_hash'])
+        
         # Store vote
         vote = Vote(
             constituency_id=expected_const_id,
             candidate_id=request.candidate_id,
             encrypted_vote=encrypted_result['encrypted_vote'],
             vote_hash=encrypted_result['vote_hash'],
+            receipt_code=receipt_code,
             timestamp=timestamp
         )
         db.add(vote)
@@ -175,8 +178,6 @@ async def cast_vote(request: CastVoteRequest):
             quantum_key_manager.invalidate_session(request.session_id)
         
         db.commit()
-        
-        receipt_code = anonymity_guard.generate_anonymous_receipt(encrypted_result['vote_hash'])
         
         return VoteConfirmation(
             success=True,
@@ -199,8 +200,8 @@ async def cast_vote(request: CastVoteRequest):
 @router.get("/verify/{receipt_code}")
 async def verify_vote(receipt_code: str):
     """Verify that a vote was recorded."""
-    if not receipt_code.startswith("QV-") or len(receipt_code) != 16:
-        return {"valid_format": False, "message": "Invalid receipt code format"}
+    if not receipt_code.startswith("QV-") or len(receipt_code) != 17:
+        return {"valid_format": False, "message": "Invalid receipt code format (Expected QV-XXXX-XXXX-XXXX)"}
     
     return {
         "valid_format": True,

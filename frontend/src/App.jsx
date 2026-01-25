@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import LandingPage from './pages/LandingPage'
-import FeaturesPage from './pages/FeaturesPage'
+import UltraHeader from './components/UltraHeader'
+import UltraFooter from './components/UltraFooter'
+import UltraLandingPage from './pages/UltraLandingPage'
 import DualVoterAuth from './pages/DualVoterAuth'
 import DualBallotPage from './pages/DualBallotPage'
 import QuantumProcess from './pages/QuantumProcess'
 import Confirmation from './pages/Confirmation'
 import AdminDashboard from './pages/AdminDashboard'
-import AttackSimulator from './pages/AttackSimulator'
+import AttackLab from './pages/AttackLab'
 import AuditTrail from './pages/AuditTrail'
 import LiveAnalytics from './pages/LiveAnalytics'
 import RealTimeDashboard from './pages/RealTimeDashboard'
+import ExplanationPage from './pages/ExplanationPage'
+import ZKVerifyPortal from './pages/ZKVerifyPortal'
+import GovernanceConsole from './pages/GovernanceConsole'
+import DigitalTwin from './pages/DigitalTwin'
 
 function App() {
     const [session, setSession] = useState(null)
@@ -31,12 +34,13 @@ function App() {
 
     return (
         <Router>
-            <div className="app">
-                <Header session={session} onLogout={handleLogout} />
-                <main className="main-content">
+            <div className="app" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                <UltraHeader />
+                <main style={{ flex: 1, paddingTop: '80px' }}>
                     <Routes>
-                        <Route path="/" element={<LandingPage />} />
-                        <Route path="/features" element={<FeaturesPage />} />
+                        {/* Ultra Landing */}
+                        <Route path="/" element={<UltraLandingPage />} />
+                        <Route path="/explanation" element={<ExplanationPage />} />
 
                         {/* Dual Voting Flow */}
                         <Route
@@ -99,12 +103,15 @@ function App() {
                         {/* Admin & Advanced Features */}
                         <Route path="/admin" element={<AdminDashboard />} />
                         <Route path="/dashboard" element={<RealTimeDashboard />} />
-                        <Route path="/attacks" element={<AttackSimulator />} />
+                        <Route path="/attacks" element={<AttackLab />} />
                         <Route path="/audit" element={<AuditTrail />} />
                         <Route path="/analytics" element={<LiveAnalytics />} />
+                        <Route path="/verify" element={<ZKVerifyPortal />} />
+                        <Route path="/governance" element={<GovernanceConsole />} />
+                        <Route path="/digital-twin" element={<DigitalTwin />} />
                     </Routes>
                 </main>
-                <Footer />
+                <UltraFooter />
             </div>
         </Router>
     )

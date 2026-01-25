@@ -2,34 +2,26 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
+// Simplified 2-theme system as per user request
 export const themes = {
-    'dark-royal': {
-        name: 'Dark Royal',
-        icon: '👑',
+    'quantum-dark': {
+        name: 'Quantum Dark',
+        icon: '🌙',
+        primary: '#00d4ff',
+        bg: '#0a0e1a'
+    },
+    'quantum-light': {
+        name: 'Quantum Light',
+        icon: '☀️',
         primary: '#3b82f6',
-        accent: '#f59e0b',
-        bg: '#020617'
-    },
-    'ocean-gradient': {
-        name: 'Ocean Gradient',
-        icon: '🌊',
-        primary: '#06b6d4',
-        accent: '#8b5cf6',
-        bg: '#0c1929'
-    },
-    'emerald-glow': {
-        name: 'Emerald Glow',
-        icon: '💎',
-        primary: '#10b981',
-        accent: '#f59e0b',
-        bg: '#052e16'
+        bg: '#f8fafc'
     }
 };
 
 export function ThemeProvider({ children }) {
     const [theme, setTheme] = useState(() => {
         const saved = localStorage.getItem('q-voting-theme');
-        return saved || 'dark-royal';
+        return saved || 'quantum-dark';
     });
 
     useEffect(() => {
@@ -37,15 +29,12 @@ export function ThemeProvider({ children }) {
         document.documentElement.setAttribute('data-theme', theme);
     }, [theme]);
 
-    const cycleTheme = () => {
-        const themeKeys = Object.keys(themes);
-        const currentIndex = themeKeys.indexOf(theme);
-        const nextIndex = (currentIndex + 1) % themeKeys.length;
-        setTheme(themeKeys[nextIndex]);
+    const toggleTheme = () => {
+        setTheme(prev => prev === 'quantum-dark' ? 'quantum-light' : 'quantum-dark');
     };
 
     return (
-        <ThemeContext.Provider value={{ theme, setTheme, cycleTheme, themes }}>
+        <ThemeContext.Provider value={{ theme, setTheme, toggleTheme, themes }}>
             {children}
         </ThemeContext.Provider>
     );

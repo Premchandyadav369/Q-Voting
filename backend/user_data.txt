@@ -1,0 +1,172 @@
+
+#	Name	Reserved for	District	Lok Sabha Constituency
+1	Ichchapuram	None	Srikakulam	Srikakulam
+2	Palasa	None	Srikakulam	Srikakulam
+3	Tekkali	None	Srikakulam	Srikakulam
+4	Pathapatnam	None	Srikakulam	Srikakulam
+5	Srikakulam	None	Srikakulam	Srikakulam
+6	Amadalavalasa	None	Srikakulam	Srikakulam
+7	Etcherla	None	Vizianagaram	Vizianagaram
+8	Narasannapeta	None	Srikakulam	Srikakulam
+9	Rajam	SC	Vizianagaram	Vizianagaram
+10	Palakonda	ST	Parvathipuram Manyam	Araku
+11	Kurupam	ST	Parvathipuram Manyam	Araku
+12	Parvathipuram	SC	Parvathipuram Manyam	Araku
+13	Salur	ST	Parvathipuram Manyam	Araku
+14	Bobbili	None	Vizianagaram	Vizianagaram
+15	Cheepurupalli	None	Vizianagaram	Vizianagaram
+16	Gajapathinagaram	None	Vizianagaram	Vizianagaram
+17	Nellimarla	None	Vizianagaram	Vizianagaram
+18	Vizianagaram	None	Vizianagaram	Vizianagaram
+19	Srungavarapukota	None	Visakhapatnam	Visakhapatnam
+20	Bhimili	None	Visakhapatnam	Visakhapatnam
+21	Visakhapatnam East	None	Visakhapatnam	Visakhapatnam
+22	Visakhapatnam South	None	Visakhapatnam	Visakhapatnam
+23	Visakhapatnam North	None	Visakhapatnam	Visakhapatnam
+24	Visakhapatnam West	None	Visakhapatnam	Visakhapatnam
+25	Gajuwaka	None	Visakhapatnam	Visakhapatnam
+26	Chodavaram	None	Anakapalli	Anakapalli
+27	Madugula	None	Anakapalli	Anakapalli
+28	Araku Valley	ST	Alluri Sitharama Raju	Araku
+29	Paderu	ST	Alluri Sitharama Raju	Araku
+30	Anakapalle	None	Anakapalli	Anakapalli
+31	Pendurthi	None	Anakapalli	Anakapalli
+32	Elamanchili	None	Anakapalli	Anakapalli
+33	Payakaraopet	SC	Anakapalli	Anakapalli
+34	Narsipatnam	None	Anakapalli	Anakapalli
+35	Tuni	None	Kakinada	Kakinada
+36	Prathipadu	None	Kakinada	Kakinada
+37	Pithapuram	None	Kakinada	Kakinada
+38	Kakinada Rural	None	Kakinada	Kakinada
+39	Peddapuram	None	Kakinada	Kakinada
+40	Anaparthy	None	East Godavari	Rajahmundry
+41	Kakinada City	None	Kakinada	Kakinada
+42	Ramachandrapuram	None	Konaseema	Amalapuram
+43	Mummidivaram	None	Konaseema	Amalapuram
+44	Amalapuram	SC	Konaseema	Amalapuram
+45	Razole	SC	Konaseema	Amalapuram
+46	Gannavaram	SC	Konaseema	Amalapuram
+47	Kothapeta	None	Konaseema	Amalapuram
+48	Mandapeta	None	Konaseema	Amalapuram
+49	Rajanagaram	None	East Godavari	Rajahmundry
+50	Rajahmundry City	None	East Godavari	Rajahmundry
+51	Rajahmundry Rural	None	East Godavari	Rajahmundry
+52	Jaggampeta	None	Kakinada	Kakinada
+53	Rampachodavaram	ST	Alluri Sitharama Raju	Araku
+54	Kovvur	SC	East Godavari	Rajahmundry
+55	Nidadavole	None	East Godavari	Rajahmundry
+56	Achanta	None	West Godavari	Narasapuram
+57	Palakollu	None	West Godavari	Narasapuram
+58	Narasapuram	None	West Godavari	Narasapuram
+59	Bhimavaram	None	West Godavari	Narasapuram
+60	Undi	None	West Godavari	Narasapuram
+61	Tanuku	None	West Godavari	Narasapuram
+62	Tadepalligudem	None	West Godavari	Narasapuram
+63	Unguturu	None	Eluru	Eluru
+64	Denduluru	None	Eluru	Eluru
+65	Eluru	None	Eluru	Eluru
+66	Gopalapuram	SC	East Godavari	Rajahmundry
+67	Polavaram	ST	Eluru	Eluru
+68	Chintalapudi	SC	Eluru	Eluru
+69	Tiruvuru	SC	NTR	Vijayawada
+70	Nuzvid	None	Eluru	Eluru
+71	Gannavaram	None	Krishna	Machilipatnam
+72	Gudivada	None	Krishna	Machilipatnam
+73	Kaikalur	None	Eluru	Eluru
+74	Pedana	None	Krishna	Machilipatnam
+75	Machilipatnam	None	Krishna	Machilipatnam
+76	Avanigadda	None	Krishna	Machilipatnam
+77	Pamarru	SC	Krishna	Machilipatnam
+78	Penamaluru	None	Krishna	Machilipatnam
+79	Vijayawada West	None	NTR	Vijayawada
+80	Vijayawada Central	None	NTR	Vijayawada
+81	Vijayawada East	None	NTR	Vijayawada
+82	Mylavaram	None	NTR	Vijayawada
+83	Nandigama	SC	NTR	Vijayawada
+84	Jaggayyapeta	None	NTR	Vijayawada
+85	Pedakurapadu	None	Palnadu	Narasaraopet
+86	Tadikonda	SC	Guntur	Guntur
+87	Mangalagiri	None	Guntur	Guntur
+88	Ponnuru	None	Guntur	Guntur
+89	Vemuru	SC	Bapatla	Bapatla
+90	Repalle	None	Bapatla	Bapatla
+91	Tenali	None	Guntur	Guntur
+92	Bapatla	None	Bapatla	Bapatla
+93	Prathipadu	SC	Guntur	Guntur
+94	Guntur West	None	Guntur	Guntur
+95	Guntur East	None	Guntur	Guntur
+96	Chilakaluripet	None	Palnadu	Narasaraopet
+97	Narasaraopet	None	Palnadu	Narasaraopet
+98	Sattenapalle	None	Palnadu	Narasaraopet
+99	Vinukonda	None	Palnadu	Narasaraopet
+100	Gurajala	None	Palnadu	Narasaraopet
+101	Macherla	None	Palnadu	Narasaraopet
+102	Yerragondapalem	SC	Prakasam	Ongole
+103	Darsi	None	Prakasam	Ongole
+104	Parchur	None	Bapatla	Bapatla
+105	Addanki	None	Bapatla	Bapatla
+106	Chirala	None	Bapatla	Bapatla
+107	Santhanuthalapadu	SC	Prakasam	Ongole
+108	Ongole	None	Prakasam	Ongole
+109	Kandukur	None	Nellore	Nellore
+110	Kondapi	SC	Prakasam	Ongole
+111	Markapuram	None	Prakasam	Ongole
+112	Giddalur	None	Prakasam	Ongole
+113	Kanigiri	None	Prakasam	Ongole
+114	Kavali	None	Nellore	Nellore
+115	Atmakur	None	Nellore	Nellore
+116	Kovur	None	Nellore	Nellore
+117	Nellore City	None	Nellore	Nellore
+118	Nellore Rural	None	Nellore	Nellore
+119	Sarvepalli	None	Tirupati	Tirupati
+120	Gudur	SC	Tirupati	Tirupati
+121	Sullurpeta	SC	Tirupati	Tirupati
+122	Venkatagiri	None	Tirupati	Tirupati
+123	Udayagiri	None	Nellore	Nellore
+124	Badvel	SC	YSR Kadapa	Kadapa
+125	Rajampet	None	Annamayya	Rajampet
+126	Kadapa	None	YSR Kadapa	Kadapa
+127	Kodur	SC	Annamayya	Rajampet
+128	Rayachoti	None	Annamayya	Rajampet
+129	Pulivendla	None	YSR Kadapa	Kadapa
+130	Kamalapuram	None	YSR Kadapa	Kadapa
+131	Jammalamadugu	None	YSR Kadapa	Kadapa
+132	Proddatur	None	YSR Kadapa	Kadapa
+133	Mydukur	None	YSR Kadapa	Kadapa
+134	Allagadda	None	Nandyal	Nandyal
+135	Srisailam	None	Nandyal	Nandyal
+136	Nandikotkur	SC	Nandyal	Nandyal
+137	Kurnool	None	Kurnool	Kurnool
+138	Panyam	None	Nandyal	Nandyal
+139	Nandyal	None	Nandyal	Nandyal
+140	Banaganapalle	None	Nandyal	Nandyal
+141	Dhone	None	Nandyal	Nandyal
+142	Pattikonda	None	Kurnool	Kurnool
+143	Kodumur	SC	Kurnool	Kurnool
+144	Yemmiganur	None	Kurnool	Kurnool
+145	Mantralayam	None	Kurnool	Kurnool
+146	Adoni	None	Kurnool	Kurnool
+147	Alur	None	Kurnool	Kurnool
+148	Rayadurg	None	Ananthapuramu	Anantapur
+149	Uravakonda	None	Ananthapuramu	Anantapur
+150	Guntakal	None	Ananthapuramu	Anantapur
+151	Tadipatri	None	Ananthapuramu	Anantapur
+152	Singanamala	SC	Ananthapuramu	Anantapur
+153	Anantapur Urban	None	Ananthapuramu	Anantapur
+154	Kalyandurg	None	Ananthapuramu	Anantapur
+155	Raptadu	None	Ananthapuramu	Hindupur
+156	Madakasira	SC	Sri Sathya Sai	Hindupur
+157	Hindupur	None	Sri Sathya Sai	Hindupur
+158	Penukonda	None	Sri Sathya Sai	Hindupur
+159	Puttaparthi	None	Sri Sathya Sai	Hindupur
+160	Dharmavaram	None	Sri Sathya Sai	Hindupur
+161	Kadiri	None	Sri Sathya Sai	Hindupur
+162	Thamballapalle	None	Annamayya	Rajampet
+163	Pileru	None	Annamayya	Rajampet
+164	Madanapalle	None	Annamayya	Rajampet
+165	Punganur	None	Chittoor	Chittoor
+166	Chandragiri	None	Tirupati	Chittoor
+167	Tirupati	None	Tirupati	Tirupati
+168	Srikalahasti	None	Tirupati	Tirupati
+169	Sathyavedu	SC	Tirupati	Chittoor
+170	Nagari	None	Chittoor	Chittoor

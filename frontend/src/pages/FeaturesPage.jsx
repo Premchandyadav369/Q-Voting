@@ -69,9 +69,10 @@ function FeaturesPage() {
                     marginBottom: '16px',
                     background: 'linear-gradient(135deg, var(--accent-blue), var(--accent-gold))',
                     WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent'
+                    WebkitTextFillColor: 'transparent',
+                    textTransform: 'uppercase'
                 }}>
-                    ✨ Q-Voting Features
+                    ✨ Q-VOTING FEATURES
                 </h1>
                 <p style={{
                     color: 'var(--text-muted)',
@@ -180,9 +181,10 @@ function FeaturesPage() {
                 <h2 style={{
                     textAlign: 'center',
                     marginBottom: '24px',
-                    color: 'var(--text-main)'
+                    color: 'var(--text-main)',
+                    textTransform: 'uppercase'
                 }}>
-                    📊 At-a-Glance Comparison
+                    📊 AT-A-GLANCE COMPARISON
                 </h2>
                 <div style={{ overflowX: 'auto' }}>
                     <table style={{
@@ -247,10 +249,11 @@ function FeaturesPage() {
                         color: 'white',
                         textDecoration: 'none',
                         display: 'inline-block',
-                        boxShadow: 'var(--glow-primary)'
+                        boxShadow: 'var(--glow-primary)',
+                        textTransform: 'uppercase'
                     }}
                 >
-                    🗳️ Experience Quantum Voting
+                    🗳️ EXPERIENCE QUANTUM VOTING
                 </Link>
             </div>
         </div>

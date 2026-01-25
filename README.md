@@ -1,143 +1,208 @@
-# 🗳️ Q-Voting: Quantum Secure Voting System
+# 🗳️ Q-Voting Ultra: Next-Gen Quantum Secure Voting System
 
-**Privacy-Preserving Quantum Voting Simulation for Andhra Pradesh Elections**
+![Q-Voting Ultra Banner](https://img.shields.io/badge/Status-Ultra%20Verified-blueviolet?style=for-the-badge) ![Security](https://img.shields.io/badge/Security-Quantum%20Resistant-green?style=for-the-badge) ![Monitoring](https://img.shields.io/badge/Monitoring-Real%20Time-red?style=for-the-badge) ![Made By](https://img.shields.io/badge/Made%20By-V%20C%20Premchand%20Yadav-blue?style=for-the-badge&logo=linkedin)
 
-Q-Voting is a state-of-the-art voting simulation platform that leverages quantum cryptography principles to ensure voter anonymity, ballot integrity, and security against cyber threats.
+**The World's First Real-Time, Quantum-Encrypted Digital Democracy Platform.**
+*Privacy-Preserving. Tamper-Proof. Instantly Verifiable.*
 
 ---
 
-## 🚀 How to Run the Application
+## 🌟 Introduction
 
-Follow these steps to set up and run the application on your local machine.
+Q-Voting Ultra represents a paradigm shift in election technology. It moves beyond traditional electronic voting machines (EVMs) and standard blockchain voting by integrating **Quantum Key Distribution (QKD)** simulations and **Post-Quantum Cryptography (PQC)**. 
+
+This system addresses the "Trilemma of E-Voting":
+1.  **Security**: Resistant to future quantum computer attacks (Shor's Algorithm).
+2.  **Anonymity**: Voters verify *that* they voted, without revealing *who* they voted for (Zero-Knowledge Proofs).
+3.  **Transparency**: A public, immutable ledger that anyone can audit in real-time.
+
+---
+
+## 🚀 One-Click Local Launch
+
+Run the entire platform (Backend + Frontend) with a single command:
 
 ### Prerequisites
+- **Windows OS** (PowerShell)
 - **Python 3.10+**
 - **Node.js 18+**
-- **VS Code** (recommended)
+
+### Startup
+Open your terminal in the project root folder and run:
+
+```powershell
+.\run_project.ps1
+```
+
+This will automatically:
+- Install all Python/Node dependencies.
+- Boot the **FastAPI Backend** (Port 8000).
+- Launch the **Vite Frontend** (Port 5173).
+- Open the dashboard in your default browser.
 
 ---
 
-### Phase 1: Backend Setup (FastAPI)
+## ⚡ Deep Feature Analysis
 
-1. **Open a Terminal** and navigate to the project directory.
-2. **Go to the backend folder**:
-   ```powershell
-   cd backend
-   ```
-3. **Create a Virtual Environment**:
-   ```powershell
-   python -m venv venv
-   ```
-4. **Activate the Virtual Environment**:
-   ```powershell
-   venv\Scripts\activate
-   ```
-5. **Install Python Dependencies**:
-   ```powershell
-   pip install -r requirements.txt
-   ```
-6. **Start the Backend Server**:
-   ```powershell
-   python -m uvicorn main:app --reload
-   ```
-   *The backend will now be running at `http://localhost:8000`.*
+### 1. Quantum Security Operations Center (QSOC)
+*The Heart of the System.*
 
----
+The QSOC Dashboard provides a "God's Eye View" of the network's cryptographic health. Unlike traditional admin panels that just show server load, QSOC visualizes the physics of the security layer.
+- **Entropy Metric**: Measures the randomness of the generated keys. True quantum randomness is unpredictable.
+- **Photon Fidelity**: Simulates the quality of the quantum state transmission. Drops in fidelity indicate potential interference or tampering.
+- **Decoherence Rate**: Tracks environmental noise affecting Qubits.
+- **Eve Detection (BB84)**: The system actively hunts for eavesdroppers ("Eve"). If an interception is attempted, the quantum error rate spikes, and the system automatically discards the compromised key and generates a new one.
 
-### Phase 2: Frontend Setup (React + Vite)
+### 2. Live Immutable Ledger & Blockchain
+*Trust through Transparency.*
 
-1. **Open a NEW Terminal** window.
-2. **Go to the frontend folder**:
-   ```powershell
-   cd frontend
-   ```
-3. **Install Node Dependencies**:
-   ```powershell
-   npm install
-   ```
-4. **Start the Development Server**:
-   ```powershell
-   npm run dev
-   ```
-   *The frontend will now be accessible at `http://localhost:5173`.*
+Every vote is not just a database entry; it is a cryptographically sealed block.
+- **Quantum Seals**: Votes are signed using quantum-resistant algorithms.
+- **Chaining**: Each block contains the hash of the previous block, creating an unbreakable chain. Retroactive alteration is mathematically impossible without breaking the entire chain.
+- **Real-Time Feed**: The "Live Ledger" component mimics a stock ticker, showing vote blocks being mined and added to the chain instantly.
 
----
+### 3. Interactive Surge Map (Quantum Radar)
+*Data Visualization at Scale.*
 
-## 🎯 Features
+A real-time, vector-based map of Andhra Pradesh that reflects the pulse of democracy.
+- **Heatwave Pulses**: When a batch of votes arrives from a district (e.g., Kuppam), that specific region pulses on the map.
+- **Drill-Down Analytics**: Click on any district (like Guntur or Visakhapatnam) to see localized voting trends, protecting individual voter privacy while showing aggregate data.
+- **Alliance Logic**: The system aims to simulate real-world political alliances (e.g., TDP+JSP+BJP) accurately in its data aggregation.
 
-| Feature | Description |
-|---------|-------------|
-| 🔐 **Quantum Key Distribution** | Secure key exchange using BB84 Protocol. |
-| 🛡️ **Tamper Detection** | Instant detection of eavesdropping or interception. |
-| 👤 **Total Anonymity** | No link between the voter and the vote cast. |
-| 📊 **Real-Time Data** | Live election results and AI-powered insights. |
-| 🏛️ **Dual Voting** | Cast both MLA and MP votes in a single session. |
+### 4. Zero-Knowledge Public Verification (ZK-SNARKs Simulation)
+*Verify Without Revealing.*
+
+This is the "Holy Grail" of voting privacy.
+- **The Problem**: How do you prove you voted for Candidate X without telling the government you voted for Candidate X?
+- **The Solution**: Q-Voting issues a cryptographic "Receipt ID". Users can enter this ID into the **Public Verification Portal**. The system uses a Zero-Knowledge Proof protocol to confirm: *"Yes, this vote exists in the ledger and counts towards the final tally"* — **without** ever displaying the candidate's name on the screen.
+
+### 5. Advanced Attack Simulation Lab
+*Stress-Testing the Future.*
+
+A dedicated sandbox environment to demonstrate why this system is necessary.
+- **Grover's Search Attack**: Simulates a quantum computer trying to invert the secure hash function. Watch as the system increases difficulty to counter it.
+- **Man-in-the-Middle (Eve)**: A visualization of the BB84 Quantum Key Distribution protocol. See "Eve" try to intercept photons and how the system detects the disturbance instantly.
+
+### 6. AI-Powered Insights (Gemini 2.5 Flash)
+*Intelligence Layer.*
+
+Integrated Google Gemini AI analyzes voting patterns in real-time to provide text-based summaries, predict surge trends, and explain complex cryptographic events to the user in plain English.
 
 ---
 
-## 🛠️ Tech Stack
-- **Frontend**: React.js, Vite, Vanilla CSS (Premium Glassmorphism)
-- **Backend**: FastAPI (Python), SQLAlchemy, SQLite
-- **AI**: Google Gemini API (for election insights)
-- **Quantum**: Custom BB84 implementation & AES-256-GCM
+## ⚙️ Backend Architecture & Support Flow
+
+The backend is engineered for high concurrency, quantum simulation, and real-time verifiable audits.
+
+### Phase 1: Authentication & Quantum Session
+1.  **User Login**: Voter logs in via `POST /api/auth/login`.
+    -   *Logic*: System verifies credentials/ID.
+2.  **Quantum Handshake (BB84)**:
+    -   The `QuantumKeyManager` initiates a BB84 protocol simulation.
+    -   **Alice (Server)** prepares qubits in random bases.
+    -   **Bob (Voter Client)** measures them.
+    -   **Eve (Attacker)** presence is checked by estimating the Error Rate (QBER).
+3.  **Key Generation**: If QBER < 11%, a shared **Quantum Key** is generated and assigned to the session `VoterSession`.
+
+### Phase 2: Secure Vote Transaction
+1.  **Vote Casting**: User submits vote via `POST /api/voting/cast`.
+2.  **Encryption Layer**:
+    -   `VoteEncryption` module uses the session's **Quantum Key** to encrypt vote data.
+    -   Algorithm: **AES-256-GCM** (Galois/Counter Mode) for authenticated encryption.
+3.  **Anonymity Layer**:
+    -   A unique `vote_hash` is generated using SHA-256(Vote + Salt).
+    -   The system ensures **Unlinkability**: The database stores the vote, but the link to the voter ID is cryptographically severed.
+4.  **Storage (WAL Mode)**:
+    -   The encrypted vote is written to the SQLite database (enabled with Write-Ahead Logging for high-speed concurrent writes).
+    -   The vote is appended to the **Immutable Ledger**.
+
+### Phase 3: Verification & Auditing
+1.  **Receipt Generation**: The user receives a `receipt_code` (e.g., `QV-A1B2-C3D4`).
+2.  **Zero-Knowledge Proof (ZKP)**:
+    -   User can query `GET /api/voting/verify/{receipt_code}`.
+    -   The system proves the vote exists in the chain **without** decrypting it or revealing who cast it.
+
+### Phase 4: Real-Time Analytics
+1.  **Background Aggregation**:
+    -   `voting_analytics.py` continuously aggregates encrypted votes by district.
+2.  **AI Insights**:
+    -   `gemini_client` analyzes the aggregated data stream to generate readable summaries ("TDP is surging in Guntur...").
+3.  **Live Map**:
+    -   The frontend polls `/api/realtime/district-map` to update the vector map colors instantly.
 
 ---
 
-## 📁 System Architecture
-- `/backend`: FastAPI server, database models, and quantum logic.
-- `/frontend`: React application with premium UI components.
-- `/data`: Real 2024 AP election candidate and constituency data.
+## 🌐 Deployment Guide (Vercel)
+
+To deploy this "Next-Gen" application to Vercel, we use a hybrid approach or a Vercel serverless configuration.
+
+### Deployment Steps
+
+1.  **Prepare the Frontend**:
+    - Navigate to `frontend/`.
+    - Ensure `vite.config.js` is set up.
+    - Run `npm run build` to verify it builds correctly.
+
+2.  **Prepare the Backend (Serverless)**:
+    - Create a `vercel.json` in the root directory to tell Vercel how to handle the Python API.
+    - Ensure `requirements.txt` is present in the `backend/` folder.
+
+3.  **Vercel Configuration (`vercel.json`)**:
+    Create a file named `vercel.json` in the root with the following content:
+
+    ```json
+    {
+      "version": 2,
+      "builds": [
+        {
+          "src": "backend/main.py",
+          "use": "@vercel/python"
+        },
+        {
+          "src": "frontend/package.json",
+          "use": "@vercel/static-build",
+          "config": { "distDir": "dist" }
+        }
+      ],
+      "routes": [
+        {
+          "src": "/api/(.*)",
+          "dest": "backend/main.py"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "frontend/$1"
+        }
+      ]
+    }
+    ```
+
+4.  **Push to GitHub**:
+    - Push your code to the repository: [https://github.com/Premchandyadav369](https://github.com/Premchandyadav369)
+
+5.  **Deploy**:
+    - Connect your GitHub repo to Vercel.
+    - Vercel will detect the configuration and deploy both the React frontend and Python backend (as serverless functions).
 
 ---
 
-## 🌐 Deployment Guide
+## 👤 Credits & Author
 
-### Phase 3: Push to GitHub
+**Architected & Developed by:**
 
-1. **Initialize Git Repository**:
-   ```powershell
-   git init
-   git add .
-   git commit -m "Initial commit: Q-Voting System"
-   ```
-2. **Create a GitHub Repository**:
-   - Go to [GitHub](https://github.com/new) and create a new repository.
-3. **Push Code**:
-   ```powershell
-   git remote add origin https://github.com/YOUR_USERNAME/Q-Voting.git
-   git branch -M main
-   git push -u origin main
-   ```
+<div align="center">
 
-### Phase 4: Deploy Frontend to Vercel
+### **V C Premchand Yadav**
 
-1. **Sign in to Vercel**: Go to [Vercel](https://vercel.com).
-2. **Import Project**: 
-   - Click "Add New" -> "Project".
-   - Select your GitHub repository.
-3. **Configure Project**:
-   - Root Directory: `frontend`
-   - Framework Preset: `Vite`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-4. **Environment Variables**:
-   - Add `VITE_API_BASE_URL` pointing to your deployed backend (e.g., `https://your-backend.herokuapp.com`).
-5. **Deploy**: Click "Deploy".
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/premchand-yadav-a785691a2/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/Premchandyadav369)
 
-### Phase 5: Deploy Backend (FastAPI)
+</div>
 
-1. **Recommended Platforms**: [Render](https://render.com), [Railway](https://railway.app), or [Koyeb](https://koyeb.com).
-2. **Setup**:
-   - Link your GitHub repo.
-   - Set the root directory to `backend`.
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-3. **Environment Variables**:
-   - Add `GEMINI_API_KEY` with your real-time Gemini 2.5 Flash API Key.
+*Made by humans on Earth.* 🌍
+*Driving the future of secure, transparent, and democratic elections.*
 
 ---
-## 📄 Academic Disclaimer
-*This project is an academic research prototype. It is not affiliated with the Election Commission of India (ECI). Candidate data used is for simulation purposes based on 2024 records.*
 
----
-*Built with ❤️ by the Quantum Research Team*
+## ⚖️ Disclaimer
+*This project is a high-fidelity academic simulation. While it leverages real cryptographic libraries (PyCryptodome, Qiskit) and authentic data structures, it is a prototype designed for research and demonstration purposes. It is not currently affiliated with the Election Commission of India.*

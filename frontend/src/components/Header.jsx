@@ -20,34 +20,39 @@ function Header({ session, onLogout }) {
                         </div>
                     </Link>
                     <nav className="header-nav">
-                        <Link to="/">{t('home') || 'Home'}</Link>
-                        <Link to="/features">✨ Features</Link>
-                        <Link to="/vote">{t('start_voting') || 'Vote'}</Link>
-                        <Link to="/dashboard">🗺️ {t('live_map') || 'Live Map'}</Link>
-                        <Link to="/admin">{t('results') || 'Results'}</Link>
-                        <Link to="/analytics">📊 {t('analytics') || 'Analytics'}</Link>
+                        <Link to="/">{t('home')?.toUpperCase() || 'HOME'}</Link>
+                        <Link to="/features">✨ FEATURES</Link>
+                        <Link to="/vote">🗳️ VOTE</Link>
+                        <Link to="/verify">🔐 VERIFY</Link>
+                        <Link to="/dashboard">🗺️ RADAR</Link>
+                        <Link to="/governance">🧠 GOVERNANCE</Link>
+                        <Link to="/digital-twin">⏪ REPLAY</Link>
+                        <Link to="/analytics">📊 ANALYTICS</Link>
+                        <Link to="/explanation">📖 DOCS</Link>
 
-                        {/* Theme Toggle */}
-                        <button
-                            onClick={cycleTheme}
-                            className="theme-toggle-btn"
-                            title={`Theme: ${themes[theme].name}`}
-                            style={{
-                                padding: '6px 12px',
-                                borderRadius: '8px',
-                                border: '1px solid var(--glass-border)',
-                                background: 'var(--bg-glass)',
-                                color: 'var(--text-main)',
-                                cursor: 'pointer',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '6px',
-                                fontSize: '14px',
-                                transition: 'all 0.2s ease'
-                            }}
-                        >
-                            {themes[theme].icon} {themes[theme].name}
-                        </button>
+                        {/* Theme Picker Dropdown */}
+                        <div className="theme-picker" style={{ marginLeft: '12px', display: 'flex', gap: '4px' }}>
+                            {Object.entries(themes).map(([key, config]) => (
+                                <button
+                                    key={key}
+                                    onClick={() => setTheme(key)}
+                                    title={config.name}
+                                    style={{
+                                        padding: '6px',
+                                        borderRadius: '6px',
+                                        border: theme === key ? '2px solid var(--primary-600)' : '1px solid var(--glass-border)',
+                                        background: theme === key ? 'var(--primary-600)' : 'var(--bg-glass)',
+                                        color: 'var(--text-main)',
+                                        cursor: 'pointer',
+                                        fontSize: '16px',
+                                        transition: 'all 0.2s ease',
+                                        opacity: theme === key ? 1 : 0.7
+                                    }}
+                                >
+                                    {config.icon}
+                                </button>
+                            ))}
+                        </div>
 
                         <div className="lang-selector" style={{ marginLeft: '8px' }}>
                             <select

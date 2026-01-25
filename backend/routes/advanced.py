@@ -12,7 +12,10 @@ from pydantic import BaseModel
 from typing import Optional
 
 from quantum.analytics import attack_simulator, audit_trail, voting_analytics
+from quantum.qiskit_utils import qiskit_bb84
 from utils.ai import gemini_client
+import asyncio
+import random
 
 router = APIRouter(prefix="/advanced", tags=["Advanced Features"])
 
@@ -57,6 +60,9 @@ async def simulate_attack(request: AttackSimulationRequest):
         result = attack_simulator.simulate_pns_attack(multi_photon_rate)
     elif attack_type == "replay":
         result = attack_simulator.simulate_replay_attack()
+    elif attack_type == "grover_attack":
+        qubits = params.get("qubits", 128)
+        result = attack_simulator.simulate_grover_attack(qubits)
     else:
         raise HTTPException(status_code=400, detail=f"Unknown attack type: {attack_type}")
     
@@ -240,6 +246,29 @@ async def get_ai_insights():
     }
 
 
+@router.get("/analytics/integrity-report")
+async def get_integrity_report():
+    """Generate a formal AI-powered election integrity report"""
+    from routes.security import get_quantum_metrics, get_governance_alerts
+    
+    # Aggregate health data
+    metrics = await get_quantum_metrics()
+    alerts = await get_governance_alerts()
+    
+    health_data = {
+        "quantum_metrics": metrics,
+        "governance_anomalies": alerts,
+        "timestamp": datetime.utcnow().isoformat()
+    }
+    
+    report = await gemini_client.generate_integrity_report(health_data)
+    
+    return {
+        "report": report,
+        "generated_at": datetime.utcnow().isoformat()
+    }
+
+
 # ==================== Multi-Language Support ====================
 
 TRANSLATIONS = {
@@ -404,3 +433,139 @@ async def get_detailed_health():
         }
     finally:
         db.close()
+
+
+# ==================== Batch Simulation & Qiskit Benchmarks ====================
+
+
+class SimulationBatchRequest(BaseModel):
+    num_voters: int = 10
+    district: Optional[str] = "Guntur"
+    constituency_ids: Optional[list[int]] = None
+
+
+@router.post("/simulate/batch")
+async def run_simulation_batch(request: SimulationBatchRequest):
+    """
+    Run a batch of realistic voting simulations across all districts.
+    """
+    from models.database import SessionLocal, Constituency, Candidate, Vote
+    import secrets
+    
+    num_voters = request.num_voters
+    target_ids = request.constituency_ids
+    
+    db = SessionLocal()
+    try:
+        # Get constituencies based on targets or state-wide
+        if target_ids:
+            mla_consts = db.query(Constituency).filter(Constituency.election_type == 'MLA', Constituency.id.in_(target_ids)).all()
+            mp_consts = db.query(Constituency).filter(Constituency.election_type == 'MP', Constituency.id.in_(target_ids)).all()
+            
+            # If no targeted MLA/MP found in selection, fallback or adjust (at least one must exist)
+            if not mla_consts and not mp_consts:
+                 raise HTTPException(status_code=400, detail="No valid constituencies found in selection")
+        else:
+            mla_consts = db.query(Constituency).filter(Constituency.election_type == 'MLA').all()
+            mp_consts = db.query(Constituency).filter(Constituency.election_type == 'MP').all()
+        
+        if not mla_consts and not target_ids:
+             raise HTTPException(status_code=500, detail="MLA Constituencies not initialized")
+        if not mp_consts and not target_ids:
+             raise HTTPException(status_code=500, detail="MP Constituencies not initialized")
+
+        # Map constituency to candidates for faster access
+        cand_map = {}
+        all_cands = db.query(Candidate).all()
+        for cand in all_cands:
+            if cand.constituency_id not in cand_map:
+                cand_map[cand.constituency_id] = []
+            cand_map[cand.constituency_id].append(cand)
+
+        success_count = 0
+        votes_to_add = []
+        
+        # Prepare selection pools
+        target_lists = []
+        if mla_consts:
+            target_lists.append(mla_consts)
+        if mp_consts:
+            target_lists.append(mp_consts)
+
+        success_count = 0
+        votes_buffer = []
+        BATCH_SIZE = 5000
+        
+        for i in range(num_voters):
+            # For each voter, we iterate through available election types (MLA and/or MP)
+            # This handles cases where user selects ONLY MLAs or ONLY MPs
+            
+            # Simulated bias (70% Alliance - NDA/Kutami)
+            bias = random.random()
+            
+            def select_candidate(const_id):
+                cands = cand_map.get(const_id, [])
+                if not cands: return None
+                
+                alliance = [c for c in cands if c.party_short in ['TDP', 'JSP', 'BJP']]
+                ysrcp = [c for c in cands if c.party_short == 'YSRCP']
+                
+                if bias < 0.7 and alliance:
+                    return random.choice(alliance)
+                elif bias < 0.9 and ysrcp:
+                    return random.choice(ysrcp)
+                else:
+                    return random.choice(cands)
+
+            for const_list in target_lists:
+                if not const_list: continue
+                
+                # Pick one constituency from this list (MLA or MP list)
+                selected_const = random.choice(const_list)
+                
+                cand = select_candidate(selected_const.id)
+                if cand:
+                    vote = Vote(
+                        constituency_id=selected_const.id,
+                        candidate_id=cand.id,
+                        encrypted_vote=f"ENC-{secrets.token_hex(16)}",
+                        vote_hash=secrets.token_hex(32)
+                    )
+                    votes_buffer.append(vote)
+                    success_count += 1
+            
+            # Bulk Insert in chunks
+            if len(votes_buffer) >= BATCH_SIZE:
+                db.bulk_save_objects(votes_buffer)
+                db.commit()
+                votes_buffer = []
+        
+        # Insert remaining
+        if votes_buffer:
+            db.bulk_save_objects(votes_buffer)
+            db.commit()
+        
+        # Log to audit trail
+        audit_trail.add_action("BATCH_SIMULATION_SCALED", {
+            "num_voters": num_voters,
+            "total_votes_cast": success_count,
+            "distribution": "Targeted" if target_ids else "State-wide"
+        })
+        
+        return {"success": True, "voters_simulated": num_voters, "total_votes": success_count}
+    finally:
+        db.close()
+
+
+@router.get("/quantum/benchmarks")
+async def get_quantum_benchmarks():
+    """
+    Retrieve authentic quantum metrics from the Qiskit simulation backend.
+    """
+    metrics = qiskit_bb84.get_benchmark_metrics()
+
+    # Get AI Insights for these metrics
+    ai_insight = await gemini_client.generate_quantum_insights(metrics)
+    metrics["ai_insight"] = ai_insight
+
+    return metrics

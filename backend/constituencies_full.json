@@ -1,0 +1,1381 @@
+[
+    {
+        "name": "Name",
+        "district": "District",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "Reserved for"
+    },
+    {
+        "name": "Ichchapuram",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Palasa",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tekkali",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pathapatnam",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Srikakulam",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Amadalavalasa",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Etcherla",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Narasannapeta",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Rajam",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Palakonda",
+        "district": "Parvathipuram Manyam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Kurupam",
+        "district": "Parvathipuram Manyam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Parvathipuram",
+        "district": "Parvathipuram Manyam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Salur",
+        "district": "Parvathipuram Manyam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Bobbili",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Cheepurupalli",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gajapathinagaram",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Nellimarla",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Vizianagaram",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Srungavarapukota",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Bhimili",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Visakhapatnam East",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Visakhapatnam South",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Visakhapatnam North",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Visakhapatnam West",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gajuwaka",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Chodavaram",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Madugula",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Araku Valley",
+        "district": "Alluri Sitharama Raju",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Paderu",
+        "district": "Alluri Sitharama Raju",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Anakapalle",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pendurthi",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Elamanchili",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Payakaraopet",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Narsipatnam",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tuni",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Prathipadu",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pithapuram",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kakinada Rural",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Peddapuram",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Anaparthy",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kakinada City",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Ramachandrapuram",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Mummidivaram",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Amalapuram",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Razole",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Gannavaram",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Kothapeta",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Mandapeta",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Rajanagaram",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Rajahmundry City",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Rajahmundry Rural",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Jaggampeta",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Rampachodavaram",
+        "district": "Alluri Sitharama Raju",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Kovvur",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Nidadavole",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Achanta",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Palakollu",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Narasapuram",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Bhimavaram",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Undi",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tanuku",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tadepalligudem",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Unguturu",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Denduluru",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Eluru",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gopalapuram",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Polavaram",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "ST"
+    },
+    {
+        "name": "Chintalapudi",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Tiruvuru",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Nuzvid",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gannavaram",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gudivada",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kaikalur",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pedana",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Machilipatnam",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Avanigadda",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pamarru",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Penamaluru",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Vijayawada West",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Vijayawada Central",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Vijayawada East",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Mylavaram",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Nandigama",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Jaggayyapeta",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pedakurapadu",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tadikonda",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Mangalagiri",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Ponnuru",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Vemuru",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Repalle",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tenali",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Bapatla",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Prathipadu",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Guntur West",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Guntur East",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Chilakaluripet",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Narasaraopet",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Sattenapalle",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Vinukonda",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gurajala",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Macherla",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Yerragondapalem",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Darsi",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Parchur",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Addanki",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Chirala",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Santhanuthalapadu",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Ongole",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kandukur",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kondapi",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Markapuram",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Giddalur",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kanigiri",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kavali",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Atmakur",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kovur",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Nellore City",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Nellore Rural",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Sarvepalli",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Gudur",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Sullurpeta",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Venkatagiri",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Udayagiri",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Badvel",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Rajampet",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kadapa",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kodur",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Rayachoti",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pulivendla",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kamalapuram",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Jammalamadugu",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Proddatur",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Mydukur",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Allagadda",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Srisailam",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Nandikotkur",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Kurnool",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Panyam",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Nandyal",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Banaganapalle",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Dhone",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pattikonda",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kodumur",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Yemmiganur",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Mantralayam",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Adoni",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Alur",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Rayadurg",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Uravakonda",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Guntakal",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tadipatri",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Singanamala",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Anantapur Urban",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kalyandurg",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Raptadu",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Madakasira",
+        "district": "Sri Sathya Sai",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Hindupur",
+        "district": "Sri Sathya Sai",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Penukonda",
+        "district": "Sri Sathya Sai",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Puttaparthi",
+        "district": "Sri Sathya Sai",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Dharmavaram",
+        "district": "Sri Sathya Sai",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Kadiri",
+        "district": "Sri Sathya Sai",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Thamballapalle",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Pileru",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Madanapalle",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Punganur",
+        "district": "Chittoor",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Chandragiri",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Tirupati",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Srikalahasti",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Sathyavedu",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "SC"
+    },
+    {
+        "name": "Nagari",
+        "district": "Chittoor",
+        "state": "Andhra Pradesh",
+        "election_type": "MLA",
+        "reserved": "None"
+    },
+    {
+        "name": "Lok Sabha Constituency",
+        "district": "District",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Srikakulam",
+        "district": "Srikakulam",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Vizianagaram",
+        "district": "Vizianagaram",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Araku",
+        "district": "Parvathipuram Manyam",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Visakhapatnam",
+        "district": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Anakapalli",
+        "district": "Anakapalli",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Kakinada",
+        "district": "Kakinada",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Rajahmundry",
+        "district": "East Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Amalapuram",
+        "district": "Konaseema",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Narasapuram",
+        "district": "West Godavari",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Eluru",
+        "district": "Eluru",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Vijayawada",
+        "district": "NTR",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Machilipatnam",
+        "district": "Krishna",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Narasaraopet",
+        "district": "Palnadu",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Guntur",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Bapatla",
+        "district": "Bapatla",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Ongole",
+        "district": "Prakasam",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Nellore",
+        "district": "Nellore",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Tirupati",
+        "district": "Tirupati",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Kadapa",
+        "district": "YSR Kadapa",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Rajampet",
+        "district": "Annamayya",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Nandyal",
+        "district": "Nandyal",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Kurnool",
+        "district": "Kurnool",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Anantapur",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Hindupur",
+        "district": "Ananthapuramu",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    },
+    {
+        "name": "Chittoor",
+        "district": "Chittoor",
+        "state": "Andhra Pradesh",
+        "election_type": "MP",
+        "reserved": "None"
+    }
+]

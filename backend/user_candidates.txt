@@ -1,0 +1,205 @@
+Constituency	YSRCP	Kutami	INDIA
+No.	Name	Party	Candidate[18][19]	Party	Candidate[20]	Party	Candidate[21][22]
+Srikakulam	1	Ichchapuram		YSRCP	Piriya Vijaya		TDP	Bendalam Ashok		INC	Masupatri Chakravarthy Reddy
+2	Palasa		YSRCP	Seediri Appalaraju		TDP	Gouthu Sireesha		INC	Majji Trinadh Babu
+3	Tekkali		YSRCP	Duvvada Srinivas		TDP	Kinjarapu Atchannaidu		INC	Killi Kruparani
+4	Pathapatnam		YSRCP	Reddy Shanthi		TDP	Mamidi Govinda Rao		INC	Koppurothu Venkata Rao
+5	Srikakulam		YSRCP	Dharmana Prasada Rao		TDP	Gondu Shankar		INC	Ambati Krishna Rao
+6	Amadalavalasa		YSRCP	Thammineni Seetharam		TDP	Koona Ravi Kumar		INC	Sannapala Annajirao
+7	Etcherla		YSRCP	Gorle Kiran Kumar		BJP	Nadikuditi Eswara Rao		INC	Karimajji Malleswar Rao
+8	Narasannapeta		YSRCP	Dharmana Krishna Das		TDP	Baggu Ramana Murthy		INC	Mantri Narasimha Murthy
+Vizianagaram	9	Rajam (SC)		YSRCP	Tale Rajesh		TDP	Kondru Murali Mohan		INC	Kambala Rajavardhan
+Parvathipuram Manyam	10	Palakonda (ST)		YSRCP	Viswasarayi Kalavathi		JSP	Nimmaka Jaya Krishna		INC	Sarava Chanti Babu
+11	Kurupam (ST)		YSRCP	Pamula Pushpa Sreevani		TDP	Toyaka Jagadeeswari		CPI(M)	M. Ramana
+12	Parvathipuram (SC)		YSRCP	Alajangi Jogarao		TDP	Bonela Vijay Chandra		INC	Battina Mohan Rao
+13	Salur (ST)		YSRCP	Peedika Rajanna Dora		TDP	Gummidi Sandhyarani		INC	Muvvala Pushpa Rao
+Vizianagaram	14	Bobbili		YSRCP	Sambangi Venkata China Appalanaidu		TDP	Ravu Venkata Swetha Kumara Krishna Ranga Rao (BabyNayana)		INC	Maripi Vidyasagar
+15	Cheepurupalli		YSRCP	Botcha Satyanarayana		TDP	Kimidi Kala Venkat Rao		INC	Aadi Narayana Jammu
+16	Gajapathinagaram		YSRCP	Botcha Appalanarasayya		TDP	Kondapalli Srinivas		INC	Dola Srinivas
+17	Nellimarla		YSRCP	Baddukonda Appala Naidu		JSP	Lokam Naga Madhavi		INC	Saragada Ramesh Kumar
+18	Vizianagaram		YSRCP	Kolagatla Veerabhadra Swamy		TDP	Pusapati Aditi Vijayalakshmi Gajapathi Raju		INC	Satish Kumar Sunkari
+19	Srungavarapukota		YSRCP	Kadubandi Srinivasa Rao		TDP	Kolla Lalitha Kumari		INC	Gedela Tirupathi
+Visakhapatnam	20	Bhimili		YSRCP	Muttamsetti Srinivasa Rao		TDP	Ganta Srinivasa Rao		INC	Addala Venkata Varma Raju
+21	Visakhapatnam East		YSRCP	M. V. V. Satyanarayana		TDP	Velagapudi Ramakrishna Babu		INC	Guthula Srinivas Rao
+22	Visakhapatnam South		YSRCP	Vasupalli Ganesh Kumar		JSP	Vamsi Krishna Srinivas		INC	Vasupalli Santosh
+23	Visakhapatnam North		YSRCP	Kammila Kannaparaju		BJP	Penmetsa Vishnu Kumar Raju		INC	Lakkaraju Rama Rao
+24	Visakhapatnam West		YSRCP	Adari Anand Kumar		TDP	P. G. V. R. Naidu		CPI	Attili Vimala
+25	Gajuwaka		YSRCP	Gudivada Amarnath		TDP	Palla Srinivas Rao Yadav		CPI(M)	Maradana Jaggunaidu
+Anakapalli	26	Chodavaram		YSRCP	Karanam Dharmasri		TDP	Kalidindi Suryana Naga Sanyasi Raju		INC	Jagat Srinivas
+27	Madugula		YSRCP	Eerli Anuradha		TDP	Bandaru Satyanarayana Murthy		INC	BBS Srinivas Rao
+Alluri Sitharama Raju	28	Araku Valley (ST)		YSRCP	Regam Mathsyalingam		BJP	Pangi Rajarao		INC	Setti Gangadharaswamy
+29	Paderu (ST)		YSRCP	M. Visweswara Raju		TDP	Giddi Eswari		INC	Sataka Bullibabu
+Anakapalli	30	Anakapalli		YSRCP	Malasala Bharath Kumar		JSP	Konathala Ramakrishna		INC	Illa Rama Gangadhara Rao
+Visakhapatnam	31	Pendurthi		YSRCP	Annamreddy Adeep Raj		JSP	Panchakarla Ramesh Babu		INC	Piridi Bhagat
+Anakapalli	32	Elamanchili		YSRCP	Kanna Babu		JSP	Sundarapu Vijay Kumar		INC	Tar Narsing Rao
+33	Payakaraopet (SC)		YSRCP	Kambala Jogulu		TDP	Vangalapudi Anitha		INC	Boni Tata Rao
+34	Narsipatnam		YSRCP	Uma Shankar Ganesh		TDP	Chintakayala Ayyanna Patrudu		INC	Ruthala Sriramamurthy
+Kakinada	35	Tuni		YSRCP	Dadisetty Raja		TDP	Yanamala Divya		INC	Gelam Srinivasa Rao
+36	Prathipadu (Kakinada)		YSRCP	Varupula Subbarao		TDP	Varupula Satya Prabha		INC	N. V. V. Satyanarayana
+37	Pithapuram		YSRCP	Vanga Geetha		JSP	Pawan Kalyan		INC	Madepalli Satyananda Rao
+38	Kakinada Rural		YSRCP	Kurasala Kannababu		JSP	Pantham Venkateswara Rao		INC	Pilli Satya Lakshmi
+39	Peddapuram		YSRCP	Davuluru Dora Babu		TDP	Nimmakayala Chinarajappa		INC	Dorababu Tummala
+East Godavari	40	Anaparthy		YSRCP	Sathi Suryanarayana Reddy		BJP	Nallamilli Ramakrishna Reddy		INC	Yella Srinivasa Rao
+Kakinada	41	Kakinada City		YSRCP	Dwarampudi Chandrasekhar Reddy		TDP	Vanamadi Venkateswara Rao		INC	Chekka Nookaraju
+Konaseema	42	Ramachandrapuram		YSRCP	Pilli Surya Prakash		TDP	Vasamsetti Subhash		INC	Kota Srinivasa Rao
+43	Mummidivaram		YSRCP	Ponnada Venkata Satish Kumar		TDP	Datla Subbaraju		INC	Palepu Dharma Rao
+44	Amalapuram (SC)		YSRCP	Pinipe Viswarup		TDP	Aithabathula Anandarao		INC	Aithabathula Subhashini
+45	Razole (SC)		YSRCP	Gollapalli Surya Rao		JSP	Deva Varaprasad		INC	Sarella Prasanna Kumar
+46	Gannavaram (Konaseema) (SC)		YSRCP	Vipparthi Venugopal Rao		JSP	Giddi Satyanarayana		INC	Kondeti Chittibabu
+47	Kothapeta		YSRCP	Chirla Jaggi Reddy		TDP	Bandaru Satyananda Rao		INC	Routhu Eswara Rao
+48	Mandapeta		YSRCP	Thota Trimurthulu		TDP	V. Jogeswara Rao		INC	Kamana Prabhakara Rao
+East Godavari	49	Rajanagaram		YSRCP	Jakkampudi Raja		JSP	Battula Balarama Krishna		INC	Mundru Venkata Srinivas
+50	Rajahmundry City		YSRCP	Margani Bharat		TDP	Adireddy Vasu		INC	Boda Lakshmi Venkata Prasanna
+51	Rajahmundry Rural		YSRCP	C. S. Venugopala Krishna		TDP	Gorantla Butchaiah Chowdary		INC	Balepalli Muralidhar
+Kakinada	52	Jaggampeta		YSRCP	Thota Narasimham		TDP	Jyothula Nehru		INC	Marothi VV Ganeswara Rao
+Alluri Sitharama Raju	53	Rampachodavaram (ST)		YSRCP	Nagulapalli Dhanalakshmi		TDP	Miryala Sirisha Devi		CPI(M)	Lotha Rama Rao
+East Godavari	54	Kovvur (SC)		YSRCP	Talari Venkat Rao		TDP	Muppidi Venkateswara Rao		INC	Arigela Aruna Kumari
+55	Nidadavole		YSRCP	G. Srinivas Naidu		JSP	Kandula Durgesh		INC	Peddireddi Subba Rao
+West Godavari	56	Achanta		YSRCP	Cherukuvada Sri Ranganadha Raju		TDP	Pithani Satyanarayana		INC	Nekkanti Venkata Satyanarayana
+57	Palakollu		YSRCP	Gudala Gopi		TDP	Nimmala Rama Naidu		INC	Kolukuluri Arjun Rao
+58	Narasapuram		YSRCP	Mudunuri Prasad Raju		JSP	Bommidi Nayakar		INC	Kanuri Udaya Baskara Krishna Prasad
+59	Bhimavaram		YSRCP	Grandhi Srinivas		JSP	Pulaparthi Ramanjaneyulu		INC	Ankem Seetaramu
+60	Undi		YSRCP	P. V. L. Narasimha Raju		TDP	Raghu Rama Krishna Raju		INC	Vegesha Venkata Gopala Krishnam
+61	Tanuku		YSRCP	Karumuri Venkata Nageswara Rao		TDP	Arimilli Radha Krishna		INC	Kadali Rama Rao
+62	Tadepalligudem		YSRCP	Kottu Satyanarayana		JSP	Bolisetti Srinivas		INC	Marneedi Sekhar
+Eluru	63	Unguturu		YSRCP	Puppala Vasubabu		JSP	Patsmatla Dharmaraju		INC	Pathapati Hari Kumara Raju
+64	Denduluru		YSRCP	Kotaru Abbaya Chowdary		TDP	Chintamaneni Prabhakar		INC	Alapati Narasimha Murthy
+65	Eluru		YSRCP	Alla Kali Krishna Srinivas		TDP	Badeti Radha Krishna		CPI	Bandi Venkateswara Rao
+East Godavari	66	Gopalapuram (SC)		YSRCP	Taneti Vanitha		TDP	Maddipati Venkata Raju		INC	Sodadasi Martin Luther
+Eluru	67	Polavaram (ST)		YSRCP	Tellam Rajyalakshmi		JSP	Chirri Balaraju		INC	Srujana Duvvela
+68	Chintalapudi (SC)		YSRCP	Kambham Vijayaraju		TDP	Songa Roshan		INC	Vunnamatla Rakada Eliza
+NTR	69	Tiruvuru (SC)		YSRCP	Nallagatla Swamy Das		TDP	Kolikapudi Srinivasa Rao		INC	Lam Thantiya Kumari
+Eluru	70	Nuzvid		YSRCP	Meka Venkata Pratap Apparao		TDP	Kolusu Parthasarathy		INC	Krishna Maridu
+Krishna	71	Gannavaram (Krishna)		YSRCP	Vallabhaneni Vamsi Mohan		TDP	Yarlagadda Venkata Rao		CPI(M)	K. Venkateswara Rao
+72	Gudivada		YSRCP	Kodali Sri Venkateswara Rao		TDP	Venigandla Ramu		INC	Vaddadi Govinda Rao
+Eluru	73	Kaikalur		YSRCP	Dulam Nageswara Rao		BJP	Kamineni Srinivas		INC	Boddu Noble
+Krishna	74	Pedana		YSRCP	Uppala Ramu		TDP	Kagitha Krishna Prasad		INC	Sonti Nagaraju
+75	Machilipatnam		YSRCP	Perni Krishnamurthy		TDP	Kollu Ravindra		INC	Abdul Mateen
+76	Avanigadda		YSRCP	Simhadri Ramesh Babu		JSP	Mandali Buddha Prasad		INC	Andee Srirama Murthy
+77	Pamarru (SC)		YSRCP	Kaile Anil Kumar		TDP	Varla Kumar Raja		INC	D. Y. Das
+78	Penamaluru		YSRCP	Jogi Ramesh		TDP	Bode Prasad		INC	Elisala Subrahmanyam
+NTR	79	Vijayawada West		YSRCP	Shaik Asif		BJP	Sujana Chowdary		CPI	G. Koteswara Rao
+80	Vijayawada Central		YSRCP	Vellampalli Srinivas		TDP	Bonda Umamaheswara Rao		CPI(M)	Ch. Babu Rao
+81	Vijayawada East		YSRCP	Devineni Avinash		TDP	Gadde Rama Mohan		INC	Pongupati Nancharayya
+82	Mylavaram		YSRCP	Sarnala Tirupathi Rao Yadav		TDP	Vasantha Krishna Prasad		INC	Borra Kiran
+83	Nandigama (SC)		YSRCP	Monditoka Jagan Mohana Rao		TDP	Tangirala Sowmya		INC	Manda Vajraiah
+84	Jaggayyapeta		YSRCP	Samineni Udaya Bhanu		TDP	Sreeram Rajagopal Tataiah		INC	Karnati Apparao
+Palnadu	85	Pedakurapadu		YSRCP	Namburu Sankar Rao		TDP	Bhashyam Praveen		INC	Pamidi Nageshwar Rao
+Guntur	86	Tadikonda (SC)		YSRCP	Mekathoti Sucharitha		TDP	Tenali Sravan Kumar		INC	Manichala Sushil Raja
+87	Mangalagiri		YSRCP	Murugudu Lavanya		TDP	Nara Lokesh		CPI(M)	Jonna Shiva Shankar
+88	Ponnuru		YSRCP	Ambati Murali		TDP	Dhulipalla Narendra Kumar		INC	Jakka Ravindra Nath
+Bapatla	89	Vemuru (SC)		YSRCP	Varikuti Ashok Babu		TDP	Nakka Ananda Babu		INC	Buraga Subba Rao
+90	Repalle		YSRCP	Evuru Ganesh		TDP	Anagani Satya Prasad		INC	Mopidevi Srinivas Rao
+Guntur	91	Tenali		YSRCP	Annabathuni Siva Kumar		JSP	Nadendla Manohar		INC	Chandu Sambasivudu
+Bapatla	92	Bapatla		YSRCP	Kona Raghupathi		TDP	Vegesana Narendra Varma Raju		INC	Ganta Anji Babu
+Guntur	93	Prathipadu (Guntur) (SC)		YSRCP	Balasani Kiran Kumar		TDP	Burla Ramanjaneyulu		INC	Korivi Vinaya Kumar
+94	Guntur West		YSRCP	Vidadala Rajini		TDP	Piduguralla Madhavi		INC	Dr. Rajachakonda John Babu
+95	Guntur East		YSRCP	Shaik Noori Fathima		TDP	Muhammad Nazeer Khan		INC	Shaik Mastan Valli
+Palnadu	96	Chilakaluripet		YSRCP	K. Manohar Naidu		TDP	Prathipati Pulla Rao		INC	Maddula Radha Krishna
+97	Narasaraopeta		YSRCP	Gopireddy Srinivasa Reddy		TDP	Chadalavada Aravinda Babu		INC	Shaik Mahaboob Basha
+98	Sattenapalle		YSRCP	Ambati Rambabu		TDP	Kanna Lakshminarayana		INC	Chandra Paul Chukka
+99	Vinukonda		YSRCP	Bolla Brahma Naidu		TDP	G. V. Anjaneyulu		INC	Chenna Srinivas Rao
+100	Gurajala		YSRCP	Kasu Mahesh Reddy		TDP	Yarapathineni Srinivasa Rao		INC	Tiyyagura Yalamanda Reddy
+101	Macherla		YSRCP	Pinnelli Rama Krishna Reddy		TDP	Julakanti Brahmananda Reddy		INC	Yeramala Ramachandra Reddy
+Prakasam	102	Yerragondapalem (SC)		YSRCP	Tatiparthi Chandrasekhar		TDP	Guduri Erixion Babu		INC	Budhala Ajitha Rao
+103	Darsi		YSRCP	Buchepalli Siva Prasad Reddy		TDP	Gottipati Lakshmi		INC	Putluri Konda Reddy
+Bapatla	104	Parchur		YSRCP	Yadam Balaji		TDP	Yeluri Sambasiva Rao		INC	Nallagorla Siva Srilakshmi Jyothi
+105	Addanki		YSRCP	Panem Hanimi Reddy		TDP	Gottipati Ravikumar		INC	Adusumalli Kishore Babu
+106	Chirala		YSRCP	Karanam Venkatesh		TDP	Madduluri Malakondaiah Yadav		INC	Amanchi Krishna Mohan
+Prakasam	107	Santhanuthalapadu (SC)		YSRCP	Merugu Nagarjuna		TDP	B. N. Vijay Kumar		INC	Vijesh Raj Palaparthi
+108	Ongole		YSRCP	Balineni Srinivasa Reddy		TDP	Damacharla Janardhana Rao		INC	Turakapalli Nagalakshmi
+Nellore	109	Kandukur		YSRCP	Burra Madhu Sudhan Yadav		TDP	Inturi Nageswara Rao		INC	Sayed Gouse Mohiddin
+Prakasam	110	Kondapi (SC)		YSRCP	Audimulapu Suresh		TDP	Dola Sree Bala Veeranjaneya Swamy		INC	Pasumarthi Sudhakar
+111	Markapuram		YSRCP	Anna Rambabu		TDP	Kandula Narayana Reddy		INC	Javeed Anwar
+112	Giddalur		YSRCP	K. P. Nagarjuna Reddy		TDP	Muthumula Ashok Reddy		INC	Pagadala Pedda Rangaswamy
+113	Kanigiri		YSRCP	Daddala Narayana Yadav		TDP	Mukku Ugra Narasimha Reddy		INC	Deverapalli Subbareddy
+Nellore	114	Kavali		YSRCP	Ramireddy Pratap Kumar Reddy		TDP	Kavya Krishna Reddy		INC	Podalakuri Kalyan
+115	Atmakur		YSRCP	Mekapati Vikram Reddy		TDP	Anam Ramanarayana Reddy		INC	Chevuru Sreedhara Reddy
+116	Kovur		YSRCP	Nallapareddy Prasanna Kumar Reddy		TDP	Vemireddy Prashanti Reddy		INC	Nebrambaka Mohan
+117	Nellore City		YSRCP	Mohammad Khaleel		TDP	Ponguru Narayana		CPI(M)	M. Ramesh
+118	Nellore Rural		YSRCP	Adala Prabhakara Reddy		TDP	Kotamreddy Sridhar Reddy		INC	Shaik Fayaz
+119	Sarvepalli		YSRCP	Kakani Govardhan Reddy		TDP	Somireddy Chandra Mohan Reddy		INC	P.V. Srikanth Reddy
+Tirupati	120	Gudur (SC)		YSRCP	Meruga Murali		TDP	Pasam Sunil Kumar		INC	U Ramakrishna Rao
+121	Sullurpeta (SC)		YSRCP	Kiliveti Sanjeevaiah		TDP	Nelavala Vijayasree		INC	Chandanamudi Shiva
+122	Venkatagiri		YSRCP	Nedurumalli Ramkumar Reddy		TDP	Korugondla Ramakrishna		INC	Panta Srinivasulu
+Nellore	123	Udayagiri		YSRCP	Mekapati Rajagopal Reddy		TDP	Kakarla Suresh		INC	Somu Anilkumar Reddy
+Kadapa	124	Badvel (SC)		YSRCP	Dasari Sudha		BJP	Bojja Roshanna		INC	Neerugattu Dora Vijaya Jyothi
+Annamayya	125	Rajampet		YSRCP	Akepati Amarnath Reddy		TDP	Sugavasi Subramanyam		CPI	Bhukya Viswanath Naik
+Kadapa	126	Kadapa		YSRCP	Amzath Basha Shaik Bepari		TDP	Reddeppagari Madhavi Reddy		INC	Tumman Kalyal Aszal Alikhan
+Annamayya	127	Kodur (SC)		YSRCP	Koramutla Srinivasulu		JSP	Arava Sreedhar		INC	Gosala Devi
+128	Rayachoti		YSRCP	Gadikota Srikanth Reddy		TDP	Mandipalli Ramprasad Reddy		INC	Shaik Alla Bakash
+Kadapa	129	Pulivendla		YSRCP	Y. S. Jagan Mohan Reddy		TDP	Mareddy Ravindranatha Reddy		INC	Mulam Reddy Dhruva Kumar Reddy
+130	Kamalapuram		YSRCP	Pochimareddy Ravindranath Reddy		TDP	Putha Krishna Chaitanya Reddy		CPI	Gali Chandra
+131	Jammalamadugu		YSRCP	Mule Sudheer Reddy		BJP	C. Adinarayana Reddy		INC	Brahmanareddy Pamula
+132	Proddatur		YSRCP	Rachamallu Siva Prasad Reddy		TDP	Nandyala Varada Rajulu Reddy		INC	Shaik Poola Mohammed Nazeer
+133	Mydukur		YSRCP	Settipalli Raghurami Reddy		TDP	Putta Sudhakar Yadav		INC	Gundlakunta Sriramulu
+Nandyal	134	Allagadda		YSRCP	Gangula Brijendra Reddy		TDP	Bhuma Akhila Priya		INC	Baragodla Hussain
+135	Srisailam		YSRCP	Silpa Chakrapani Reddy		TDP	Budda Rajasekhar Reddy		INC	Asar Syed Ismail
+136	Nandikotkur (SC)		YSRCP	Dara Sudheer		TDP	Githa Jayasurya		INC	Thoguru Arthur
+Kurnool	137	Kurnool		YSRCP	A. Mohammad Imtiaz Ahmed		TDP	T. G. Bharath		INC	Shaik Jelani Basha
+138	Panyam		YSRCP	Katasani Ramabhupal Reddy		TDP	Gowru Charitha Reddy		CPI(M)	D. Ghous Desai
+Nandyal	139	Nandyal		YSRCP	Silpa Ravichandra Kishore Reddy		TDP	N. M. D. Farooq		INC	Gokula Krishna Reddy
+140	Banaganapalle		YSRCP	Katasani Rami Reddy		TDP	B. C. Janardhan Reddy		INC	Gutam Pullaiah
+141	Dhone		YSRCP	Buggana Rajendranath Reddy		TDP	Kotla Jayasurya Prakasha Reddy		INC	Garlapati Madhuleti Swami
+Kurnool	142	Pattikonda		YSRCP	Kangati Sreedevi		TDP	K. E. Shyam Babu		CPI	P. Ramachandraiah
+143	Kodumur (SC)		YSRCP	Audimulapu Sateesh		TDP	Boggula Dastagiri		INC	Paregella Murali Krishna
+144	Yemmiganur		YSRCP	Butta Renuka		TDP	Jaya Nageswara Reddy		INC	Marumulla Kashim Vali
+145	Mantralayam		YSRCP	Y. Balanagi Reddy		TDP	Raghavendra Reddy		INC	P S Murali Krishnaraju
+146	Adoni		YSRCP	Y. Sai Prasad Reddy		BJP	P. V. Parthasarathi		INC	Golla Ramesh
+147	Alur		YSRCP	Busine Virupakshi		TDP	B. Veerabhadra Gowd		INC	Naveen Kishore Arakatla
+Anantapur	148	Rayadurg		YSRCP	Mettu Govinda Reddy		TDP	Kalava Srinivasulu		INC	M. B. Chinna Appiah
+149	Uravakonda		YSRCP	Y. Visweswara Reddy		TDP	Payyavula Keshav		INC	Y. Madhusudan Reddy
+150	Guntakal		YSRCP	Y. Venkatrama Reddy		TDP	Gummanur Jayaram		INC	Kavali Prabhakar
+151	Tadipatri		YSRCP	Kethireddy Pedda Reddy		TDP	J.C. Asmit Reddy		INC	Gujjala Nagi Reddy
+152	Singanamala (SC)		YSRCP	M. Veeranjaneyulu		TDP	Bandaru Sravani Sree		INC	Sake Sailajanath
+153	Anantapur Urban		YSRCP	Anantha Venkatarami Reddy		TDP	Daggupati Venkateswara Prasad		CPI	C. Jafar
+154	Kalyandurg		YSRCP	Talari Rangaiah		TDP	Amilineni Surendra Babu		INC	P. Rambhupal Reddy
+155	Raptadu		YSRCP	Thopudurthi Prakash Reddy		TDP	Paritala Sunitha		INC	Adi Andhra Sankaraiah
+Sri Sathya Sai	156	Madakasira (SC)		YSRCP	Eera Lakkappa		TDP	M. S. Raju		INC	Karikera Sudhakar
+157	Hindupur		YSRCP	T. N. Deepika		TDP	Nandamuri Balakrishna		INC	Mohammad Hussain Inayathulla
+158	Penukonda		YSRCP	K. V. Ushashri Charan		TDP	S. Savitha		INC	P. Narasimhappa
+159	Puttaparthi		YSRCP	Duddukunta Sreedhar Reddy		TDP	Palle Sindhura Reddy		INC	Madhusudhan Reddy
+160	Dharmavaram		YSRCP	Kethireddy Venkatarami Reddy		BJP	Y. Satya Kumar Yadav		INC	Rangana Aswardha Narayana
+161	Kadiri		YSRCP	B. S. Maqbool Ahmed		TDP	Kandikunta Venkata Prasad		INC	K. S. Shanwaz
+Annamayya	162	Thamballapalle		YSRCP	Peddireddy Dwarkanath Reddy		TDP	Jaya Chandra Reddy		INC	M. N. Chandrasekhar Reddy
+163	Pileru		YSRCP	Chintala Ramachandra Reddy		TDP	Nallari Kishore Kumar Reddy		INC	B. Somasekhar Reddy
+164	Madanapalle		YSRCP	Nissar Ahmed		TDP	Mohammed Shahjahan Basha		INC	Pawan Kumar Reddy
+Chittoor	165	Punganur		YSRCP	Peddireddy Ramachandra Reddy		TDP	Challa Ramachandra Reddy		INC	G. Murali Mohan Yadav
+Tirupati	166	Chandragiri		YSRCP	Chevireddy Mohith Reddy		TDP	Pulivarthi Venkata Mani Prasad		INC	Kanuparthy Srinivasulu
+167	Tirupati		YSRCP	Bhumana Abhinay Reddy		JSP	Arani Srinivasulu		CPI	P. Murali
+168	Srikalahasti		YSRCP	Biyyapu Madhusudhan Reddy		TDP	Bojjala Sudhir Reddy		INC	Pothugunta Rajesh Naidu
+169	Sathyavedu (SC)		YSRCP	Nukatoti Rajesh		TDP	Koneti Adimulam		INC	Balaguruvam Babu
+Chittoor	170	Nagari		YSRCP	R. K. Roja		TDP	Gali Bhanu Prakash		INC	Pochareddy Rakesh Reddy
+171	Gangadhara Nellore (SC)		YSRCP	Kalattur Krupa Lakshmi		TDP	V. M. Thomas		INC	Deyala Ramesh Babu
+172	Chittoor		YSRCP	M. Vijayananda Reddy		TDP	Gurajala Jagan Mohan		INC	G. Tikaram
+173	Puthalapattu (SC)		YSRCP	M. Sunil Kumar		TDP	Kalikiri Murali Mohan		INC	M. S. Babu
+174	Palamaner		YSRCP	N. Venkate Gowda		TDP	N. Amarnath Reddy		INC	B. Siva Sankar
+175	Kuppam		YSRCP	K. R. J. Bharath		TDP	N. Chandrababu Naidu		INC	Avula Govindarajulu mla candidate data and mp candidate data 
+CONST_DATA_SEPARATOR
+Constituency			
+YSRCP	NDA	INDIA
+1	Araku (ST)		YCP	Gumma Thanuja Rani		BJP	Kothapalli Geetha		CPI(M)	Appala Narsa
+2	Srikakulam	YCP	Perada Tilak		TDP	Kinjarapu Ram Mohan Naidu		INC	Pedada Parameswara Rao
+3	Vizianagaram	YCP	Bellana Chandra Sekhar		TDP	Kalisetti Appala Naidu	INC	Bobbili Srinu
+4	Visakhapatnam	YCP	Botcha Jhansi Lakshmi		TDP	Mathukumilli Bharat	INC	Pulusu Satyanarayana Reddy
+5	Anakapalli	YCP	Budi Mutyala Naidu		BJP	C. M. Ramesh	INC	Vegi Venkatesh
+6	Kakinada	YCP	Chalamalasetti Sunil		JSP	Tangella Uday Srinivas	INC	M. M. Pallam Raju
+7	Amalapuram (SC)	YCP	Rapaka Vara Prasada Rao		TDP	Ganti Harish Madhur	INC	Janga Goutham
+8	Rajahmundry	YCP	Guduri Srinivas		BJP	Daggubati Purandeswari	INC	Gidugu Rudra Raju
+9	Narasapuram	YCP	Guduri Umabala		BJP	Srinivas Verma	INC	Korlapati Brahmananda Rao Naidu
+10	Eluru	YCP	Karumuri Sunil Kumar		TDP	Putta Mahesh Kumar	INC	Lavanya Kumari
+11	Machilipatnam	YCP	Simhadri Chandrasekhar Rao		JSP	Vallabhaneni Balashowry	INC	Gollu Krishna
+12	Vijayawada	YCP	Kesineni Srinivas		TDP	Kesineni Sivanath	INC	Valluru Bhargav
+13	Guntur	YCP	Kilari Venkata Rosaiah		TDP	Chandra Sekhar Pemmasani		CPI	Jangala Ajay Kumar
+14	Narasaraopet	YCP	Poluboina Anilkumar Yadav		TDP	Lavu Sri Krishna Devarayalu		INC	Garnepudi Alexander Sudhakar
+15	Bapatla (SC)	YCP	Nandigam Suresh		TDP	Tenneti Krishna Prasad	INC	Jesudasu Seelam
+16	Ongole	YCP	Chevireddy Bhaskar Reddy		TDP	Magunta Sreenivasulu Reddy	INC	Eda Sudhakara Reddy
+17	Nandyal	YCP	Pocha Brahmananda Reddy		TDP	Byreddy Sabari	INC	Jangiti Lakshmi Narasimha Yadav
+18	Kurnoolu	YCP	B. Y. Ramaiah		TDP	Panchalingala Nagaraju	INC	P. G. Ram Pullaiah Yadav
+19	Anantapur	YCP	Malagundla Sankaranarayana		TDP	Ambika Lakshminarayana	INC	Mallikarjun Vajjala
+20	Hindupur	YCP	J. Shantha		TDP	B. K. Parthasarathi	INC	B. A. Samad Shaheen
+21	Kadapa	YCP	Y. S. Avinash Reddy		TDP	Chadipiralla Bhupesh Reddy	INC	Y. S. Sharmila
+22	Nellore	YCP	V. Vijaysai Reddy		TDP	Vemireddy Prabhakar Reddy	INC	Koppula Raju
+23	Tirupati (SC)	YCP	Maddila Gurumoorthy		BJP	Velagapalli Varaprasad Rao	INC	Chinta Mohan
+24	Rajampet	YCP	P. V. Midhun Reddy		BJP	Kiran Kumar Reddy	INC	S K Basheed
+25	Chittoor (SC)	YCP	N. Reddeppa		TDP	Daggumalla Prasada Rao	INC	M Jagapathi

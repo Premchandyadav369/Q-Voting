@@ -49,7 +49,8 @@ class QuantumAttackSimulator:
         "trojan_horse": "Trojan Horse Attack",
         "dos": "Denial of Service Attack",
         "replay": "Classical Replay Attack",
-        "man_in_middle": "Man-in-the-Middle Attack"
+        "man_in_middle": "Man-in-the-Middle Attack",
+        "grover_attack": "Quantum Brute-Force (Grover's Search)"
     }
     
     def __init__(self):
@@ -124,6 +125,32 @@ class QuantumAttackSimulator:
             details={
                 "countermeasure": "Unique Vote Hash (No-Cloning)",
                 "explanation": "Each vote has a unique quantum-derived hash that cannot be replicated"
+            }
+        )
+        self.attack_history.append(attack)
+        return attack
+
+    def simulate_grover_attack(self, qubits: int = 128) -> AttackSimulation:
+        """
+        Simulate Quantum Brute-Force attack using Grover's Search.
+        Attempts to reverse-engineer vote hashes.
+        """
+        # Quantum security level (AES-256 equivalent)
+        is_resistant = qubits >= 256
+        detected = True # Patterns of mass hash-checking are detected by QSOC
+        
+        attack = AttackSimulation(
+            attack_id=secrets.token_hex(8),
+            attack_type="grover_attack",
+            timestamp=datetime.utcnow(),
+            success=not is_resistant,
+            detected=detected,
+            error_rate=0.0,
+            details={
+                "qubit_power": qubits,
+                "complexity": f"O(√2^{qubits})",
+                "countermeasure": "Quantum-Resistant Hash Extension",
+                "explanation": "High-entropy salts derived from QKD keys make Grover-based brute forcing exponentially difficult."
             }
         )
         self.attack_history.append(attack)

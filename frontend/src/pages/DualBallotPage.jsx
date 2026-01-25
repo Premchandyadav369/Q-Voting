@@ -77,7 +77,6 @@ function DualBallotPage({ session, mlaConstituency, mpConstituency, setVoteRecei
                     setMlaVoted(true)
                     setReceipts(prev => ({ ...prev, mla: response.data.receipt_code }))
                     setConfirmModal(null)
-                    // Switch to MP voting
                     if (!mpVoted) {
                         setCurrentElection('MP')
                     }
@@ -108,59 +107,67 @@ function DualBallotPage({ session, mlaConstituency, mpConstituency, setVoteRecei
 
     if (loading) {
         return (
-            <div className="container">
-                <div className="loading-container" style={{ minHeight: '400px' }}>
-                    <div className="spinner"></div>
-                    <span>Loading candidates...</span>
+            <div style={{ background: 'var(--bg-space)', minHeight: 'calc(100vh - 160px)', padding: '3rem 0' }}>
+                <div className="container" style={{ textAlign: 'center', paddingTop: '4rem' }}>
+                    <div style={{ fontSize: '4rem', marginBottom: '1rem', animation: 'pulse 1.5s infinite' }}>⏳</div>
+                    <p style={{ color: 'var(--text-muted)' }}>Loading candidates...</p>
                 </div>
             </div>
         )
     }
 
     return (
-        <div className="container">
-            <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                {/* Voting Progress */}
+        <div style={{ background: 'var(--bg-space)', minHeight: 'calc(100vh - 160px)', padding: '3rem 0' }}>
+            <div className="container" style={{ maxWidth: '900px' }}>
+
+                {/* Voting Progress Tabs */}
                 <div style={{
-                    display: 'flex', gap: '16px', marginBottom: '24px',
-                    padding: '16px', background: 'var(--neutral-100)', borderRadius: '12px'
+                    display: 'flex', gap: '1rem', marginBottom: '2rem',
+                    padding: '1rem', background: 'var(--bg-glass)',
+                    border: '1px solid var(--glass-border)', borderRadius: '16px'
                 }}>
                     <div
                         onClick={() => !mlaVoted && setCurrentElection('MLA')}
                         style={{
-                            flex: 1, padding: '16px', borderRadius: '12px', cursor: mlaVoted ? 'default' : 'pointer',
-                            background: currentElection === 'MLA' ? 'linear-gradient(135deg, #1e3a5f, #2b4d7a)' : 'white',
-                            color: currentElection === 'MLA' ? 'white' : 'var(--neutral-800)',
-                            border: mlaVoted ? '2px solid #22c55e' : '2px solid transparent',
-                            textAlign: 'center'
+                            flex: 1, padding: '1.5rem', borderRadius: '12px',
+                            cursor: mlaVoted ? 'default' : 'pointer',
+                            background: currentElection === 'MLA' ? 'linear-gradient(135deg, #1e3a5f, #2b4d7a)' : 'transparent',
+                            border: mlaVoted ? '2px solid var(--neon-green)' : currentElection === 'MLA' ? 'none' : '1px solid var(--glass-border)',
+                            textAlign: 'center', transition: 'all 0.3s ease'
                         }}
                     >
-                        <div style={{ fontSize: '2rem' }}>{mlaVoted ? '✅' : '🏛️'}</div>
-                        <div style={{ fontWeight: '600' }}>MLA Vote</div>
-                        <div style={{ fontSize: '12px', opacity: 0.8 }}>
+                        <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{mlaVoted ? '✅' : '🏛️'}</div>
+                        <div style={{ fontFamily: 'var(--font-display)', fontSize: '1rem' }}>MLA VOTE</div>
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
                             {mlaVoted ? 'Completed' : mlaConstituency?.name}
                         </div>
                     </div>
                     <div
                         onClick={() => !mpVoted && setCurrentElection('MP')}
                         style={{
-                            flex: 1, padding: '16px', borderRadius: '12px', cursor: mpVoted ? 'default' : 'pointer',
-                            background: currentElection === 'MP' ? 'linear-gradient(135deg, #ff9933, #e67e22)' : 'white',
-                            color: currentElection === 'MP' ? 'white' : 'var(--neutral-800)',
-                            border: mpVoted ? '2px solid #22c55e' : '2px solid transparent',
-                            textAlign: 'center'
+                            flex: 1, padding: '1.5rem', borderRadius: '12px',
+                            cursor: mpVoted ? 'default' : 'pointer',
+                            background: currentElection === 'MP' ? 'linear-gradient(135deg, #ff9933, #e67e22)' : 'transparent',
+                            border: mpVoted ? '2px solid var(--neon-green)' : currentElection === 'MP' ? 'none' : '1px solid var(--glass-border)',
+                            textAlign: 'center', transition: 'all 0.3s ease'
                         }}
                     >
-                        <div style={{ fontSize: '2rem' }}>{mpVoted ? '✅' : '🇮🇳'}</div>
-                        <div style={{ fontWeight: '600' }}>MP Vote</div>
-                        <div style={{ fontSize: '12px', opacity: 0.8 }}>
+                        <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{mpVoted ? '✅' : '🇮🇳'}</div>
+                        <div style={{ fontFamily: 'var(--font-display)', fontSize: '1rem' }}>MP VOTE</div>
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
                             {mpVoted ? 'Completed' : mpConstituency?.name}
                         </div>
                     </div>
                 </div>
 
                 {error && (
-                    <div className="alert alert-error" style={{ marginBottom: '24px' }}>
+                    <div style={{
+                        marginBottom: '2rem', padding: '1rem 1.5rem',
+                        background: 'rgba(239, 68, 68, 0.1)',
+                        border: '1px solid var(--neon-red)',
+                        borderRadius: '12px', color: 'var(--neon-red)',
+                        display: 'flex', alignItems: 'center', gap: '12px'
+                    }}>
                         <span>⚠️</span>
                         <span>{error}</span>
                     </div>
@@ -168,130 +175,149 @@ function DualBallotPage({ session, mlaConstituency, mpConstituency, setVoteRecei
 
                 {/* Current Election Ballot */}
                 {!hasVoted ? (
-                    <div className="card">
-                        <div className="card-header" style={{
+                    <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
+                        {/* Header */}
+                        <div style={{
                             background: currentElection === 'MLA'
                                 ? 'linear-gradient(135deg, #1e3a5f, #2b4d7a)'
                                 : 'linear-gradient(135deg, #ff9933, #e67e22)',
-                            color: 'white', margin: '-24px -24px 24px', padding: '24px', borderRadius: '12px 12px 0 0'
+                            padding: '2rem', textAlign: 'center'
                         }}>
-                            <div style={{ textAlign: 'center' }}>
-                                <div style={{ fontSize: '2rem', marginBottom: '8px' }}>
-                                    {currentElection === 'MLA' ? '🏛️' : '🇮🇳'}
-                                </div>
-                                <h2 style={{ margin: 0, color: 'white' }}>
-                                    {currentElection} Election - {currentConstituency?.name}
-                                </h2>
-                                <div style={{ opacity: 0.8, marginTop: '4px' }}>
-                                    {currentConstituency?.district} District
-                                </div>
+                            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>
+                                {currentElection === 'MLA' ? '🏛️' : '🇮🇳'}
+                            </div>
+                            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', margin: 0 }}>
+                                {currentElection} ELECTION
+                            </h2>
+                            <div style={{ fontSize: '1.1rem', opacity: 0.9, marginTop: '0.5rem' }}>
+                                {currentConstituency?.name}
+                            </div>
+                            <div style={{ fontSize: '0.85rem', opacity: 0.7 }}>
+                                {currentConstituency?.district} District
                             </div>
                         </div>
 
-                        <h3 style={{ marginBottom: '16px' }}>Select Your Candidate</h3>
+                        {/* Candidates */}
+                        <div style={{ padding: '2rem' }}>
+                            <h3 style={{ fontFamily: 'var(--font-display)', marginBottom: '1.5rem', fontSize: '1rem', letterSpacing: '1px' }}>
+                                SELECT YOUR CANDIDATE
+                            </h3>
 
-                        <div className="candidate-list" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                            {currentCandidates.map(candidate => (
-                                <div
-                                    key={candidate.id}
-                                    onClick={() => setSelectedCandidate(candidate.id)}
-                                    className={`candidate-card ${selectedCandidate === candidate.id ? 'selected' : ''}`}
-                                    style={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: '16px',
-                                        padding: '16px',
-                                        border: selectedCandidate === candidate.id ? `3px solid ${candidate.party_color}` : '2px solid var(--neutral-200)',
-                                        borderRadius: '12px',
-                                        cursor: 'pointer',
-                                        background: selectedCandidate === candidate.id ? `${candidate.party_color}15` : 'white',
-                                        transition: 'all 0.2s'
-                                    }}
-                                >
-                                    {/* Radio button */}
-                                    <div style={{
-                                        width: '24px', height: '24px', borderRadius: '50%',
-                                        border: `3px solid ${selectedCandidate === candidate.id ? candidate.party_color : 'var(--neutral-300)'}`,
-                                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                        background: selectedCandidate === candidate.id ? candidate.party_color : 'white'
-                                    }}>
-                                        {selectedCandidate === candidate.id && (
-                                            <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'white' }} />
-                                        )}
-                                    </div>
-
-                                    {/* Party logo/symbol */}
-                                    <div style={{
-                                        width: '60px', height: '60px', borderRadius: '12px',
-                                        background: candidate.party_color,
-                                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                        flexShrink: 0
-                                    }}>
-                                        {PARTY_LOGOS[candidate.party_short] ? (
-                                            <img
-                                                src={PARTY_LOGOS[candidate.party_short]}
-                                                alt={candidate.party_short}
-                                                style={{ width: '50px', height: '50px', objectFit: 'contain' }}
-                                                onError={(e) => { e.target.style.display = 'none' }}
-                                            />
-                                        ) : (
-                                            <span style={{ fontSize: '2rem' }}>{candidate.symbol}</span>
-                                        )}
-                                    </div>
-
-                                    {/* Candidate info */}
-                                    <div style={{ flex: 1 }}>
-                                        <div style={{ fontWeight: '700', fontSize: '18px', marginBottom: '4px' }}>
-                                            {candidate.name}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                {currentCandidates.map(candidate => (
+                                    <div
+                                        key={candidate.id}
+                                        onClick={() => setSelectedCandidate(candidate.id)}
+                                        style={{
+                                            display: 'flex', alignItems: 'center', gap: '1rem',
+                                            padding: '1.25rem',
+                                            background: selectedCandidate === candidate.id ? `${candidate.party_color}20` : 'var(--bg-glass)',
+                                            border: selectedCandidate === candidate.id ? `2px solid ${candidate.party_color}` : '1px solid var(--glass-border)',
+                                            borderRadius: '12px', cursor: 'pointer',
+                                            transition: 'all 0.2s ease',
+                                            boxShadow: selectedCandidate === candidate.id ? `0 0 20px ${candidate.party_color}30` : 'none'
+                                        }}
+                                    >
+                                        {/* Radio */}
+                                        <div style={{
+                                            width: '28px', height: '28px', borderRadius: '50%',
+                                            border: `3px solid ${selectedCandidate === candidate.id ? candidate.party_color : 'var(--glass-border)'}`,
+                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                            background: selectedCandidate === candidate.id ? candidate.party_color : 'transparent',
+                                            transition: 'all 0.2s ease'
+                                        }}>
+                                            {selectedCandidate === candidate.id && (
+                                                <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: 'white' }} />
+                                            )}
                                         </div>
-                                        <div style={{ color: 'var(--neutral-600)' }}>
-                                            {candidate.party}
+
+                                        {/* Party Logo */}
+                                        <div style={{
+                                            width: '60px', height: '60px', borderRadius: '12px',
+                                            background: candidate.party_color,
+                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                            flexShrink: 0
+                                        }}>
+                                            {PARTY_LOGOS[candidate.party_short] ? (
+                                                <img
+                                                    src={PARTY_LOGOS[candidate.party_short]}
+                                                    alt={candidate.party_short}
+                                                    style={{ width: '45px', height: '45px', objectFit: 'contain' }}
+                                                    onError={(e) => { e.target.style.display = 'none' }}
+                                                />
+                                            ) : (
+                                                <span style={{ fontSize: '1.8rem' }}>{candidate.symbol}</span>
+                                            )}
                                         </div>
-                                        {candidate.votes_2024 > 0 && (
-                                            <div style={{ fontSize: '12px', color: 'var(--neutral-500)', marginTop: '4px' }}>
-                                                2024: {candidate.votes_2024.toLocaleString()} votes
+
+                                        {/* Info */}
+                                        <div style={{ flex: 1 }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                                                <div style={{ fontWeight: '700', fontSize: '1.1rem' }}>
+                                                    {candidate.name}
+                                                </div>
+                                                {['TDP', 'JSP', 'BJP'].includes(candidate.party_short) && (
+                                                    <span style={{
+                                                        fontSize: '0.65rem', background: 'rgba(255, 235, 59, 0.2)',
+                                                        color: '#FFD700', padding: '3px 8px', borderRadius: '4px',
+                                                        border: '1px solid rgba(255, 215, 0, 0.3)', fontWeight: '800'
+                                                    }}>KUTAMI 🤝</span>
+                                                )}
                                             </div>
-                                        )}
-                                    </div>
+                                            <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                                                {candidate.party}
+                                            </div>
+                                        </div>
 
-                                    {/* Party badge */}
-                                    <div style={{
-                                        padding: '6px 16px', borderRadius: '20px',
-                                        background: candidate.party_color,
-                                        color: ['TDP', 'BJP'].includes(candidate.party_short) ? '#000' : '#fff',
-                                        fontWeight: '600', fontSize: '14px'
-                                    }}>
-                                        {candidate.party_short}
+                                        {/* Party Badge */}
+                                        <div style={{
+                                            padding: '0.5rem 1.25rem', borderRadius: '20px',
+                                            background: candidate.party_color,
+                                            color: ['TDP', 'BJP'].includes(candidate.party_short) ? '#000' : '#fff',
+                                            fontWeight: '800', fontSize: '0.85rem'
+                                        }}>
+                                            {candidate.party_short}
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+
+                            <button
+                                onClick={() => setConfirmModal(currentElection)}
+                                disabled={!selectedCandidate}
+                                className="btn btn-primary btn-lg"
+                                style={{
+                                    marginTop: '2rem', width: '100%', padding: '1.2rem',
+                                    borderRadius: '12px', fontSize: '1rem',
+                                    background: selectedCandidate ? 'linear-gradient(135deg, #22c55e, #16a34a)' : 'var(--bg-glass)',
+                                    boxShadow: selectedCandidate ? '0 0 30px rgba(34, 197, 94, 0.4)' : 'none',
+                                    opacity: selectedCandidate ? 1 : 0.5
+                                }}
+                            >
+                                ✓ CONFIRM {currentElection} VOTE
+                            </button>
                         </div>
-
-                        <button
-                            onClick={() => setConfirmModal(currentElection)}
-                            disabled={!selectedCandidate}
-                            className="btn btn-success btn-lg"
-                            style={{ marginTop: '24px', width: '100%' }}
-                        >
-                            ✓ Confirm {currentElection} Vote
-                        </button>
                     </div>
                 ) : (
-                    <div className="card" style={{ textAlign: 'center', background: '#f0fdf4' }}>
-                        <div style={{ fontSize: '4rem', marginBottom: '16px' }}>✅</div>
-                        <h2 style={{ color: '#16a34a' }}>{currentElection} Vote Recorded!</h2>
-                        <p style={{ color: 'var(--neutral-600)' }}>
-                            Receipt: <strong>{receipts[currentElection.toLowerCase()]}</strong>
+                    <div className="glass-card" style={{ textAlign: 'center', padding: '3rem' }}>
+                        <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>✅</div>
+                        <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--neon-green)', marginBottom: '0.5rem' }}>
+                            {currentElection} VOTE RECORDED
+                        </h2>
+                        <p style={{ color: 'var(--text-muted)' }}>
+                            Receipt: <span style={{ color: 'var(--neon-cyan)', fontFamily: 'monospace' }}>
+                                {receipts[currentElection.toLowerCase()]}
+                            </span>
                         </p>
-                        {!mlaVoted || !mpVoted ? (
+                        {(!mlaVoted || !mpVoted) && (
                             <button
                                 onClick={() => setCurrentElection(mlaVoted ? 'MP' : 'MLA')}
                                 className="btn btn-primary btn-lg"
-                                style={{ marginTop: '16px' }}
+                                style={{ marginTop: '1.5rem' }}
                             >
                                 Continue to {mlaVoted ? 'MP' : 'MLA'} Voting →
                             </button>
-                        ) : null}
+                        )}
                     </div>
                 )}
 
@@ -299,70 +325,80 @@ function DualBallotPage({ session, mlaConstituency, mpConstituency, setVoteRecei
                 {confirmModal && (
                     <div style={{
                         position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
-                        background: 'rgba(0,0,0,0.7)', display: 'flex',
-                        alignItems: 'center', justifyContent: 'center',
-                        zIndex: 1000, padding: '16px'
+                        background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(10px)',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        zIndex: 1000, padding: '1rem'
                     }}>
-                        <div className="card" style={{ maxWidth: '500px', width: '100%' }}>
-                            <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-                                <div style={{ fontSize: '4rem', marginBottom: '16px' }}>🗳️</div>
-                                <h2>Confirm Your {confirmModal} Vote</h2>
+                        <div className="glass-card" style={{ maxWidth: '500px', width: '100%', padding: '2.5rem' }}>
+                            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🗳️</div>
+                                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem' }}>
+                                    CONFIRM YOUR {confirmModal} VOTE
+                                </h2>
                             </div>
 
                             {currentCandidates.find(c => c.id === selectedCandidate) && (
                                 <div style={{
-                                    padding: '20px',
+                                    padding: '1.5rem',
                                     background: `${currentCandidates.find(c => c.id === selectedCandidate).party_color}20`,
-                                    borderRadius: '12px', marginBottom: '24px'
+                                    border: `1px solid ${currentCandidates.find(c => c.id === selectedCandidate).party_color}`,
+                                    borderRadius: '16px', marginBottom: '2rem', textAlign: 'center'
                                 }}>
-                                    <div style={{ textAlign: 'center' }}>
-                                        <div style={{
-                                            width: '80px', height: '80px', borderRadius: '50%', margin: '0 auto 12px',
-                                            background: currentCandidates.find(c => c.id === selectedCandidate).party_color,
-                                            display: 'flex', alignItems: 'center', justifyContent: 'center'
-                                        }}>
-                                            {PARTY_LOGOS[currentCandidates.find(c => c.id === selectedCandidate).party_short] ? (
-                                                <img
-                                                    src={PARTY_LOGOS[currentCandidates.find(c => c.id === selectedCandidate).party_short]}
-                                                    alt="" style={{ width: '60px', height: '60px', objectFit: 'contain' }}
-                                                />
-                                            ) : (
-                                                <span style={{ fontSize: '2.5rem' }}>
-                                                    {currentCandidates.find(c => c.id === selectedCandidate).symbol}
-                                                </span>
-                                            )}
-                                        </div>
-                                        <div style={{ fontWeight: '700', fontSize: '20px' }}>
-                                            {currentCandidates.find(c => c.id === selectedCandidate).name}
-                                        </div>
-                                        <div style={{ color: 'var(--neutral-600)' }}>
-                                            {currentCandidates.find(c => c.id === selectedCandidate).party}
-                                        </div>
+                                    <div style={{
+                                        width: '80px', height: '80px', borderRadius: '50%', margin: '0 auto 1rem',
+                                        background: currentCandidates.find(c => c.id === selectedCandidate).party_color,
+                                        display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                    }}>
+                                        {PARTY_LOGOS[currentCandidates.find(c => c.id === selectedCandidate).party_short] ? (
+                                            <img
+                                                src={PARTY_LOGOS[currentCandidates.find(c => c.id === selectedCandidate).party_short]}
+                                                alt="" style={{ width: '55px', height: '55px', objectFit: 'contain' }}
+                                            />
+                                        ) : (
+                                            <span style={{ fontSize: '2.5rem' }}>
+                                                {currentCandidates.find(c => c.id === selectedCandidate).symbol}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div style={{ fontWeight: '700', fontSize: '1.3rem' }}>
+                                        {currentCandidates.find(c => c.id === selectedCandidate).name}
+                                    </div>
+                                    <div style={{ color: 'var(--text-muted)' }}>
+                                        {currentCandidates.find(c => c.id === selectedCandidate).party}
                                     </div>
                                 </div>
                             )}
 
-                            <div className="alert alert-warning" style={{ marginBottom: '24px' }}>
+                            <div style={{
+                                padding: '1rem 1.5rem', background: 'rgba(251, 191, 36, 0.1)',
+                                border: '1px solid var(--neon-yellow)', borderRadius: '12px',
+                                marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '12px'
+                            }}>
                                 <span>⚠️</span>
-                                <span>This vote cannot be changed after submission.</span>
+                                <span style={{ fontSize: '0.9rem' }}>This vote cannot be changed after submission.</span>
                             </div>
 
-                            <div style={{ display: 'flex', gap: '12px' }}>
+                            <div style={{ display: 'flex', gap: '1rem' }}>
                                 <button
                                     onClick={() => setConfirmModal(null)}
                                     className="btn btn-secondary"
                                     disabled={submitting}
-                                    style={{ flex: 1 }}
+                                    style={{ flex: 1, padding: '1rem', borderRadius: '12px' }}
                                 >
-                                    ← Go Back
+                                    ← BACK
                                 </button>
                                 <button
                                     onClick={() => handleCastVote(confirmModal)}
-                                    className="btn btn-success"
                                     disabled={submitting}
-                                    style={{ flex: 2 }}
+                                    style={{
+                                        flex: 2, padding: '1rem', borderRadius: '12px',
+                                        background: 'linear-gradient(135deg, #22c55e, #16a34a)',
+                                        border: 'none', color: 'white', fontFamily: 'var(--font-display)',
+                                        fontSize: '1rem', cursor: submitting ? 'not-allowed' : 'pointer',
+                                        boxShadow: '0 0 20px rgba(34, 197, 94, 0.4)'
+                                    }}
                                 >
-                                    {submitting ? '⏳ Casting Vote...' : '🗳️ CAST MY VOTE'}
+                                    {submitting ? '⏳ CASTING...' : '🗳️ CAST MY VOTE'}
                                 </button>
                             </div>
                         </div>

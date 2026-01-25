@@ -14,13 +14,21 @@ import secrets
 from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
-from sqlalchemy import create_engine, Column, Integer, String, Boolean, DateTime, ForeignKey, Text, Float
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine, Column, Integer, String, Boolean, DateTime, ForeignKey, Text, Float, event
 from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.ext.declarative import declarative_base
 
 # Database setup
 DATABASE_URL = "sqlite:///./quantum_voting.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+
+# Enable Write-Ahead Logging (WAL) for better concurrency
+@event.listens_for(engine, "connect")
+def set_sqlite_pragma(dbapi_connection, connection_record):
+    cursor = dbapi_connection.cursor()
+    cursor.execute("PRAGMA journal_mode=WAL")
+    cursor.close()
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
@@ -67,6 +75,7 @@ class Vote(Base):
     candidate_id = Column(Integer, ForeignKey("candidates.id"), nullable=False)
     encrypted_vote = Column(Text, nullable=False)
     vote_hash = Column(String(64), unique=True, nullable=False)
+    receipt_code = Column(String(20), unique=True, nullable=True, index=True)
     timestamp = Column(DateTime, default=datetime.utcnow)
     
     # Relationships

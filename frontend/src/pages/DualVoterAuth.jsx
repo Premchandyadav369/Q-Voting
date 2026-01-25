@@ -83,31 +83,47 @@ function DualVoterAuth({ session, setSession, setMlaConstituency, setMpConstitue
     }
 
     return (
-        <div className="container">
-            <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+        <div style={{ background: 'var(--bg-space)', minHeight: 'calc(100vh - 160px)', padding: '3rem 0' }}>
+            <div className="container" style={{ maxWidth: '800px' }}>
+
                 {/* Progress Steps */}
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginBottom: '32px' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginBottom: '3rem' }}>
                     {[1, 2].map(s => (
                         <div key={s} style={{
-                            display: 'flex', alignItems: 'center', gap: '8px',
-                            color: step >= s ? 'var(--primary-600)' : 'var(--neutral-400)'
+                            display: 'flex', alignItems: 'center', gap: '12px',
+                            opacity: step >= s ? 1 : 0.4
                         }}>
-                            <span style={{
-                                width: '28px', height: '28px', borderRadius: '50%',
-                                background: step >= s ? 'var(--primary-600)' : 'var(--neutral-200)',
-                                color: step >= s ? 'white' : 'var(--neutral-500)',
+                            <div style={{
+                                width: '50px', height: '50px', borderRadius: '50%',
+                                background: step >= s ? 'var(--gradient-primary)' : 'var(--bg-glass)',
+                                border: step >= s ? 'none' : '2px solid var(--glass-border)',
                                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                fontSize: '14px', fontWeight: '600'
-                            }}>{step > s ? '✓' : s}</span>
-                            <span style={{ fontWeight: step === s ? '600' : '400' }}>
-                                {s === 1 ? 'Select District' : 'Select Constituencies'}
-                            </span>
+                                fontSize: '1.2rem', fontWeight: '700', color: 'white',
+                                boxShadow: step >= s ? 'var(--glow-cyan)' : 'none'
+                            }}>
+                                {step > s ? '✓' : s}
+                            </div>
+                            <div>
+                                <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.9rem', fontWeight: step === s ? '700' : '500' }}>
+                                    {s === 1 ? 'SELECT DISTRICT' : 'SELECT CONSTITUENCIES'}
+                                </div>
+                                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                                    {s === 1 ? 'Identity Verification' : 'MLA & MP Selection'}
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
 
                 {error && (
-                    <div className="alert alert-error" style={{ marginBottom: '24px' }}>
+                    <div style={{
+                        marginBottom: '2rem', padding: '1rem 1.5rem',
+                        background: 'rgba(239, 68, 68, 0.1)',
+                        border: '1px solid var(--neon-red)',
+                        borderRadius: '12px', color: 'var(--neon-red)',
+                        display: 'flex', alignItems: 'center', gap: '12px',
+                        fontFamily: 'var(--font-display)', fontSize: '0.9rem'
+                    }}>
                         <span>⚠️</span>
                         <span>{error}</span>
                     </div>
@@ -115,21 +131,39 @@ function DualVoterAuth({ session, setSession, setMlaConstituency, setMpConstitue
 
                 {/* Step 1: Select District */}
                 {step === 1 && (
-                    <div className="card">
-                        <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-                            <div style={{ fontSize: '4rem', marginBottom: '16px' }}>🗳️</div>
-                            <h2>Select Your District</h2>
-                            <p style={{ color: 'var(--neutral-600)' }}>
-                                You will vote for both MLA and MP in a single session
+                    <div className="glass-card" style={{ padding: '3rem' }}>
+                        <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+                            <div style={{
+                                fontSize: '5rem', marginBottom: '1.5rem',
+                                animation: 'float 4s ease-in-out infinite'
+                            }}>🗳️</div>
+                            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', marginBottom: '0.5rem' }}>
+                                SELECT YOUR DISTRICT
+                            </h2>
+                            <p style={{ color: 'var(--text-muted)', maxWidth: '400px', margin: '0 auto' }}>
+                                You will vote for both MLA and MP representatives in a single secure quantum session
                             </p>
                         </div>
 
-                        <div className="form-group">
-                            <label className="form-label">District</label>
+                        <div style={{ marginBottom: '2rem' }}>
+                            <label style={{
+                                display: 'block', marginBottom: '0.75rem',
+                                fontFamily: 'var(--font-display)', fontSize: '0.8rem',
+                                color: 'var(--neon-cyan)', letterSpacing: '1px'
+                            }}>
+                                DISTRICT
+                            </label>
                             <select
-                                className="form-select"
                                 value={selectedDistrict}
                                 onChange={(e) => setSelectedDistrict(e.target.value)}
+                                style={{
+                                    width: '100%', padding: '1rem 1.5rem',
+                                    background: 'var(--bg-glass)',
+                                    border: '1px solid var(--glass-border)',
+                                    borderRadius: '12px', color: 'var(--text-main)',
+                                    fontSize: '1rem', cursor: 'pointer',
+                                    outline: 'none'
+                                }}
                             >
                                 <option value="">-- Select your district --</option>
                                 {districts.map(d => (
@@ -140,8 +174,15 @@ function DualVoterAuth({ session, setSession, setMlaConstituency, setMpConstitue
                             </select>
                         </div>
 
-                        <div className="alert alert-info">
-                            <span>ℹ️</span>
+                        <div style={{
+                            padding: '1rem 1.5rem',
+                            background: 'rgba(0, 212, 255, 0.05)',
+                            border: '1px solid var(--neon-cyan)',
+                            borderRadius: '12px', marginBottom: '2rem',
+                            display: 'flex', alignItems: 'center', gap: '12px',
+                            fontSize: '0.9rem', color: 'var(--text-muted)'
+                        }}>
+                            <span style={{ fontSize: '1.2rem' }}>ℹ️</span>
                             <span>Your district determines which MLA and MP constituencies you can vote in.</span>
                         </div>
 
@@ -149,82 +190,127 @@ function DualVoterAuth({ session, setSession, setMlaConstituency, setMpConstitue
                             onClick={handleCreateSession}
                             disabled={loading || !selectedDistrict}
                             className="btn btn-primary btn-lg"
-                            style={{ marginTop: '16px', width: '100%' }}
+                            style={{
+                                width: '100%', padding: '1.2rem',
+                                fontSize: '1rem', borderRadius: '12px',
+                                opacity: (!selectedDistrict || loading) ? 0.5 : 1
+                            }}
                         >
-                            {loading ? '⏳ Creating Session...' : '🚀 Create Voting Session'}
+                            {loading ? '⏳ Creating Quantum Session...' : '🚀 CREATE VOTING SESSION'}
                         </button>
                     </div>
                 )}
 
                 {/* Step 2: Select Both Constituencies */}
                 {step === 2 && (
-                    <div className="card">
-                        <div className="card-header">
-                            <h2 className="card-title">Select Your Constituencies</h2>
-                            <p style={{ margin: 0, color: 'var(--neutral-500)' }}>
-                                District: <strong>{selectedDistrict}</strong>
+                    <div className="glass-card" style={{ padding: '3rem' }}>
+                        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', marginBottom: '0.5rem' }}>
+                                SELECT YOUR CONSTITUENCIES
+                            </h2>
+                            <p style={{ color: 'var(--text-muted)' }}>
+                                District: <span style={{ color: 'var(--neon-cyan)', fontWeight: '600' }}>{selectedDistrict}</span>
                             </p>
                         </div>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
                             {/* MLA Selection */}
                             <div>
                                 <div style={{
-                                    padding: '16px', marginBottom: '16px',
+                                    padding: '1.5rem', marginBottom: '1rem',
                                     background: 'linear-gradient(135deg, #1e3a5f, #2b4d7a)',
-                                    borderRadius: '12px', color: 'white', textAlign: 'center'
+                                    borderRadius: '16px', textAlign: 'center'
                                 }}>
-                                    <div style={{ fontSize: '2rem' }}>🏛️</div>
-                                    <div style={{ fontWeight: '600' }}>MLA Election</div>
-                                    <div style={{ fontSize: '12px', opacity: 0.8 }}>State Assembly</div>
+                                    <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🏛️</div>
+                                    <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem' }}>MLA Election</div>
+                                    <div style={{ fontSize: '0.8rem', opacity: 0.8 }}>State Assembly</div>
                                 </div>
-                                <select
-                                    className="form-select"
-                                    value={selectedMla}
-                                    onChange={(e) => setSelectedMla(e.target.value)}
-                                    size={6}
-                                    style={{ height: 'auto' }}
-                                >
-                                    <option value="">-- Select MLA Constituency --</option>
+                                <div style={{
+                                    background: 'var(--bg-glass)',
+                                    border: '1px solid var(--glass-border)',
+                                    borderRadius: '12px',
+                                    maxHeight: '250px',
+                                    overflowY: 'auto'
+                                }}>
                                     {mlaConstituencies.map(c => (
-                                        <option key={c.id} value={c.id}>{c.name}</option>
+                                        <div
+                                            key={c.id}
+                                            onClick={() => setSelectedMla(c.id)}
+                                            style={{
+                                                padding: '1rem 1.5rem',
+                                                cursor: 'pointer',
+                                                borderBottom: '1px solid var(--glass-border)',
+                                                background: selectedMla == c.id ? 'rgba(0, 212, 255, 0.1)' : 'transparent',
+                                                borderLeft: selectedMla == c.id ? '3px solid var(--neon-cyan)' : '3px solid transparent',
+                                                transition: 'all 0.2s ease'
+                                            }}
+                                        >
+                                            <div style={{
+                                                fontWeight: selectedMla == c.id ? '600' : '400',
+                                                color: selectedMla == c.id ? 'var(--neon-cyan)' : 'var(--text-main)'
+                                            }}>
+                                                {c.name}
+                                            </div>
+                                        </div>
                                     ))}
-                                </select>
+                                </div>
                             </div>
 
                             {/* MP Selection */}
                             <div>
                                 <div style={{
-                                    padding: '16px', marginBottom: '16px',
+                                    padding: '1.5rem', marginBottom: '1rem',
                                     background: 'linear-gradient(135deg, #ff9933, #e67e22)',
-                                    borderRadius: '12px', color: 'white', textAlign: 'center'
+                                    borderRadius: '16px', textAlign: 'center'
                                 }}>
-                                    <div style={{ fontSize: '2rem' }}>🇮🇳</div>
-                                    <div style={{ fontWeight: '600' }}>MP Election</div>
-                                    <div style={{ fontSize: '12px', opacity: 0.8 }}>Lok Sabha</div>
+                                    <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🇮🇳</div>
+                                    <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem' }}>MP Election</div>
+                                    <div style={{ fontSize: '0.8rem', opacity: 0.8 }}>Lok Sabha</div>
                                 </div>
-                                <select
-                                    className="form-select"
-                                    value={selectedMp}
-                                    onChange={(e) => setSelectedMp(e.target.value)}
-                                    size={6}
-                                    style={{ height: 'auto' }}
-                                >
-                                    <option value="">-- Select MP Constituency --</option>
+                                <div style={{
+                                    background: 'var(--bg-glass)',
+                                    border: '1px solid var(--glass-border)',
+                                    borderRadius: '12px',
+                                    maxHeight: '250px',
+                                    overflowY: 'auto'
+                                }}>
                                     {mpConstituencies.map(c => (
-                                        <option key={c.id} value={c.id}>{c.name}</option>
+                                        <div
+                                            key={c.id}
+                                            onClick={() => setSelectedMp(c.id)}
+                                            style={{
+                                                padding: '1rem 1.5rem',
+                                                cursor: 'pointer',
+                                                borderBottom: '1px solid var(--glass-border)',
+                                                background: selectedMp == c.id ? 'rgba(255, 153, 51, 0.1)' : 'transparent',
+                                                borderLeft: selectedMp == c.id ? '3px solid #ff9933' : '3px solid transparent',
+                                                transition: 'all 0.2s ease'
+                                            }}
+                                        >
+                                            <div style={{
+                                                fontWeight: selectedMp == c.id ? '600' : '400',
+                                                color: selectedMp == c.id ? '#ff9933' : 'var(--text-main)'
+                                            }}>
+                                                {c.name}
+                                            </div>
+                                        </div>
                                     ))}
-                                </select>
+                                </div>
                             </div>
                         </div>
 
                         <button
                             onClick={handleSelectConstituencies}
                             disabled={loading || !selectedMla || !selectedMp}
-                            className="btn btn-quantum btn-lg"
-                            style={{ marginTop: '24px', width: '100%' }}
+                            className="btn btn-primary btn-lg"
+                            style={{
+                                width: '100%', padding: '1.2rem',
+                                fontSize: '1rem', borderRadius: '12px',
+                                background: 'var(--gradient-primary)',
+                                opacity: (!selectedMla || !selectedMp || loading) ? 0.5 : 1
+                            }}
                         >
-                            {loading ? '⏳ Processing...' : '🔐 Proceed to Quantum Key Exchange'}
+                            {loading ? '⏳ Processing...' : '🔐 PROCEED TO QUANTUM KEY EXCHANGE'}
                         </button>
                     </div>
                 )}
@@ -232,13 +318,26 @@ function DualVoterAuth({ session, setSession, setMlaConstituency, setMpConstitue
                 {/* Session Info */}
                 {session && (
                     <div style={{
-                        marginTop: '24px', padding: '16px',
-                        background: 'var(--neutral-50)', borderRadius: '8px',
-                        fontSize: '14px', color: 'var(--neutral-600)'
+                        marginTop: '2rem', padding: '1.5rem',
+                        background: 'var(--bg-glass)',
+                        border: '1px solid var(--glass-border)',
+                        borderRadius: '12px', fontSize: '0.85rem'
                     }}>
-                        <strong>Session ID:</strong> {session.session_id?.substring(0, 16)}...
-                        <br />
-                        <strong>Expires:</strong> {new Date(session.expires_at).toLocaleString()}
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <span style={{ color: 'var(--text-muted)' }}>Session ID: </span>
+                                <span style={{ color: 'var(--neon-cyan)', fontFamily: 'monospace' }}>
+                                    {session.session_id?.substring(0, 16)}...
+                                </span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <div style={{
+                                    width: '8px', height: '8px', borderRadius: '50%',
+                                    background: 'var(--neon-green)', animation: 'pulse 1.5s infinite'
+                                }}></div>
+                                <span style={{ color: 'var(--neon-green)', fontSize: '0.8rem' }}>ACTIVE</span>
+                            </div>
+                        </div>
                     </div>
                 )}
             </div>

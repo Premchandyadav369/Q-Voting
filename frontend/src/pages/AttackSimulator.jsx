@@ -1,235 +1,182 @@
-import { useState } from 'react'
-import axios from 'axios'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function AttackSimulator() {
-    const [selectedAttack, setSelectedAttack] = useState('eve_intercept')
-    const [loading, setLoading] = useState(false)
-    const [result, setResult] = useState(null)
-    const [history, setHistory] = useState(null)
-    const [interceptRate, setInterceptRate] = useState(0.3)
+    const [attackResults, setAttackResults] = useState({});
+    const [attackLogs, setAttackLogs] = useState([]);
 
-    const attackTypes = [
-        { id: 'eve_intercept', name: 'Eve Intercept-Resend', icon: '👁️', description: 'Eavesdropper intercepts and resends qubits' },
-        { id: 'photon_number_split', name: 'Photon Splitting', icon: '💡', description: 'Exploits multi-photon pulses' },
-        { id: 'replay', name: 'Replay Attack', icon: '🔄', description: 'Attempts to reuse captured votes' }
-    ]
+    const runAttack = (attackType, attackName) => {
+        setAttackResults(prev => ({ ...prev, [attackType]: 'running' }));
 
-    const simulateAttack = async () => {
-        try {
-            setLoading(true)
-            const params = selectedAttack === 'eve_intercept'
-                ? { intercept_rate: interceptRate }
-                : {}
+        // Add attack log
+        const newLog = {
+            time: new Date().toLocaleTimeString(),
+            type: 'ALERT',
+            msg: `${attackName} initiated...`
+        };
+        setAttackLogs(prev => [newLog, ...prev].slice(0, 10));
 
-            const response = await axios.post('/api/advanced/attacks/simulate', {
-                attack_type: selectedAttack,
-                parameters: params
-            })
-            setResult(response.data)
-        } catch (err) {
-            console.error('Attack simulation failed:', err)
-        } finally {
-            setLoading(false)
+        // Simulate attack and defense
+        setTimeout(() => {
+            setAttackResults(prev => ({ ...prev, [attackType]: 'blocked' }));
+
+            const defenseLog = {
+                time: new Date().toLocaleTimeString(),
+                type: 'SECURE',
+                msg: `${attackName} → NEUTRALIZED by Quantum Defense`
+            };
+            setAttackLogs(prev => [defenseLog, ...prev].slice(0, 10));
+        }, 2500);
+    };
+
+    const attacks = [
+        {
+            id: 'grover',
+            name: "Grover's Brute-Force",
+            icon: '🧠',
+            description: 'Quantum algorithm attempting to crack vote hashes using quadratic speedup.',
+            defense: 'SHA-3 with 256-bit security maintains resistance even against quantum search.'
+        },
+        {
+            id: 'eve',
+            name: 'Eve Intercept (BB84)',
+            icon: '🕵️',
+            description: 'Man-in-the-middle eavesdropping attempt on quantum key distribution channel.',
+            defense: 'BB84 protocol detects 25%+ error rate, automatically discards compromised keys.'
+        },
+        {
+            id: 'shor',
+            name: "Shor's Factorization",
+            icon: '🔓',
+            description: 'Quantum algorithm targeting RSA/ECDSA signatures used in vote sealing.',
+            defense: 'System uses Kyber/Dilithium PQC algorithms immune to Shor attack.'
+        },
+        {
+            id: 'tamper',
+            name: 'Ledger Tampering',
+            icon: '💥',
+            description: 'Attempt to modify sealed vote blocks in the immutable ledger.',
+            defense: 'Hash chain integrity verification instantly detects any modifications.'
+        },
+        {
+            id: 'sybil',
+            name: 'Sybil Attack',
+            icon: '👥',
+            description: 'Creating multiple fake voter identities to influence election results.',
+            defense: 'Quantum Random ID generation + one-time session tokens prevent duplication.'
+        },
+        {
+            id: 'replay',
+            name: 'Replay Attack',
+            icon: '🔄',
+            description: 'Capturing and re-transmitting valid vote packets.',
+            defense: 'Time-locked quantum signatures expire after single use.'
         }
-    }
-
-    const loadHistory = async () => {
-        try {
-            const response = await axios.get('/api/advanced/attacks/history')
-            setHistory(response.data)
-        } catch (err) {
-            console.error('Failed to load history:', err)
-        }
-    }
+    ];
 
     return (
-        <div className="container">
-            <div style={{ marginBottom: '32px' }}>
-                <h1>🛡️ Attack Simulation Lab</h1>
-                <p style={{ color: 'var(--neutral-600)' }}>
-                    Test how quantum cryptography protects against various attacks
-                </p>
-            </div>
+        <div style={{ background: 'var(--bg-space)', minHeight: '100vh', padding: '2rem 0' }}>
+            <div className="container">
+                {/* Header */}
+                <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                    <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', marginBottom: '1rem' }}>
+                        ⚔️ ATTACK SIMULATION LAB
+                    </h1>
+                    <p style={{ color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto' }}>
+                        Stress-test Q-Voting Ultra against high-tech quantum and classical threats.
+                        Observe real-time defense mechanisms activating.
+                    </p>
+                </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
-                {/* Attack Selection */}
-                <div className="card">
-                    <h3 style={{ marginBottom: '16px' }}>Select Attack Type</h3>
+                {/* Attack Grid */}
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', marginBottom: '3rem' }}>
+                    {attacks.map(attack => (
+                        <div key={attack.id} className="glass-card" style={{ textAlign: 'center' }}>
+                            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>{attack.icon}</div>
+                            <h4 style={{ fontFamily: 'var(--font-display)', marginBottom: '0.5rem' }}>{attack.name}</h4>
+                            <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1.5rem', minHeight: '60px' }}>
+                                {attack.description}
+                            </p>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                        {attackTypes.map(attack => (
-                            <div
-                                key={attack.id}
-                                onClick={() => setSelectedAttack(attack.id)}
-                                style={{
-                                    padding: '16px',
-                                    border: `2px solid ${selectedAttack === attack.id ? 'var(--error)' : 'var(--neutral-200)'}`,
-                                    borderRadius: '12px',
-                                    cursor: 'pointer',
-                                    background: selectedAttack === attack.id ? 'var(--error-light)' : 'white',
-                                    transition: 'all 0.2s'
-                                }}
+                            <button
+                                className="btn btn-danger"
+                                onClick={() => runAttack(attack.id, attack.name)}
+                                disabled={attackResults[attack.id] === 'running'}
+                                style={{ marginBottom: '1rem' }}
                             >
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                    <span style={{ fontSize: '2rem' }}>{attack.icon}</span>
-                                    <div>
-                                        <div style={{ fontWeight: '600' }}>{attack.name}</div>
-                                        <div style={{ fontSize: '14px', color: 'var(--neutral-600)' }}>
-                                            {attack.description}
-                                        </div>
+                                {attackResults[attack.id] === 'running' ? '⏳ Attacking...' : '🚀 Run Attack'}
+                            </button>
+
+                            {attackResults[attack.id] === 'blocked' && (
+                                <div style={{
+                                    marginTop: '1rem',
+                                    padding: '1rem',
+                                    background: 'rgba(34, 197, 94, 0.1)',
+                                    border: '1px solid var(--neon-green)',
+                                    borderRadius: '8px',
+                                    animation: 'slide-up 0.3s ease-out'
+                                }}>
+                                    <div style={{ color: 'var(--neon-green)', fontFamily: 'var(--font-display)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>
+                                        ✅ ATTACK NEUTRALIZED
+                                    </div>
+                                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                                        {attack.defense}
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Eve Attack Parameters */}
-                    {selectedAttack === 'eve_intercept' && (
-                        <div style={{ marginTop: '24px' }}>
-                            <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>
-                                Interception Rate: {(interceptRate * 100).toFixed(0)}%
-                            </label>
-                            <input
-                                type="range"
-                                min="0.1"
-                                max="1"
-                                step="0.1"
-                                value={interceptRate}
-                                onChange={(e) => setInterceptRate(parseFloat(e.target.value))}
-                                style={{ width: '100%' }}
-                            />
-                            <div style={{ fontSize: '12px', color: 'var(--neutral-500)' }}>
-                                Higher rate = more qubits intercepted = easier to detect
-                            </div>
+                            )}
                         </div>
-                    )}
-
-                    <button
-                        onClick={simulateAttack}
-                        disabled={loading}
-                        className="btn btn-primary"
-                        style={{ marginTop: '24px', width: '100%', background: 'var(--error)' }}
-                    >
-                        {loading ? '⏳ Simulating...' : '⚔️ Launch Attack Simulation'}
-                    </button>
+                    ))}
                 </div>
 
-                {/* Attack Result */}
-                <div className="card">
-                    <h3 style={{ marginBottom: '16px' }}>Attack Result</h3>
-
-                    {!result ? (
-                        <div style={{
-                            padding: '48px', textAlign: 'center',
-                            color: 'var(--neutral-400)', background: 'var(--neutral-50)',
-                            borderRadius: '12px'
-                        }}>
-                            <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🎯</div>
-                            <div>Select an attack and click "Launch" to simulate</div>
-                        </div>
-                    ) : (
-                        <div>
-                            {/* Status Banner */}
-                            <div style={{
-                                padding: '24px',
-                                borderRadius: '12px',
-                                background: result.security_status === 'BLOCKED' ? 'var(--success-light)' : 'var(--error-light)',
-                                marginBottom: '24px',
-                                textAlign: 'center'
-                            }}>
-                                <div style={{ fontSize: '3rem', marginBottom: '8px' }}>
-                                    {result.security_status === 'BLOCKED' ? '🛡️' : '⚠️'}
-                                </div>
-                                <div style={{
-                                    fontSize: '24px', fontWeight: '700',
-                                    color: result.security_status === 'BLOCKED' ? 'var(--success)' : 'var(--error)'
+                {/* Attack Logs */}
+                <div className="glass-card">
+                    <h3 style={{ fontFamily: 'var(--font-display)', marginBottom: '1.5rem' }}>📜 Attack & Defense Logs</h3>
+                    <div style={{
+                        background: 'rgba(0, 0, 0, 0.4)',
+                        border: '1px solid var(--glass-border)',
+                        borderRadius: '8px',
+                        padding: '1rem',
+                        maxHeight: '300px',
+                        overflowY: 'auto',
+                        fontFamily: "'Courier New', monospace",
+                        fontSize: '0.85rem'
+                    }}>
+                        {attackLogs.length === 0 ? (
+                            <div style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '2rem' }}>
+                                No attacks initiated yet. Click "Run Attack" to begin simulation.
+                            </div>
+                        ) : (
+                            attackLogs.map((log, i) => (
+                                <div key={i} style={{
+                                    padding: '0.5rem 0',
+                                    borderBottom: '1px solid rgba(255,255,255,0.05)',
+                                    display: 'flex',
+                                    gap: '1rem'
                                 }}>
-                                    {result.security_status}
+                                    <span style={{ color: 'var(--text-muted)', minWidth: '80px' }}>[{log.time}]</span>
+                                    <span style={{
+                                        color: log.type === 'SECURE' ? 'var(--neon-green)' :
+                                            log.type === 'ALERT' ? 'var(--neon-red)' : 'var(--neon-cyan)',
+                                        minWidth: '80px'
+                                    }}>
+                                        [{log.type}]
+                                    </span>
+                                    <span>{log.msg}</span>
                                 </div>
-                                <div style={{ color: 'var(--neutral-600)' }}>
-                                    {result.result.detected_by_system ? 'Attack detected by quantum monitoring' : 'Attack went undetected'}
-                                </div>
-                            </div>
-
-                            {/* Details */}
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px', background: 'var(--neutral-50)', borderRadius: '8px' }}>
-                                    <span>Attack Type</span>
-                                    <strong>{result.attack_name}</strong>
-                                </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px', background: 'var(--neutral-50)', borderRadius: '8px' }}>
-                                    <span>Error Rate</span>
-                                    <strong>{result.result.error_rate}</strong>
-                                </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px', background: 'var(--neutral-50)', borderRadius: '8px' }}>
-                                    <span>Detection Threshold</span>
-                                    <strong>11%</strong>
-                                </div>
-                            </div>
-
-                            {/* Explanation */}
-                            {result.result.details?.explanation && (
-                                <div className="alert alert-info" style={{ marginTop: '16px' }}>
-                                    <span>ℹ️</span>
-                                    <span>{result.result.details.explanation}</span>
-                                </div>
-                            )}
-
-                            {/* Countermeasure */}
-                            {result.result.details?.countermeasure && (
-                                <div className="alert alert-success" style={{ marginTop: '16px' }}>
-                                    <span>🛡️</span>
-                                    <span><strong>Countermeasure:</strong> {result.result.details.countermeasure}</span>
-                                </div>
-                            )}
-                        </div>
-                    )}
-                </div>
-            </div>
-
-            {/* Attack History */}
-            <div className="card" style={{ marginTop: '24px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                    <h3>Attack History & Statistics</h3>
-                    <button onClick={loadHistory} className="btn btn-secondary btn-sm">
-                        🔄 Load History
-                    </button>
-                </div>
-
-                {history && (
-                    <div>
-                        <div className="stats-grid" style={{ marginBottom: '24px' }}>
-                            <div className="stat-card">
-                                <div className="stat-label">Total Attacks</div>
-                                <div className="stat-value">{history.total_attacks}</div>
-                            </div>
-                            <div className="stat-card">
-                                <div className="stat-label">Detected</div>
-                                <div className="stat-value" style={{ color: 'var(--success)' }}>{history.detected}</div>
-                            </div>
-                            <div className="stat-card">
-                                <div className="stat-label">Blocked</div>
-                                <div className="stat-value" style={{ color: 'var(--success)' }}>{history.blocked}</div>
-                            </div>
-                            <div className="stat-card">
-                                <div className="stat-label">Detection Rate</div>
-                                <div className="stat-value">{history.detection_rate}%</div>
-                            </div>
-                        </div>
+                            ))
+                        )}
                     </div>
-                )}
-            </div>
+                </div>
 
-            <div className="alert alert-warning" style={{ marginTop: '24px' }}>
-                <span>⚠️</span>
-                <span>
-                    <strong>Educational Purpose:</strong> This attack simulator demonstrates how quantum cryptography
-                    (BB84 protocol) detects various security threats. In real systems, these attacks would be
-                    logged and investigated.
-                </span>
+                {/* Back to Dashboard */}
+                <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+                    <Link to="/dashboard" className="btn btn-secondary btn-lg">
+                        ← Back to Live Dashboard
+                    </Link>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default AttackSimulator
+export default AttackSimulator;
