@@ -14,7 +14,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "backend/main.py"
+      "dest": "https://q-voting1.onrender.com"
     },
     {
       "src": "/(.*)",
