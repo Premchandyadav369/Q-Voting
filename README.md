@@ -180,6 +180,68 @@ This project is configured as a Monorepo (Frontend + Backend). Follow these exac
 
 ---
 
+## 🌐 Professional Deployment (Stateful Backend)
+
+While Vercel is perfect for the **Frontend**, its "Serverless" nature means the SQLite database (`quantum_voting.db`) resets frequently. For a persistent, production-grade deployment, we recommend hosting the **Backend** on **Render** or **Railway**.
+
+### Option A: Deploy Backend to Render (Recommended)
+1. **Create Web Service**: Connect your GitHub repo to [Render](https://render.com).
+2. **Configure Service**:
+   - **Root Directory**: `backend`
+   - **Runtime**: `Docker`
+   - **Plan**: Free (or Starter for persistence).
+3. **Environment Variables**: Add `GEMINI_API_KEY`.
+4. **Persistent Disk (Important)**: 
+   - Go to **Advanced** -> **Add Disk**.
+   - Mount Path: `/app/data` (Update `DATABASE_URL` in `database.py` to `sqlite:////app/data/quantum_voting.db` if using a disk).
+   - *Note: Without a disk, the DB will reset on every deploy/restart.*
+
+### Option B: Deploy Backend to Railway
+1. **New Project**: Select "Deploy from GitHub repo".
+2. **Variables**: Add your `GEMINI_API_KEY`.
+3. **Volumes**: Add a Volume to the backend service to persist the `.db` file.
+
+### Step 3: Connect Frontend (Vercel) to Backend (Render/Railway)
+Once your backend is live (e.g., `https://q-voting-api.onrender.com`), update your `vercel.json` in the root:
+
+```json
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://your-backend-url.com/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
+
+---
+
+## 🔄 Updating & Maintenance Procedure
+
+To update the system and push changes to GitHub/Production:
+
+1. **Local Development**:
+   Make your changes in the `backend/` or `frontend/` folders.
+
+2. **Test Locally**:
+   ```powershell
+   .\run_project.ps1
+   ```
+
+3. **Deploy Updates**:
+   Once satisfied, run these commands in your terminal:
+   ```powershell
+   git add .
+   git commit -m "feat: your feature description"
+   git push origin main
+   ```
+
+4. **Automatic Re-deployment**:
+   - **Vercel** will detect the push and rebuild the **Frontend**.
+   - **Render/Railway** will detect the push and rebuild the **Backend Container**.
+   - Your live site will update automatically in ~2-3 minutes.
+
+---
+
 ## 👤 Credits & Author
 
 **Architected & Developed by:**
